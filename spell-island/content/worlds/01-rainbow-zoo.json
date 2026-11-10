@@ -1,0 +1,1862 @@
+{
+ "id": "rainbow-zoo",
+ "order": 1,
+ "grade": "三年级上册",
+ "gradeNum": 3,
+ "unit": "Unit · Animals & Colours（动物与颜色）",
+ "title": "Rainbow Zoo",
+ "titleZh": "彩虹动物园",
+ "scene": "zoo",
+ "bounds": 52,
+ "intro": [
+  "欢迎来到彩虹动物园！灰色魔法把动物们的颜色偷走了。",
+  "园里有猴子山、熊猫森林、鸭子池塘……到处飘着金色的单词星，走过去大声说出来就能收集！先去找饲养员 Amy 吧：“Go to Amy!”"
+ ],
+ "vocab": [
+  "duck",
+  "cat",
+  "dog",
+  "rabbit",
+  "panda",
+  "monkey",
+  "elephant",
+  "tiger",
+  "bear",
+  "red",
+  "yellow",
+  "blue",
+  "green",
+  "black",
+  "white",
+  "brown",
+  "pink"
+ ],
+ "patterns": [
+  "What's this? It's a duck.",
+  "I see a panda.",
+  "What colour is it? It's green.",
+  "Make the duck yellow!"
+ ],
+ "spawn": {
+  "pos": [
+   0,
+   0,
+   44
+  ],
+  "rot": 3.14159
+ },
+ "zones": [
+  {
+   "id": "gate",
+   "name": "Zoo Gate",
+   "zh": "动物园大门",
+   "pos": [
+    0,
+    40
+   ],
+   "r": 8
+  },
+  {
+   "id": "plaza",
+   "name": "Rainbow Plaza",
+   "zh": "彩虹广场",
+   "pos": [
+    0,
+    4
+   ],
+   "r": 10
+  },
+  {
+   "id": "pond",
+   "name": "Duck Pond",
+   "zh": "鸭子池塘",
+   "pos": [
+    26,
+    12
+   ],
+   "r": 10
+  },
+  {
+   "id": "hill",
+   "name": "Monkey Hill",
+   "zh": "猴子山",
+   "pos": [
+    26,
+    -20
+   ],
+   "r": 11
+  },
+  {
+   "id": "forest",
+   "name": "Panda Forest",
+   "zh": "熊猫森林",
+   "pos": [
+    -26,
+    -22
+   ],
+   "r": 12
+  },
+  {
+   "id": "field",
+   "name": "Big Animal Field",
+   "zh": "大动物草原",
+   "pos": [
+    -28,
+    8
+   ],
+   "r": 12
+  },
+  {
+   "id": "rock",
+   "name": "Big Cat Rock",
+   "zh": "大猫岩",
+   "pos": [
+    0,
+    -27
+   ],
+   "r": 9
+  },
+  {
+   "id": "farm",
+   "name": "Farm Corner",
+   "zh": "小农场",
+   "pos": [
+    -24,
+    32
+   ],
+   "r": 10
+  },
+  {
+   "id": "icecream",
+   "name": "Ice Cream Corner",
+   "zh": "冰淇淋角",
+   "pos": [
+    20,
+    31
+   ],
+   "r": 9
+  }
+ ],
+ "decor": [
+  {
+   "k": "model",
+   "m": "zoo_gate",
+   "at": [
+    0,
+    36
+   ],
+   "rot": 0
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     46
+    ],
+    [
+     0,
+     20
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "w": 4
+  },
+  {
+   "k": "plaza",
+   "at": [
+    0,
+    4
+   ],
+   "r": 8.5,
+   "color": "#e8d6a8"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     4
+    ],
+    [
+     22,
+     6
+    ],
+    [
+     26,
+     -12
+    ]
+   ],
+   "w": 3.2
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     4
+    ],
+    [
+     -22,
+     6
+    ],
+    [
+     -26,
+     -12
+    ]
+   ],
+   "w": 3.2
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     -22
+    ]
+   ],
+   "w": 3.2
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     26
+    ],
+    [
+     -20,
+     30
+    ]
+   ],
+   "w": 2.8
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     26
+    ],
+    [
+     18,
+     30
+    ]
+   ],
+   "w": 2.8
+  },
+  {
+   "k": "pond",
+   "at": [
+    28,
+    14
+   ],
+   "r": 5,
+   "sx": 1.3
+  },
+  {
+   "k": "grove",
+   "at": [
+    -27,
+    -24
+   ],
+   "r": 9,
+   "n": 12,
+   "kind": "mix",
+   "s": 1.1
+  },
+  {
+   "k": "grove",
+   "at": [
+    30,
+    -26
+   ],
+   "r": 6,
+   "n": 6,
+   "kind": "tree"
+  },
+  {
+   "k": "mountain",
+   "at": [
+    30,
+    -32
+   ],
+   "r": 9,
+   "h": 7,
+   "color": "#9cb87a"
+  },
+  {
+   "k": "rock",
+   "at": [
+    -3,
+    -31
+   ],
+   "s": 1.6
+  },
+  {
+   "k": "rock",
+   "at": [
+    4,
+    -32
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "rock",
+   "at": [
+    7,
+    -26
+   ],
+   "s": 0.8
+  },
+  {
+   "k": "fence",
+   "from": [
+    -32,
+    26
+   ],
+   "to": [
+    -16,
+    26
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    -32,
+    26
+   ],
+   "to": [
+    -32,
+    40
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    -38,
+    0
+   ],
+   "to": [
+    -38,
+    18
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    -38,
+    18
+   ],
+   "to": [
+    -18,
+    20
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    32,
+    -14
+   ],
+   "to": [
+    20,
+    -12
+   ]
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -6,
+    10
+   ],
+   "rot": 0.4
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    6,
+    -2
+   ],
+   "rot": -0.4
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -4,
+    30
+   ],
+   "rot": 1.57
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    4,
+    30
+   ],
+   "rot": 1.57
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    -8,
+    2
+   ],
+   "rot": 1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    8,
+    8
+   ],
+   "rot": -1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    26,
+    28
+   ],
+   "rot": -1.2,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    -10,
+    22
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    10,
+    22
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    14,
+    -8
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    -14,
+    -8
+   ]
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -28,
+    10
+   ],
+   "r": 10,
+   "n": 70
+  },
+  {
+   "k": "meadow",
+   "at": [
+    14,
+    18
+   ],
+   "r": 6,
+   "n": 40
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -24,
+    34
+   ],
+   "r": 6,
+   "n": 40
+  },
+  {
+   "k": "tree",
+   "at": [
+    -12,
+    40
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "tree",
+   "at": [
+    12,
+    40
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "pine",
+   "at": [
+    -40,
+    -8
+   ],
+   "s": 1.3
+  },
+  {
+   "k": "pine",
+   "at": [
+    40,
+    0
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "grove",
+   "at": [
+    0,
+    52
+   ],
+   "r": 14,
+   "n": 8,
+   "kind": "pine",
+   "s": 1.2
+  },
+  {
+   "k": "lamp",
+   "at": [
+    -3,
+    22
+   ]
+  },
+  {
+   "k": "lamp",
+   "at": [
+    3,
+    22
+   ]
+  }
+ ],
+ "things": [
+  {
+   "id": "fountain",
+   "name": "fountain",
+   "zh": "喷泉",
+   "model": "fountain",
+   "pos": [
+    0,
+    0,
+    2
+   ],
+   "radius": 1.8,
+   "can": [
+    "light"
+   ],
+   "chatter": []
+  },
+  {
+   "id": "sign_map",
+   "name": "zoo map",
+   "zh": "动物园地图",
+   "model": "signpost",
+   "pos": [
+    -3,
+    0,
+    16
+   ],
+   "aliases": [
+    "map",
+    "sign",
+    "board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Welcome to Rainbow Zoo!\nSee the pandas, the monkeys and the ducks.\nHave fun!"
+  },
+  {
+   "id": "lamp1",
+   "name": "lamp",
+   "zh": "路灯",
+   "model": "lamp_post",
+   "pos": [
+    -6,
+    0,
+    12
+   ],
+   "aliases": [
+    "light",
+    "lamp post"
+   ],
+   "radius": 0.3,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "lamp2",
+   "name": "lamp",
+   "zh": "路灯",
+   "model": "lamp_post",
+   "pos": [
+    6,
+    0,
+    -4
+   ],
+   "aliases": [
+    "light",
+    "lamp post"
+   ],
+   "radius": 0.3,
+   "can": [
+    "light"
+   ],
+   "label": false,
+   "reveal": [
+    "ws_pink"
+   ],
+   "revealOn": "light"
+  },
+  {
+   "id": "duck",
+   "name": "duck",
+   "zh": "鸭子",
+   "model": "duck",
+   "pos": [
+    23,
+    0,
+    9
+   ],
+   "tags": [
+    "small",
+    "yellow"
+   ],
+   "color": "yellow",
+   "radius": 0.4,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "startTint": "grey",
+    "voice": "animal"
+   },
+   "chatter": [
+    "Quack, quack! I am a duck!"
+   ]
+  },
+  {
+   "id": "frog",
+   "name": "frog",
+   "zh": "青蛙",
+   "model": "frog",
+   "pos": [
+    32,
+    0,
+    9
+   ],
+   "tags": [
+    "small",
+    "green"
+   ],
+   "color": "green",
+   "radius": 0.3,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Ribbit! I am green. Ribbit!"
+   ]
+  },
+  {
+   "id": "sign_monkey",
+   "name": "monkey sign",
+   "zh": "猴子告示牌",
+   "model": "signpost",
+   "pos": [
+    21,
+    0,
+    -15
+   ],
+   "aliases": [
+    "sign",
+    "board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "I like monkeys.\nMonkeys are brown.\nThey like bananas."
+  },
+  {
+   "id": "giraffe",
+   "name": "giraffe",
+   "zh": "长颈鹿",
+   "model": "giraffe",
+   "pos": [
+    33,
+    0,
+    -22
+   ],
+   "tags": [
+    "tall",
+    "yellow"
+   ],
+   "color": "yellow",
+   "radius": 1.2,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "h": 5.0,
+    "voice": "animal"
+   }
+  },
+  {
+   "id": "elephant",
+   "name": "elephant",
+   "zh": "大象",
+   "model": "elephant_mom",
+   "pos": [
+    -31,
+    0,
+    14
+   ],
+   "tags": [
+    "big",
+    "grey"
+   ],
+   "color": "grey",
+   "radius": 2.0,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "h": 3.0,
+    "voice": "animal"
+   },
+   "reveal": [
+    "ws_big"
+   ],
+   "revealOn": "small",
+   "chatter": [
+    "Hello! I am big and grey!"
+   ]
+  },
+  {
+   "id": "zebra",
+   "name": "zebra",
+   "zh": "斑马",
+   "model": "zebra",
+   "pos": [
+    -23,
+    0,
+    15
+   ],
+   "tags": [
+    "black",
+    "white"
+   ],
+   "color": "white",
+   "radius": 1.0,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   }
+  },
+  {
+   "id": "horse",
+   "name": "horse",
+   "zh": "马",
+   "model": "horse",
+   "pos": [
+    -34,
+    0,
+    3
+   ],
+   "tags": [
+    "brown"
+   ],
+   "color": "brown",
+   "radius": 0.9,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   }
+  },
+  {
+   "id": "panda",
+   "name": "panda",
+   "zh": "熊猫",
+   "model": "panda",
+   "pos": [
+    -24,
+    0,
+    -21
+   ],
+   "tags": [
+    "black",
+    "white",
+    "big"
+   ],
+   "color": "black",
+   "radius": 1.0,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Hi! I am a panda. I like bamboo!"
+   ]
+  },
+  {
+   "id": "bear",
+   "name": "bear",
+   "zh": "熊",
+   "model": "brown_bear",
+   "pos": [
+    -33,
+    0,
+    -14
+   ],
+   "aliases": [
+    "brown bear"
+   ],
+   "tags": [
+    "brown",
+    "big"
+   ],
+   "color": "brown",
+   "radius": 1.1,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   }
+  },
+  {
+   "id": "sign_panda",
+   "name": "panda sign",
+   "zh": "熊猫告示牌",
+   "model": "signpost",
+   "pos": [
+    -18,
+    0,
+    -15
+   ],
+   "aliases": [
+    "sign",
+    "board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "This is a panda.\nIt is black and white.\nIt likes bamboo."
+  },
+  {
+   "id": "chest",
+   "name": "treasure chest",
+   "zh": "宝箱",
+   "model": "treasure_chest",
+   "pos": [
+    -31,
+    0,
+    -29
+   ],
+   "aliases": [
+    "chest",
+    "box",
+    "treasure"
+   ],
+   "radius": 0.6,
+   "can": [
+    "open",
+    "fly"
+   ],
+   "reveal": [
+    "ws_see"
+   ],
+   "revealOn": "open"
+  },
+  {
+   "id": "tiger",
+   "name": "tiger",
+   "zh": "老虎",
+   "model": "tiger",
+   "pos": [
+    2,
+    0,
+    -27
+   ],
+   "tags": [
+    "orange"
+   ],
+   "color": "orange",
+   "radius": 0.9,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Roar! I am a little tiger."
+   ]
+  },
+  {
+   "id": "lion",
+   "name": "lion",
+   "zh": "狮子",
+   "model": "lion",
+   "pos": [
+    -7,
+    0,
+    -29
+   ],
+   "tags": [
+    "yellow",
+    "brown"
+   ],
+   "color": "yellow",
+   "radius": 1.0,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "h": 1.6,
+    "voice": "animal"
+   }
+  },
+  {
+   "id": "sheep",
+   "name": "sheep",
+   "zh": "绵羊",
+   "model": "sheep",
+   "pos": [
+    -26,
+    0,
+    30
+   ],
+   "tags": [
+    "white"
+   ],
+   "color": "white",
+   "radius": 0.6,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Baa, baa! I am white."
+   ]
+  },
+  {
+   "id": "rabbit",
+   "name": "rabbit",
+   "zh": "兔子",
+   "model": "rabbit",
+   "pos": [
+    -29,
+    0,
+    36
+   ],
+   "tags": [
+    "white",
+    "small"
+   ],
+   "color": "white",
+   "radius": 0.4,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   }
+  },
+  {
+   "id": "cat",
+   "name": "cat",
+   "zh": "猫",
+   "model": "cat",
+   "pos": [
+    -18,
+    0,
+    29
+   ],
+   "tags": [
+    "small",
+    "grey"
+   ],
+   "color": "grey",
+   "radius": 0.4,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Meow! Meow!"
+   ]
+  },
+  {
+   "id": "dog",
+   "name": "dog",
+   "zh": "狗",
+   "model": "dog",
+   "pos": [
+    -13,
+    0,
+    33
+   ],
+   "tags": [
+    "brown"
+   ],
+   "color": "brown",
+   "radius": 0.5,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Woof, woof! Let's play!"
+   ]
+  },
+  {
+   "id": "cart",
+   "name": "ice cream cart",
+   "zh": "冰淇淋车",
+   "model": "ice_cream_cart",
+   "pos": [
+    24,
+    0,
+    29
+   ],
+   "aliases": [
+    "cart",
+    "ice cream car"
+   ],
+   "radius": 1.3,
+   "can": [
+    "fly"
+   ]
+  }
+ ],
+ "npcs": [
+  {
+   "id": "keeper",
+   "name": "zookeeper",
+   "zh": "饲养员",
+   "model": "zookeeper",
+   "pos": [
+    3,
+    0,
+    8
+   ],
+   "aliases": [
+    "amy",
+    "keeper",
+    "lady"
+   ],
+   "idle": [
+    "Thank you! The zoo is so colourful now!",
+    "Look at the animals!",
+    "The panda is black and white."
+   ],
+   "chatter": [
+    "Look! I see a panda. It is black and white.",
+    "What colour is the duck? It is yellow!",
+    "I like elephants. They are big!"
+   ],
+   "voice": "woman",
+   "persona": "Amy, a cheerful zookeeper who loves animals; uses very simple grade-3 English",
+   "greet": "Hi! I'm Amy, the zookeeper. Welcome to Rainbow Zoo!",
+   "radius": 0.8
+  },
+  {
+   "id": "monkey",
+   "name": "monkey",
+   "zh": "猴子",
+   "model": "monkey",
+   "pos": [
+    26,
+    0,
+    -22
+   ],
+   "aliases": [
+    "momo"
+   ],
+   "tags": [
+    "brown"
+   ],
+   "color": "brown",
+   "idle": [
+    "Yummy! Thank you!",
+    "I like bananas!"
+   ],
+   "chatter": [
+    "Ooh ooh! I like bananas!",
+    "I am a brown monkey. Ooh ooh!"
+   ],
+   "voice": "animal",
+   "persona": "Momo, a cheeky little monkey who is always hungry; very simple English",
+   "greet": "Ooh ooh! Hello! I am hungry!",
+   "radius": 0.8
+  },
+  {
+   "id": "polly",
+   "name": "parrot",
+   "zh": "鹦鹉",
+   "model": "parrot",
+   "pos": [
+    19,
+    0,
+    17
+   ],
+   "aliases": [
+    "polly",
+    "bird"
+   ],
+   "idle": [
+    "Red! Yellow! Blue! Green!",
+    "Pretty colours! Pretty colours!"
+   ],
+   "chatter": [
+    "What colour is it? What colour is it?",
+    "Red! Yellow! Blue! Hello, hello!"
+   ],
+   "voice": "animal",
+   "persona": "Polly, a chatty colourful parrot who loves colours and repeats words; very simple English",
+   "greet": "Hello! Hello! I am Polly! Red, yellow, blue!",
+   "radius": 0.8
+  },
+  {
+   "id": "kate",
+   "name": "Kate",
+   "zh": "凯特",
+   "model": "shopper_girl",
+   "pos": [
+    15,
+    0,
+    26
+   ],
+   "aliases": [
+    "girl",
+    "kate"
+   ],
+   "idle": [
+    "I like pandas!",
+    "The zoo is fun!"
+   ],
+   "chatter": [
+    "I see a tiger! It is orange.",
+    "I like pandas. Pandas are black and white!"
+   ],
+   "voice": "child",
+   "persona": "Kate, a little girl visiting the zoo who loves pandas and ice cream; very simple English",
+   "greet": "Hi! I'm Kate. I love animals!",
+   "radius": 0.8
+  },
+  {
+   "id": "lee",
+   "name": "Mr Lee",
+   "zh": "李叔叔",
+   "model": "fruit_seller",
+   "pos": [
+    21,
+    0,
+    34
+   ],
+   "aliases": [
+    "mister lee",
+    "lee",
+    "ice cream man",
+    "man",
+    "uncle"
+   ],
+   "idle": [
+    "Ice cream is yummy!"
+   ],
+   "chatter": [
+    "Ice cream! Pink, yellow and brown ice cream!"
+   ],
+   "voice": "man",
+   "persona": "Mr Lee, a jolly ice cream seller at the zoo; very simple English",
+   "greet": "Ice cream! Ice cream! Pink, yellow and brown!",
+   "radius": 0.8
+  }
+ ],
+ "quests": [
+  {
+   "id": "zoo_hello",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "keeper",
+   "titleZh": "和饲养员打招呼，告诉她你的名字",
+   "title": "Hello!",
+   "intro": [
+    "Hello! I'm Amy. What's your name?"
+   ],
+   "model": [
+    "My name is Milo.",
+    "I'm Milo."
+   ],
+   "done": [
+    "Nice to meet you! Look, the Grey Hush took the colours. Can you help?"
+   ],
+   "prompt": "What's your name?",
+   "accept": [
+    [
+     "name",
+     "i am",
+     "im",
+     "call me"
+    ]
+   ],
+   "tipZh": "Amy 问你叫什么名字。可以说“My name is …”或者“I'm …”。"
+  },
+  {
+   "id": "zoo_what",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "keeper",
+   "titleZh": "回答饲养员：这是什么动物？",
+   "title": "What's this?",
+   "intro": [
+    "Look at that little bird by the pond. It says quack, quack!"
+   ],
+   "model": [
+    "It's a duck."
+   ],
+   "done": [
+    "Yes! It's a duck. But oh no, it is grey!"
+   ],
+   "prompt": "What's this?",
+   "accept": [
+    [
+     "duck"
+    ]
+   ],
+   "needs": "zoo_hello",
+   "tipZh": "饲养员在问“这是什么？”看看池塘边那只嘎嘎叫的小鸟，回答：“It's a …”"
+  },
+  {
+   "id": "zoo_color",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "keeper",
+   "titleZh": "用咒语把鸭子变回黄色",
+   "title": "Make the duck yellow",
+   "intro": [
+    "The Grey Hush took its colour! Ducks are yellow. Can you use your magic?"
+   ],
+   "model": [
+    "Make the duck yellow!"
+   ],
+   "done": [
+    "Hooray! A yellow duck! Thank you, little wizard!"
+   ],
+   "prompt": "Say: Make the duck yellow!",
+   "goal": "tint:duck:yellow",
+   "needs": "zoo_what"
+  },
+  {
+   "id": "zoo_listen",
+   "kind": "listen",
+   "skill": "听",
+   "giver": "keeper",
+   "titleZh": "听一听，选出说的是哪种动物",
+   "title": "Listen and choose",
+   "intro": [
+    "Now a listening game. Listen carefully!"
+   ],
+   "model": [],
+   "done": [
+    "Great listening! Pandas are black and white."
+   ],
+   "prompt": "Which animal is it?",
+   "audio": "I see a big animal. It is black and white. It likes bamboo. It is a panda!",
+   "options": [
+    "A brown monkey",
+    "A black and white panda",
+    "A yellow duck"
+   ],
+   "answer": 1,
+   "video": "zoo.mp4",
+   "needs": "zoo_color"
+  },
+  {
+   "id": "zoo_write",
+   "kind": "write",
+   "skill": "写",
+   "giver": "keeper",
+   "titleZh": "写出动物的名字（喵喵叫的）",
+   "title": "Write the animal",
+   "intro": [
+    "Can you write the name of an animal?"
+   ],
+   "model": [
+    "cat"
+   ],
+   "done": [
+    "Perfect spelling! C-A-T, cat!"
+   ],
+   "prompt": "It says \"Meow, meow!\" Write the animal.",
+   "accept": [
+    [
+     "cat"
+    ]
+   ],
+   "needs": "zoo_listen"
+  },
+  {
+   "id": "bear_sleep",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "keeper",
+   "titleZh": "熊困了：念咒语让它睡觉",
+   "title": "Make the bear sleep",
+   "intro": [
+    "The brown bear is so tired. Can you help it sleep?"
+   ],
+   "model": [
+    "Make the bear sleep!"
+   ],
+   "done": [
+    "Shh... Good night, bear! Thank you!"
+   ],
+   "prompt": "Say: Make the bear sleep!",
+   "goal": "nap:bear",
+   "needs": "zoo_write",
+   "tipZh": "棕熊困了。念咒语：“Make the bear sleep!”"
+  },
+  {
+   "id": "zoo_party",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "keeper",
+   "titleZh": "颜色都回来啦！放烟花庆祝",
+   "title": "Fireworks!",
+   "intro": [
+    "The zoo is colourful again! Let's have a party. Can you make fireworks?"
+   ],
+   "model": [
+    "Fireworks!"
+   ],
+   "done": [
+    "Wow! Red, yellow, blue and green! What a colourful zoo! Thank you!"
+   ],
+   "prompt": "Say: Fireworks!",
+   "goal": "fireworks",
+   "needs": "bear_sleep"
+  },
+  {
+   "id": "zoo_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "sign_monkey",
+   "titleZh": "大声读出猴子告示牌",
+   "title": "Read the sign",
+   "intro": [],
+   "model": [
+    "I like monkeys."
+   ],
+   "done": [
+    "You read it! Monkeys are brown and they like bananas."
+   ],
+   "passage": "I like monkeys. Monkeys are brown.",
+   "readAloud": true,
+   "prompt": "Read the sign aloud."
+  },
+  {
+   "id": "panda_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "sign_panda",
+   "titleZh": "读熊猫告示牌：熊猫喜欢吃什么？",
+   "title": "What does the panda like?",
+   "intro": [],
+   "model": [],
+   "done": [
+    "Yes! Pandas like bamboo."
+   ],
+   "passage": "This is a panda.\nIt is black and white.\nIt likes bamboo.",
+   "prompt": "What does the panda like?",
+   "options": [
+    "Bamboo",
+    "Bananas",
+    "Fish"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "zoo_feed",
+   "kind": "do",
+   "skill": "说",
+   "giver": "monkey",
+   "titleZh": "小猴饿了：变一根香蕉给它",
+   "title": "Feed the monkey",
+   "intro": [
+    "Ooh ooh! I am so hungry! I want a banana!"
+   ],
+   "model": [
+    "Make a banana!",
+    "Give the banana to the monkey."
+   ],
+   "done": [
+    "Yummy! Thank you! Ooh ooh!"
+   ],
+   "tipZh": "先变一根香蕉：“Make a banana!” 再说：“Give the banana to the monkey!”",
+   "goal": "give:*:monkey"
+  },
+  {
+   "id": "monkey_dance",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "monkey",
+   "titleZh": "小猴吃饱了想跳舞：让它跳起舞来",
+   "title": "Make the monkey dance",
+   "intro": [
+    "I am full! Now I want to dance! Ooh ooh!"
+   ],
+   "model": [
+    "Make the monkey dance!"
+   ],
+   "done": [
+    "La la la! I can dance! Thank you!"
+   ],
+   "prompt": "Say: Make the monkey dance!",
+   "goal": "dance:monkey",
+   "needs": "zoo_feed"
+  },
+  {
+   "id": "polly_frog",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "polly",
+   "titleZh": "回答鹦鹉：青蛙是什么颜色？",
+   "title": "What colour is the frog?",
+   "intro": [
+    "Look at the frog by the pond! What colour is it? What colour is it?"
+   ],
+   "model": [
+    "It's green."
+   ],
+   "done": [
+    "Green! Green! Pretty green frog!"
+   ],
+   "prompt": "What colour is the frog?",
+   "accept": [
+    [
+     "green"
+    ]
+   ],
+   "tipZh": "鹦鹉问青蛙是什么颜色。看看池塘边的青蛙，回答：“It's …”"
+  },
+  {
+   "id": "polly_rainbow",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "polly",
+   "titleZh": "鹦鹉想变成彩虹色",
+   "title": "Make the parrot rainbow",
+   "intro": [
+    "I want all the colours! Red, yellow, blue! Make me rainbow!"
+   ],
+   "model": [
+    "Make the parrot rainbow!"
+   ],
+   "done": [
+    "Wow! I am a rainbow parrot! Red, yellow, blue, green!"
+   ],
+   "prompt": "Say: Make the parrot rainbow!",
+   "goal": "tint:polly:rainbow",
+   "needs": "polly_frog"
+  },
+  {
+   "id": "polly_write",
+   "kind": "write",
+   "skill": "写",
+   "giver": "polly",
+   "titleZh": "写颜色：天空是什么颜色？",
+   "title": "Write a colour",
+   "intro": [
+    "Spelling game! Spelling game!"
+   ],
+   "model": [
+    "blue"
+   ],
+   "done": [
+    "B-L-U-E! Blue! Clever wizard!"
+   ],
+   "prompt": "Look up! The sky is ___ . Write the colour.",
+   "accept": [
+    [
+     "blue"
+    ]
+   ],
+   "needs": "polly_rainbow"
+  },
+  {
+   "id": "kate_panda",
+   "kind": "do",
+   "skill": "说",
+   "giver": "kate",
+   "titleZh": "Kate 看不清熊猫：把熊猫变大",
+   "title": "Make the panda big",
+   "intro": [
+    "I want to see the panda, but it is so far away! Can you make it big?"
+   ],
+   "model": [
+    "Make the panda big!"
+   ],
+   "done": [
+    "Wow! A big panda! I see a panda! Thank you!"
+   ],
+   "goal": "big:panda",
+   "tipZh": "熊猫离得太远了。念咒语：“Make the panda big!”"
+  },
+  {
+   "id": "kate_tiger",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "kate",
+   "titleZh": "小老虎不开心：让它高兴起来",
+   "title": "Make the tiger happy",
+   "intro": [
+    "Look at the little tiger. It looks sad. Can you make it happy?"
+   ],
+   "model": [
+    "Make the tiger happy!"
+   ],
+   "done": [
+    "Yay! The tiger is happy now! Roar!"
+   ],
+   "prompt": "Say: Make the tiger happy!",
+   "goal": "happy:tiger|dance:tiger",
+   "needs": "kate_panda"
+  },
+  {
+   "id": "lee_icecream",
+   "kind": "do",
+   "skill": "说",
+   "giver": "lee",
+   "titleZh": "帮李叔叔：变一个冰淇淋送给 Kate",
+   "title": "Ice cream for Kate",
+   "intro": [
+    "Oh no! My ice cream is all gone. Kate wants one. Can you make an ice cream for her?"
+   ],
+   "model": [
+    "Make an ice cream!",
+    "Give the ice cream to Kate."
+   ],
+   "done": [
+    "Ha ha! Thank you, little wizard!"
+   ],
+   "goal": "give:*:kate",
+   "tipZh": "先变冰淇淋：“Make an ice cream!” 再送过去：“Give the ice cream to Kate!”"
+  }
+ ],
+ "words": [
+  {
+   "id": "ws_duck",
+   "say": "duck",
+   "zh": "鸭子",
+   "pos": [
+    24,
+    5
+   ]
+  },
+  {
+   "id": "ws_panda",
+   "say": "panda",
+   "zh": "熊猫",
+   "pos": [
+    -21,
+    -18
+   ]
+  },
+  {
+   "id": "ws_monkey",
+   "say": "monkey",
+   "zh": "猴子",
+   "pos": [
+    22,
+    -19
+   ]
+  },
+  {
+   "id": "ws_elephant",
+   "say": "elephant",
+   "zh": "大象",
+   "pos": [
+    -25,
+    9
+   ]
+  },
+  {
+   "id": "ws_tiger",
+   "say": "tiger",
+   "zh": "老虎",
+   "pos": [
+    5,
+    -23
+   ]
+  },
+  {
+   "id": "ws_rabbit",
+   "say": "rabbit",
+   "zh": "兔子",
+   "pos": [
+    -27,
+    33
+   ]
+  },
+  {
+   "id": "ws_red",
+   "say": "red",
+   "zh": "红色",
+   "pos": [
+    10,
+    3
+   ]
+  },
+  {
+   "id": "ws_yellow",
+   "say": "yellow",
+   "zh": "黄色",
+   "pos": [
+    17,
+    9
+   ]
+  },
+  {
+   "id": "ws_blue",
+   "say": "blue",
+   "zh": "蓝色",
+   "pos": [
+    -10,
+    4
+   ]
+  },
+  {
+   "id": "ws_green",
+   "say": "green",
+   "zh": "绿色",
+   "pos": [
+    31,
+    18
+   ]
+  },
+  {
+   "id": "ws_what",
+   "say": "What's this? It's a duck.",
+   "zh": "这是什么？是一只鸭子。",
+   "pos": [
+    2,
+    17
+   ]
+  },
+  {
+   "id": "ws_like",
+   "say": "I like monkeys.",
+   "zh": "我喜欢猴子。",
+   "pos": [
+    29,
+    -14
+   ]
+  },
+  {
+   "id": "ws_make",
+   "say": "Make the duck yellow!",
+   "zh": "把鸭子变成黄色！",
+   "pos": [
+    13,
+    14
+   ]
+  },
+  {
+   "id": "ws_see",
+   "say": "I see a panda.",
+   "zh": "我看见一只熊猫。",
+   "pos": [
+    -28,
+    -25
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_big",
+   "say": "The elephant is big and grey.",
+   "zh": "大象又大又灰。",
+   "pos": [
+    -27,
+    18
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_pink",
+   "say": "pink",
+   "zh": "粉色",
+   "pos": [
+    8,
+    -6
+   ],
+   "hidden": true
+  }
+ ],
+ "spellIdeas": [
+  {
+   "say": "Make the elephant pink!",
+   "zh": "把大象变成粉色",
+   "near": "elephant"
+  },
+  {
+   "say": "Make the elephant small!",
+   "zh": "把大象变小（会发现秘密哦）",
+   "near": "elephant"
+  },
+  {
+   "say": "Make the panda fly!",
+   "zh": "让熊猫飞起来",
+   "near": "panda"
+  },
+  {
+   "say": "Make the rabbit big!",
+   "zh": "把兔子变大",
+   "near": "rabbit"
+  },
+  {
+   "say": "Make the dog blue!",
+   "zh": "把小狗变成蓝色",
+   "near": "dog"
+  },
+  {
+   "say": "Make three ducks!",
+   "zh": "变出三只鸭子",
+   "near": "duck"
+  },
+  {
+   "say": "Make the sheep dance!",
+   "zh": "让绵羊跳舞",
+   "near": "sheep"
+  },
+  {
+   "say": "Turn the cat into a pig!",
+   "zh": "把小猫变成小猪",
+   "near": "cat"
+  },
+  {
+   "say": "Make the giraffe sing!",
+   "zh": "让长颈鹿唱歌",
+   "near": "giraffe"
+  },
+  {
+   "say": "Open the chest!",
+   "zh": "打开宝箱",
+   "near": "chest"
+  },
+  {
+   "say": "Make it night!",
+   "zh": "让天黑下来"
+  },
+  {
+   "say": "Make a rainbow!",
+   "zh": "变出一道彩虹"
+  },
+  {
+   "say": "Make the frog jump!",
+   "zh": "让青蛙跳一跳",
+   "near": "frog"
+  },
+  {
+   "say": "Freeze the lion!",
+   "zh": "把狮子冻住",
+   "near": "lion"
+  },
+  {
+   "say": "Light the lamp!",
+   "zh": "点亮路灯",
+   "near": "lamp1"
+  },
+  {
+   "say": "Put the panda on a cloud!",
+   "zh": "让熊猫坐上云朵"
+  },
+  {
+   "say": "Turn the dog into a panda!",
+   "zh": "把小狗变成熊猫"
+  },
+  {
+   "say": "Turn the duck into a tiger!",
+   "zh": "把鸭子变成老虎"
+  },
+  {
+   "say": "Make the tiger rainbow!",
+   "zh": "把老虎变成彩虹色"
+  },
+  {
+   "say": "Make the bear white!",
+   "zh": "把熊变成白色"
+  },
+  {
+   "say": "Make the lion gold!",
+   "zh": "把狮子变成金色"
+  },
+  {
+   "say": "Move the elephant to the left!",
+   "zh": "把大象移到左边"
+  },
+  {
+   "say": "Make the rabbit invisible!",
+   "zh": "让兔子隐身"
+  },
+  {
+   "say": "Everybody, dance!",
+   "zh": "让所有动物一起跳舞"
+  },
+  {
+   "say": "Make butterflies!",
+   "zh": "变出一群蝴蝶"
+  }
+ ]
+}

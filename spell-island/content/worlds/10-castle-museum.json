@@ -1,0 +1,2203 @@
+{
+ "id": "castle-museum",
+ "order": 10,
+ "grade": "九年级",
+ "gradeNum": 9,
+ "unit": "Unit · Could you please tell me where…?（礼貌问询与宾语从句）",
+ "title": "The Castle Museum",
+ "titleZh": "古堡博物馆",
+ "scene": "castle",
+ "bounds": 52,
+ "intro": [
+  "这座古堡是一座大博物馆：骑士厅、金龙厅、王座厅、古塔、礼品店、邮局……这里的人都很讲礼貌。",
+  "问路要用礼貌的说法：“Could you please tell me where … is?” 先去庭院找导游格蕾丝：“Go to Ms Grace!”"
+ ],
+ "vocab": [
+  "castle",
+  "museum",
+  "exhibit",
+  "guide",
+  "polite",
+  "excuse me",
+  "could you",
+  "tell me",
+  "where",
+  "restroom",
+  "gift shop",
+  "postcard",
+  "stamp",
+  "post office",
+  "next to",
+  "turn left",
+  "built",
+  "wonder"
+ ],
+ "patterns": [
+  "Could you please tell me where the gift shop is?",
+  "Do you know when the castle was built?",
+  "Do you know where I can buy stamps?",
+  "Excuse me, could you please open the door?",
+  "Sure. It's next to the entrance, on the right."
+ ],
+ "spawn": {
+  "pos": [
+   0,
+   0,
+   44
+  ],
+  "rot": 3.14159
+ },
+ "zones": [
+  {
+   "id": "entrance",
+   "name": "Museum Entrance",
+   "zh": "博物馆入口",
+   "pos": [
+    0,
+    36
+   ],
+   "r": 8
+  },
+  {
+   "id": "courtyard",
+   "name": "Castle Courtyard",
+   "zh": "城堡庭院",
+   "pos": [
+    0,
+    6
+   ],
+   "r": 10
+  },
+  {
+   "id": "knight",
+   "name": "Knight Hall",
+   "zh": "骑士厅",
+   "pos": [
+    -26,
+    -6
+   ],
+   "r": 10
+  },
+  {
+   "id": "dragon",
+   "name": "Dragon Hall",
+   "zh": "金龙厅",
+   "pos": [
+    26,
+    -6
+   ],
+   "r": 10
+  },
+  {
+   "id": "throne",
+   "name": "Throne Room",
+   "zh": "王座厅",
+   "pos": [
+    0,
+    -32
+   ],
+   "r": 9
+  },
+  {
+   "id": "gift",
+   "name": "Gift Shop",
+   "zh": "礼品店",
+   "pos": [
+    27,
+    24
+   ],
+   "r": 9
+  },
+  {
+   "id": "rest",
+   "name": "Restrooms",
+   "zh": "洗手间",
+   "pos": [
+    -27,
+    24
+   ],
+   "r": 8
+  },
+  {
+   "id": "tower",
+   "name": "Old Tower",
+   "zh": "古塔",
+   "pos": [
+    -28,
+    -33
+   ],
+   "r": 9
+  },
+  {
+   "id": "post",
+   "name": "Post Office",
+   "zh": "邮局",
+   "pos": [
+    28,
+    -34
+   ],
+   "r": 9
+  }
+ ],
+ "decor": [
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     50
+    ],
+    [
+     0,
+     6
+    ]
+   ],
+   "w": 4,
+   "color": "#c9c2b6"
+  },
+  {
+   "k": "model",
+   "m": "lantern",
+   "at": [
+    -3.4,
+    31
+   ]
+  },
+  {
+   "k": "model",
+   "m": "lantern",
+   "at": [
+    3.4,
+    31
+   ]
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -7,
+    40
+   ],
+   "rot": 1.57
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    8,
+    41
+   ],
+   "rot": 1.57
+  },
+  {
+   "k": "tree",
+   "at": [
+    -12,
+    44
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "tree",
+   "at": [
+    12,
+    44
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "plaza",
+   "at": [
+    0,
+    6
+   ],
+   "r": 10,
+   "color": "#c8c2b8"
+  },
+  {
+   "k": "wall",
+   "from": [
+    -20,
+    19
+   ],
+   "to": [
+    -4,
+    19
+   ]
+  },
+  {
+   "k": "wall",
+   "from": [
+    4,
+    19
+   ],
+   "to": [
+    20,
+    19
+   ]
+  },
+  {
+   "k": "wall",
+   "from": [
+    -20,
+    -20
+   ],
+   "to": [
+    -5,
+    -20
+   ]
+  },
+  {
+   "k": "wall",
+   "from": [
+    5,
+    -20
+   ],
+   "to": [
+    20,
+    -20
+   ]
+  },
+  {
+   "k": "tower",
+   "at": [
+    -21.5,
+    20
+   ]
+  },
+  {
+   "k": "tower",
+   "at": [
+    21.5,
+    20
+   ]
+  },
+  {
+   "k": "tower",
+   "at": [
+    -21.5,
+    -21.5
+   ]
+  },
+  {
+   "k": "tower",
+   "at": [
+    21.5,
+    -21.5
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    -9,
+    9
+   ],
+   "rot": 1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    10,
+    4
+   ],
+   "rot": -1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    -12,
+    15
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    13,
+    15
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    -13,
+    -12
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    13,
+    -12
+   ]
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -5,
+    -6
+   ],
+   "rot": 0.3
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    5,
+    -6
+   ],
+   "rot": -0.3
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     6
+    ],
+    [
+     -14,
+     -2
+    ],
+    [
+     -23,
+     -5
+    ]
+   ],
+   "w": 3.2,
+   "color": "#c9c2b6"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     6
+    ],
+    [
+     14,
+     -2
+    ],
+    [
+     23,
+     -5
+    ]
+   ],
+   "w": 3.2,
+   "color": "#c9c2b6"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     6
+    ],
+    [
+     0,
+     -32
+    ]
+   ],
+   "w": 3.6,
+   "color": "#c9c2b6"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     23
+    ],
+    [
+     14,
+     23
+    ],
+    [
+     24,
+     24
+    ]
+   ],
+   "w": 3,
+   "color": "#c9c2b6"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     23
+    ],
+    [
+     -14,
+     23
+    ],
+    [
+     -23,
+     23
+    ]
+   ],
+   "w": 3,
+   "color": "#c9c2b6"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     -24,
+     -9
+    ],
+    [
+     -26,
+     -22
+    ],
+    [
+     -25,
+     -28
+    ]
+   ],
+   "w": 2.8,
+   "color": "#c9c2b6"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     24,
+     -9
+    ],
+    [
+     26,
+     -22
+    ],
+    [
+     25,
+     -29
+    ]
+   ],
+   "w": 2.8,
+   "color": "#c9c2b6"
+  },
+  {
+   "k": "house",
+   "at": [
+    -33,
+    -18
+   ],
+   "rot": 0.4,
+   "w": 7,
+   "h": 5,
+   "wall": "#cfc8bc",
+   "roof": "#4f6fb8"
+  },
+  {
+   "k": "house",
+   "at": [
+    33,
+    -18
+   ],
+   "rot": -0.4,
+   "w": 7,
+   "h": 5,
+   "wall": "#cfc8bc",
+   "roof": "#c8343a"
+  },
+  {
+   "k": "plaza",
+   "at": [
+    -26,
+    -6
+   ],
+   "r": 6,
+   "color": "#bdb6aa"
+  },
+  {
+   "k": "plaza",
+   "at": [
+    26,
+    -6
+   ],
+   "r": 6,
+   "color": "#bdb6aa"
+  },
+  {
+   "k": "model",
+   "m": "lantern",
+   "at": [
+    -19,
+    -11
+   ]
+  },
+  {
+   "k": "model",
+   "m": "lantern",
+   "at": [
+    19,
+    -11
+   ]
+  },
+  {
+   "k": "rock",
+   "at": [
+    -38,
+    -4
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "rock",
+   "at": [
+    38,
+    -3
+   ],
+   "s": 1.1
+  },
+  {
+   "k": "plaza",
+   "at": [
+    0,
+    -34
+   ],
+   "r": 7,
+   "color": "#d9b8b8"
+  },
+  {
+   "k": "house",
+   "at": [
+    0,
+    -46
+   ],
+   "rot": 0,
+   "w": 8,
+   "h": 5.5,
+   "wall": "#d8d0c4",
+   "roof": "#4f6fb8"
+  },
+  {
+   "k": "model",
+   "m": "lantern",
+   "at": [
+    -7,
+    -38
+   ]
+  },
+  {
+   "k": "model",
+   "m": "lantern",
+   "at": [
+    7,
+    -38
+   ]
+  },
+  {
+   "k": "house",
+   "at": [
+    -31,
+    29
+   ],
+   "rot": 0,
+   "w": 5,
+   "h": 3.4,
+   "wall": "#e6e0d6",
+   "roof": "#6f8fb8"
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    35,
+    19
+   ],
+   "rot": 0.5
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    19,
+    30
+   ],
+   "rot": 3.14,
+   "solid": 0.9
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -16,
+    -32
+   ],
+   "r": 5,
+   "n": 35
+  },
+  {
+   "k": "meadow",
+   "at": [
+    16,
+    -40
+   ],
+   "r": 5,
+   "n": 35
+  },
+  {
+   "k": "pine",
+   "at": [
+    -38,
+    -24
+   ],
+   "s": 1.3
+  },
+  {
+   "k": "pine",
+   "at": [
+    -16,
+    -44
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "tree",
+   "at": [
+    38,
+    -28
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "tree",
+   "at": [
+    18,
+    -46
+   ],
+   "s": 1.1
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    20,
+    -36
+   ],
+   "rot": 1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "grove",
+   "at": [
+    -47,
+    8
+   ],
+   "r": 6,
+   "n": 7,
+   "kind": "mix"
+  },
+  {
+   "k": "grove",
+   "at": [
+    47,
+    8
+   ],
+   "r": 6,
+   "n": 7,
+   "kind": "mix"
+  },
+  {
+   "k": "grove",
+   "at": [
+    -42,
+    42
+   ],
+   "r": 6,
+   "n": 6,
+   "kind": "tree"
+  },
+  {
+   "k": "grove",
+   "at": [
+    42,
+    42
+   ],
+   "r": 6,
+   "n": 6,
+   "kind": "tree"
+  },
+  {
+   "k": "grove",
+   "at": [
+    0,
+    60
+   ],
+   "r": 10,
+   "n": 8,
+   "kind": "pine",
+   "s": 1.2
+  },
+  {
+   "k": "grove",
+   "at": [
+    -20,
+    -56
+   ],
+   "r": 8,
+   "n": 6,
+   "kind": "pine"
+  },
+  {
+   "k": "grove",
+   "at": [
+    22,
+    -56
+   ],
+   "r": 8,
+   "n": 6,
+   "kind": "pine"
+  },
+  {
+   "k": "mountain",
+   "at": [
+    0,
+    -78
+   ],
+   "r": 18,
+   "h": 14,
+   "color": "#8fa88a"
+  }
+ ],
+ "things": [
+  {
+   "id": "booth",
+   "name": "ticket booth",
+   "zh": "售票亭",
+   "model": "ticket_booth",
+   "pos": [
+    -6,
+    0,
+    34
+   ],
+   "aliases": [
+    "booth",
+    "tickets",
+    "ticket office"
+   ],
+   "radius": 1.2,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "entrance_sign",
+   "name": "museum sign",
+   "zh": "博物馆告示牌",
+   "model": "signpost",
+   "pos": [
+    6,
+    0,
+    38
+   ],
+   "aliases": [
+    "sign",
+    "board",
+    "welcome sign"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Welcome to the Castle Museum\nOpen: 9:00 a.m. to 5:00 p.m.\nPlease do not touch the exhibits.\nCould you please speak quietly?"
+  },
+  {
+   "id": "lamp1",
+   "name": "lamp",
+   "zh": "灯",
+   "model": "lantern",
+   "pos": [
+    -4,
+    0,
+    27
+   ],
+   "aliases": [
+    "lantern"
+   ],
+   "radius": 0.4,
+   "can": [
+    "light"
+   ],
+   "params": {
+    "h": 2.4
+   }
+  },
+  {
+   "id": "gift_shop",
+   "name": "gift shop",
+   "zh": "礼品店",
+   "model": "gift_shop",
+   "pos": [
+    30,
+    0,
+    27
+   ],
+   "aliases": [
+    "shop",
+    "souvenir shop",
+    "gift kiosk"
+   ],
+   "radius": 1.6,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "postcards",
+   "name": "postcards",
+   "zh": "明信片",
+   "model": "book_pile",
+   "pos": [
+    24,
+    0,
+    28
+   ],
+   "aliases": [
+    "postcard",
+    "cards"
+   ],
+   "radius": 0.4,
+   "can": [
+    "pick",
+    "fly"
+   ]
+  },
+  {
+   "id": "west",
+   "name": "west door",
+   "zh": "洗手间的门",
+   "model": "magic_door",
+   "pos": [
+    -26,
+    0,
+    23
+   ],
+   "aliases": [
+    "restroom",
+    "restrooms",
+    "toilet",
+    "bathroom",
+    "restroom door",
+    "west"
+   ],
+   "rot": 1.5708,
+   "radius": 0.6,
+   "can": [
+    "open"
+   ],
+   "params": {
+    "h": 3.2
+   }
+  },
+  {
+   "id": "fountain",
+   "name": "fountain",
+   "zh": "喷泉",
+   "model": "fountain",
+   "pos": [
+    0,
+    0,
+    6
+   ],
+   "radius": 1.8,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "map",
+   "name": "castle map",
+   "zh": "城堡地图",
+   "model": "signpost",
+   "pos": [
+    -6,
+    0,
+    14
+   ],
+   "aliases": [
+    "map",
+    "sign",
+    "board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Castle Map\nRestrooms: next to the entrance, on the left.\nGift shop: next to the entrance, on the right.\nKnight Hall: on the left. Dragon Hall: on the right.\nThrone Room: behind the great gate."
+  },
+  {
+   "id": "horse",
+   "name": "horse",
+   "zh": "骑士的马",
+   "model": "horse",
+   "pos": [
+    9,
+    0,
+    10
+   ],
+   "aliases": [
+    "pony",
+    "knight's horse"
+   ],
+   "tags": [
+    "brown"
+   ],
+   "color": "brown",
+   "radius": 0.9,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Neigh! Excuse me, could you tell me where the carrots are?",
+    "Neigh! Do you know when my knight comes back?"
+   ]
+  },
+  {
+   "id": "lamp2",
+   "name": "lamp",
+   "zh": "灯",
+   "model": "lantern",
+   "pos": [
+    -9,
+    0,
+    -3
+   ],
+   "aliases": [
+    "lantern"
+   ],
+   "radius": 0.4,
+   "can": [
+    "light"
+   ],
+   "label": false,
+   "params": {
+    "h": 2.4
+   }
+  },
+  {
+   "id": "armor",
+   "name": "knight armor",
+   "zh": "骑士盔甲",
+   "model": "knight_armor",
+   "pos": [
+    -24,
+    0,
+    -8
+   ],
+   "aliases": [
+    "armor",
+    "armour",
+    "knight",
+    "knight armour"
+   ],
+   "radius": 0.9,
+   "can": [
+    "fly"
+   ],
+   "text": "The armor of Sir Leon.\nHe was a brave and kind knight.\nHe lived here about 400 years ago."
+  },
+  {
+   "id": "cannon",
+   "name": "cannon",
+   "zh": "大炮",
+   "model": "cannon",
+   "pos": [
+    -30,
+    0,
+    -2
+   ],
+   "aliases": [
+    "old cannon"
+   ],
+   "radius": 0.8,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "chest",
+   "name": "treasure chest",
+   "zh": "宝箱",
+   "model": "treasure_chest",
+   "pos": [
+    -31,
+    0,
+    -9
+   ],
+   "aliases": [
+    "chest",
+    "box",
+    "treasure"
+   ],
+   "radius": 0.6,
+   "can": [
+    "open",
+    "fly"
+   ],
+   "reveal": [
+    "ws_how"
+   ],
+   "revealOn": "open"
+  },
+  {
+   "id": "dragon",
+   "name": "dragon statue",
+   "zh": "金龙雕像",
+   "model": "dragon_statue",
+   "pos": [
+    26,
+    0,
+    -8
+   ],
+   "aliases": [
+    "statue",
+    "golden dragon",
+    "gold dragon"
+   ],
+   "tags": [
+    "gold"
+   ],
+   "radius": 1.2,
+   "can": [
+    "fly"
+   ],
+   "text": "This golden dragon was made in 1888.\nPeople believed that dragons brought good luck,\nso the king kept it in the great hall."
+  },
+  {
+   "id": "vase",
+   "name": "vase",
+   "zh": "青花瓷瓶",
+   "model": "vase",
+   "pos": [
+    20,
+    0,
+    -3
+   ],
+   "aliases": [
+    "blue and white vase",
+    "old vase"
+   ],
+   "radius": 0.4,
+   "can": [
+    "fly"
+   ],
+   "text": "This blue and white vase is about 300 years old.\nIt came from China."
+  },
+  {
+   "id": "painting",
+   "name": "painting",
+   "zh": "城堡油画",
+   "model": "painting_frame",
+   "pos": [
+    31,
+    0,
+    -1
+   ],
+   "aliases": [
+    "picture",
+    "castle painting"
+   ],
+   "radius": 0.8,
+   "can": [
+    "fly"
+   ],
+   "text": "The Castle on the Hill\nPainted in 1750."
+  },
+  {
+   "id": "gate",
+   "name": "castle gate",
+   "zh": "城堡大门",
+   "model": "castle_gate",
+   "pos": [
+    0,
+    0,
+    -20
+   ],
+   "aliases": [
+    "gate",
+    "great gate",
+    "great door",
+    "castle door"
+   ],
+   "radius": 4.0,
+   "can": [
+    "open"
+   ]
+  },
+  {
+   "id": "throne",
+   "name": "throne",
+   "zh": "王座",
+   "model": "throne",
+   "pos": [
+    0,
+    0,
+    -37
+   ],
+   "aliases": [
+    "king chair",
+    "king's chair"
+   ],
+   "tags": [
+    "red"
+   ],
+   "radius": 1.0,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "crown",
+   "name": "crown",
+   "zh": "王冠",
+   "model": "crown_display",
+   "pos": [
+    5,
+    0,
+    -31
+   ],
+   "aliases": [
+    "king's crown",
+    "royal crown"
+   ],
+   "tags": [
+    "gold"
+   ],
+   "radius": 0.6,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "startTint": "grey"
+   },
+   "reveal": [
+    "ws_wonder"
+   ],
+   "revealOn": "glow"
+  },
+  {
+   "id": "tower",
+   "name": "tower",
+   "zh": "古塔",
+   "model": "wizard_tower",
+   "pos": [
+    -33,
+    0,
+    -38
+   ],
+   "aliases": [
+    "old tower"
+   ],
+   "radius": 3.4,
+   "can": [
+    "light"
+   ],
+   "params": {
+    "h": 9
+   }
+  },
+  {
+   "id": "owl",
+   "name": "owl",
+   "zh": "猫头鹰",
+   "model": "owl",
+   "pos": [
+    -22,
+    0,
+    -38
+   ],
+   "tags": [
+    "brown"
+   ],
+   "radius": 0.4,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Hoo! Could you please tell me what time it is?",
+    "Hoo! Do you know where the post office is?"
+   ],
+   "reveal": [
+    "ws_postwhere"
+   ],
+   "revealOn": "any"
+  },
+  {
+   "id": "post_office",
+   "name": "post office",
+   "zh": "邮局",
+   "model": "post_office",
+   "pos": [
+    32,
+    0,
+    -38
+   ],
+   "aliases": [
+    "post"
+   ],
+   "radius": 3.0,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "post_sign",
+   "name": "post office sign",
+   "zh": "邮局牌子",
+   "model": "signpost",
+   "pos": [
+    22,
+    0,
+    -30
+   ],
+   "aliases": [
+    "sign",
+    "board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Post Office\nStamps, postcards and letters\nOpen every day, 9:00 a.m. to 5:00 p.m."
+  }
+ ],
+ "npcs": [
+  {
+   "id": "guard",
+   "name": "Sir Bob",
+   "zh": "守卫鲍勃爵士",
+   "model": "guard",
+   "pos": [
+    6,
+    0,
+    -16
+   ],
+   "aliases": [
+    "guard",
+    "sir bob",
+    "bob",
+    "knight guard"
+   ],
+   "ouch": "Ouch! That is not very polite, young wizard!",
+   "idle": [
+    "Thank you for asking so politely!",
+    "Could you please speak quietly in the museum?"
+   ],
+   "chatter": [
+    "Excuse me, could you please speak quietly?",
+    "Polite visitors are always welcome!",
+    "The Throne Room is behind this gate."
+   ],
+   "voice": "guard",
+   "persona": "Sir Bob, a polite castle guard at the great gate who only answers polite questions; grade-9 English",
+   "greet": "Good day! Welcome to the Castle Museum. Please speak politely here.",
+   "radius": 0.8
+  },
+  {
+   "id": "grace",
+   "name": "Ms Grace",
+   "zh": "导游格蕾丝",
+   "model": "guide",
+   "pos": [
+    -5,
+    0,
+    2
+   ],
+   "aliases": [
+    "guide",
+    "grace",
+    "ms grace",
+    "lady"
+   ],
+   "idle": [
+    "Do you know when the castle was built? About four hundred years ago!",
+    "Please do not touch the exhibits."
+   ],
+   "chatter": [
+    "Could you please follow me? The tour is starting!",
+    "The Knight Hall is on the left. The Dragon Hall is on the right.",
+    "Do you know who lived in this castle?"
+   ],
+   "voice": "lady",
+   "persona": "Ms Grace, a friendly museum guide who knows the castle's history; grade-9 English with polite requests and indirect questions",
+   "greet": "Hello! I'm Ms Grace, your guide today.",
+   "radius": 0.8
+  },
+  {
+   "id": "brown",
+   "name": "Mr Brown",
+   "zh": "布朗先生",
+   "model": "tourist",
+   "pos": [
+    6,
+    0,
+    25
+   ],
+   "aliases": [
+    "mr brown",
+    "brown",
+    "tourist",
+    "man"
+   ],
+   "idle": [
+    "Thank you for your help!",
+    "What a polite young wizard!"
+   ],
+   "chatter": [
+    "Excuse me, do you know where the gift shop is?",
+    "I wonder where I can buy postcards."
+   ],
+   "voice": "man",
+   "persona": "Mr Brown, a friendly tourist who is a little lost and not good with directions; grade-9 English",
+   "greet": "Excuse me! Could you help me? I'm a little lost.",
+   "radius": 0.8
+  },
+  {
+   "id": "lily",
+   "name": "Lily",
+   "zh": "莉莉",
+   "model": "girl_scarf",
+   "pos": [
+    7,
+    0,
+    15
+   ],
+   "aliases": [
+    "lily",
+    "girl"
+   ],
+   "idle": [
+    "Thank you so much!",
+    "This castle is amazing!"
+   ],
+   "chatter": [
+    "Excuse me, could you tell me where the restrooms are?",
+    "I wonder where the restrooms are..."
+   ],
+   "voice": "child",
+   "persona": "Lily, a young visitor who is looking for the restrooms; grade-9 English",
+   "greet": "Hi! I'm Lily. This castle is so big!",
+   "radius": 0.8
+  },
+  {
+   "id": "page",
+   "name": "Mr Page",
+   "zh": "佩奇先生",
+   "model": "fruit_seller",
+   "pos": [
+    25,
+    0,
+    21
+   ],
+   "aliases": [
+    "mr page",
+    "page",
+    "shopkeeper",
+    "shop man"
+   ],
+   "idle": [
+    "Have a nice day!",
+    "You can buy stamps at the post office."
+   ],
+   "chatter": [
+    "Postcards! Toy castles! Could I help you find something?",
+    "You can buy stamps at the post office."
+   ],
+   "voice": "man",
+   "persona": "Mr Page, the cheerful gift shop keeper; grade-9 English",
+   "greet": "Welcome to the gift shop! Can I help you?",
+   "radius": 0.8
+  },
+  {
+   "id": "sparky",
+   "name": "Sparky",
+   "zh": "小龙斯帕基",
+   "model": "baby_dragon",
+   "pos": [
+    -25,
+    0,
+    -30
+   ],
+   "aliases": [
+    "sparky",
+    "little dragon",
+    "baby dragon"
+   ],
+   "tags": [
+    "small"
+   ],
+   "idle": [
+    "Excuse me, could you... Rawr! I am learning!",
+    "I want to be a polite dragon!"
+   ],
+   "chatter": [
+    "Where is the kitchen?! Oops... Could you tell me where the kitchen is?",
+    "I want to be a polite dragon!"
+   ],
+   "voice": "animal",
+   "persona": "Sparky, a little dragon living in the old tower who wants to learn polite English; grade-9 English",
+   "greet": "Rawr! I mean... hello! I'm Sparky, the little dragon of the old tower.",
+   "radius": 0.8
+  }
+ ],
+ "quests": [
+  {
+   "id": "cm_listen",
+   "kind": "listen",
+   "skill": "听",
+   "giver": "grace",
+   "titleZh": "听导游讲解，选出游客不能做的事",
+   "title": "Listen to the tour",
+   "intro": [
+    "The tour is starting. Listen carefully!"
+   ],
+   "model": [],
+   "done": [
+    "Correct! Please do not touch the exhibits."
+   ],
+   "prompt": "What should visitors NOT do?",
+   "audio": "Welcome to the Castle Museum! This castle was built about four hundred years ago. If you look to your left, you will see the armor of a famous knight. You may take photos, but please do not touch the exhibits.",
+   "options": [
+    "Take photos",
+    "Touch the exhibits",
+    "Look to the left"
+   ],
+   "answer": 1,
+   "video": "castle.mp4"
+  },
+  {
+   "id": "cm_guide",
+   "kind": "guide",
+   "skill": "说",
+   "giver": "grace",
+   "titleZh": "格蕾丝想看骑士盔甲：带她去骑士厅",
+   "title": "Take Ms Grace to the knight armor",
+   "intro": [
+    "Oh, I'm new here too! Could you show me where the knight armor is?"
+   ],
+   "model": [
+    "Follow me, please.",
+    "Go to the knight armor."
+   ],
+   "done": [
+    "Here it is! Thank you. You are a wonderful guide!"
+   ],
+   "prompt": "Please lead the way. I will follow you.",
+   "to": "armor",
+   "needs": "cm_listen",
+   "tipZh": "骑士盔甲在左边（西边）的骑士厅。说“Go to the knight armor.”，格蕾丝会跟着你。"
+  },
+  {
+   "id": "cm_ask",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "grace",
+   "titleZh": "用 Do you know … 礼貌地问城堡哪年建的",
+   "title": "Ask when it was built",
+   "intro": [
+    "Do you have any questions about the castle?"
+   ],
+   "model": [
+    "Do you know when the castle was built?",
+    "Could you tell me when the castle was built?"
+   ],
+   "done": [
+    "Good question! It was built about four hundred years ago."
+   ],
+   "prompt": "Ask me when the castle was built, politely.",
+   "accept": [
+    [
+     "do you know",
+     "could you",
+     "can you",
+     "would you"
+    ],
+    [
+     "when",
+     "how old",
+     "what year"
+    ]
+   ],
+   "judge": "A polite indirect question about when the castle was built, e.g. 'Do you know when the castle was built?'",
+   "needs": "cm_guide",
+   "tipZh": "礼貌地问：“Do you know when the castle was built?” 注意 when 后面用陈述句语序。"
+  },
+  {
+   "id": "cm_fireworks",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "grace",
+   "titleZh": "参观结束啦！放烟花庆祝",
+   "title": "Fireworks show",
+   "intro": [
+    "That is the end of our tour! Every evening the castle has a fireworks show. Could you start it for us?"
+   ],
+   "model": [
+    "Fireworks!"
+   ],
+   "done": [
+    "Wonderful! What a polite and clever wizard! Thank you for visiting the Castle Museum!"
+   ],
+   "prompt": "Say: Fireworks!",
+   "goal": "fireworks",
+   "needs": "cm_ask",
+   "tipZh": "念咒语放烟花：“Fireworks!”"
+  },
+  {
+   "id": "cm_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "dragon",
+   "titleZh": "读金龙的说明牌：国王为什么留着它？",
+   "title": "Read the plaque",
+   "intro": [],
+   "model": [],
+   "done": [
+    "Exactly. People believed dragons brought good luck."
+   ],
+   "passage": "This golden dragon was made in 1888. People believed that dragons brought good luck, so the king kept it in the great hall.",
+   "prompt": "Why did the king keep the dragon?",
+   "options": [
+    "Because it was cheap",
+    "Because people believed it brought good luck",
+    "Because it could fly"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "cm_map",
+   "kind": "read",
+   "skill": "读",
+   "giver": "map",
+   "titleZh": "读城堡地图：洗手间在哪里？",
+   "title": "Read the map",
+   "intro": [],
+   "model": [],
+   "done": [
+    "Right! The restrooms are next to the entrance, on the left."
+   ],
+   "passage": "Castle Map\nRestrooms: next to the entrance, on the left.\nGift shop: next to the entrance, on the right.\nKnight Hall: on the left. Dragon Hall: on the right.\nThrone Room: behind the great gate.",
+   "prompt": "Where are the restrooms?",
+   "options": [
+    "Next to the entrance, on the left",
+    "Behind the great gate",
+    "In the Dragon Hall"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "cm_polite",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "guard",
+   "titleZh": "礼貌地问守卫：礼品店在哪里？",
+   "title": "Ask politely",
+   "intro": [
+    "Halt! In this castle you must ask politely. Ask me where the gift shop is."
+   ],
+   "model": [
+    "Could you please tell me where the gift shop is?"
+   ],
+   "done": [
+    "Of course! The gift shop is next to the entrance, on the right. What a polite young wizard!"
+   ],
+   "prompt": "Go on, ask me politely.",
+   "accept": [
+    [
+     "could you",
+     "can you",
+     "would you",
+     "excuse me",
+     "do you know"
+    ],
+    [
+     "where"
+    ]
+   ],
+   "tipZh": "守卫只回答有礼貌的问题。试试：“Could you please tell me where the gift shop is?”注意 where 后面是陈述句语序哦。"
+  },
+  {
+   "id": "cm_write",
+   "kind": "write",
+   "skill": "写",
+   "giver": "guard",
+   "titleZh": "把问句改成礼貌说法",
+   "title": "Write it politely",
+   "intro": [
+    "Now a writing test. Make this question polite."
+   ],
+   "model": [
+    "Could you tell me where the restroom is?"
+   ],
+   "done": [
+    "Perfect word order! You may pass."
+   ],
+   "prompt": "\"Where is the restroom?\" → Could you tell me ___?",
+   "accept": [
+    [
+     "could you",
+     "can you"
+    ],
+    [
+     "where"
+    ],
+    [
+     "restroom",
+     "toilet",
+     "bathroom"
+    ],
+    [
+     "is"
+    ]
+   ],
+   "judge": "An indirect question with statement word order, e.g. 'Could you tell me where the restroom is?' (not 'where is the restroom').",
+   "needs": "cm_polite",
+   "tipZh": "写：“Could you tell me where the restroom is?” is 要放到最后。"
+  },
+  {
+   "id": "cm_gate",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "guard",
+   "titleZh": "用礼貌的咒语打开城堡大门",
+   "title": "Open the great gate",
+   "intro": [
+    "The great gate is locked. Only a polite wizard can open it."
+   ],
+   "model": [
+    "Please open the gate!"
+   ],
+   "done": [
+    "The gate is open! The Throne Room is behind it. Well done, polite wizard!"
+   ],
+   "prompt": "Say: Please open the gate!",
+   "goal": "open:gate",
+   "needs": "cm_write",
+   "tipZh": "礼貌地念咒语：“Please open the gate!”"
+  },
+  {
+   "id": "cm_crown",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "guard",
+   "titleZh": "王冠失去了光彩：让它重新闪耀",
+   "title": "Make the crown shine",
+   "intro": [
+    "The king's crown is in the Throne Room, but it has lost its shine. Could you please make it glow again?"
+   ],
+   "model": [
+    "Make the crown glow!"
+   ],
+   "done": [
+    "Look at it shine! The king would be very happy. Thank you!"
+   ],
+   "prompt": "Say: Make the crown glow!",
+   "goal": "glow:crown",
+   "needs": "cm_gate",
+   "tipZh": "王冠在大门后面的王座厅。念咒语：“Make the crown glow!”"
+  },
+  {
+   "id": "cm_brown",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "brown",
+   "titleZh": "告诉布朗先生礼品店在哪里",
+   "title": "Give directions",
+   "intro": [
+    "Excuse me, could you tell me where the gift shop is?"
+   ],
+   "model": [
+    "Sure. It's next to the entrance, on the right.",
+    "It's over there, on the right."
+   ],
+   "done": [
+    "On the right, next to the entrance. Thank you!"
+   ],
+   "prompt": "Could you tell me where the gift shop is?",
+   "accept": [
+    [
+     "right",
+     "left",
+     "next to",
+     "near",
+     "go",
+     "turn",
+     "follow",
+     "this way",
+     "over there",
+     "behind",
+     "between",
+     "across",
+     "east"
+    ]
+   ],
+   "judge": "The child politely tells Mr Brown where the gift shop is or how to get there (e.g. 'Sure. It's next to the entrance, on the right.').",
+   "tipZh": "布朗先生问礼品店在哪里。看看地图：“Sure. It's next to the entrance, on the right.”"
+  },
+  {
+   "id": "cm_brown_go",
+   "kind": "guide",
+   "skill": "说",
+   "giver": "brown",
+   "titleZh": "布朗先生不认路：带他去礼品店",
+   "title": "Take Mr Brown to the gift shop",
+   "intro": [
+    "Sorry, could you show me the way? I'm not good with directions."
+   ],
+   "model": [
+    "Follow me, please.",
+    "Go to the gift shop."
+   ],
+   "done": [
+    "Here we are! Thank you so much. I can buy some postcards now."
+   ],
+   "prompt": "Could you show me the way, please?",
+   "to": "gift_shop",
+   "needs": "cm_brown",
+   "tipZh": "说“Go to the gift shop.”，布朗先生会跟着你走。"
+  },
+  {
+   "id": "cm_stamps",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "page",
+   "titleZh": "礼貌地问店主：哪里可以买邮票？",
+   "title": "Ask about stamps",
+   "intro": [
+    "Welcome to the gift shop! We have postcards and toy castles. But no stamps, sorry!"
+   ],
+   "model": [
+    "Do you know where I can buy stamps?",
+    "Could you tell me where I can buy stamps?"
+   ],
+   "done": [
+    "Stamps? You can buy them at the post office. It is behind the Dragon Hall."
+   ],
+   "prompt": "Can I help you?",
+   "accept": [
+    [
+     "do you know",
+     "could you",
+     "can you",
+     "would you",
+     "excuse me"
+    ],
+    [
+     "where"
+    ]
+   ],
+   "judge": "A polite indirect question asking where to buy stamps, e.g. 'Do you know where I can buy stamps?'",
+   "needs": "cm_brown_go",
+   "tipZh": "礼貌地问哪里能买邮票：“Do you know where I can buy stamps?”"
+  },
+  {
+   "id": "cm_postcard",
+   "kind": "do",
+   "skill": "说",
+   "giver": "page",
+   "titleZh": "把明信片送给布朗先生",
+   "title": "Postcards for Mr Brown",
+   "intro": [
+    "Oh! Mr Brown wants some postcards of the castle. Could you please give these postcards to him?"
+   ],
+   "model": [
+    "Pick up the postcards.",
+    "Give the postcards to Mr Brown."
+   ],
+   "done": [
+    "Thank you, little wizard! Now Mr Brown can send them to his family."
+   ],
+   "goal": "give:*:brown",
+   "needs": "cm_stamps",
+   "tipZh": "先拿明信片：“Pick up the postcards.” 再送过去：“Give the postcards to Mr Brown.”"
+  },
+  {
+   "id": "cm_lily",
+   "kind": "guide",
+   "skill": "说",
+   "giver": "lily",
+   "titleZh": "Lily 找不到洗手间：带她去",
+   "title": "Take Lily to the restrooms",
+   "intro": [
+    "Excuse me... I wonder where the restrooms are. Could you take me there, please?"
+   ],
+   "model": [
+    "Follow me, please.",
+    "Go to the restroom."
+   ],
+   "done": [
+    "Here they are! Thank you so much!"
+   ],
+   "prompt": "Could you take me to the restrooms?",
+   "to": "west",
+   "needs": "cm_map",
+   "tipZh": "洗手间在入口旁边、左边（西边）。说“Go to the restroom.”，Lily 会跟着你。"
+  },
+  {
+   "id": "cm_door",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "lily",
+   "titleZh": "洗手间的门锁住了：礼貌地请它打开",
+   "title": "Open the door, please",
+   "intro": [
+    "Oh no, the door is locked! Could you please open it?"
+   ],
+   "model": [
+    "Could you please open the door?"
+   ],
+   "done": [
+    "It opened! You are so polite — even the door listens to you!"
+   ],
+   "prompt": "Say: Could you please open the door?",
+   "goal": "open:west",
+   "needs": "cm_lily",
+   "tipZh": "礼貌地说：“Could you please open the door?”"
+  },
+  {
+   "id": "cm_sparky",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "sparky",
+   "titleZh": "教小龙礼貌地问路：厨房在哪里？",
+   "title": "Teach Sparky to ask politely",
+   "intro": [
+    "When I shout 'Where is the kitchen?!', people run away! How can I ask politely?"
+   ],
+   "model": [
+    "Excuse me, could you tell me where the kitchen is?"
+   ],
+   "done": [
+    "Excuse me, could you tell me where the kitchen is? Oh, that's much better! Thank you!"
+   ],
+   "prompt": "How can I ask politely?",
+   "accept": [
+    [
+     "could you",
+     "can you",
+     "would you",
+     "do you know",
+     "excuse me"
+    ],
+    [
+     "where"
+    ],
+    [
+     "kitchen"
+    ]
+   ],
+   "judge": "A polite indirect question asking where the kitchen is, e.g. 'Excuse me, could you tell me where the kitchen is?'",
+   "tipZh": "教小龙说：“Excuse me, could you tell me where the kitchen is?”"
+  },
+  {
+   "id": "cm_tower",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "sparky",
+   "titleZh": "小龙的古塔太黑了：点亮古塔",
+   "title": "Light the tower",
+   "intro": [
+    "My old tower is so dark at night. Could you please light it for me?"
+   ],
+   "model": [
+    "Light the tower!"
+   ],
+   "done": [
+    "Rawr! I mean... thank you very much! My tower looks beautiful!"
+   ],
+   "prompt": "Say: Light the tower!",
+   "goal": "light:tower",
+   "needs": "cm_sparky",
+   "tipZh": "点亮古塔：“Light the tower!”"
+  }
+ ],
+ "words": [
+  {
+   "id": "ws_excuse",
+   "say": "excuse me",
+   "zh": "打扰一下",
+   "pos": [
+    -9,
+    30
+   ]
+  },
+  {
+   "id": "ws_museum",
+   "say": "museum",
+   "zh": "博物馆",
+   "pos": [
+    9,
+    34
+   ]
+  },
+  {
+   "id": "ws_where",
+   "say": "Could you please tell me where the gift shop is?",
+   "zh": "请问你能告诉我礼品店在哪里吗？",
+   "pos": [
+    14,
+    22
+   ]
+  },
+  {
+   "id": "ws_gift",
+   "say": "gift shop",
+   "zh": "礼品店",
+   "pos": [
+    33,
+    21
+   ]
+  },
+  {
+   "id": "ws_postcards",
+   "say": "postcards",
+   "zh": "明信片",
+   "pos": [
+    21,
+    31
+   ]
+  },
+  {
+   "id": "ws_rest",
+   "say": "restrooms",
+   "zh": "洗手间",
+   "pos": [
+    -21,
+    27
+   ]
+  },
+  {
+   "id": "ws_nextto",
+   "say": "next to",
+   "zh": "在……旁边",
+   "pos": [
+    -14,
+    17
+   ]
+  },
+  {
+   "id": "ws_polite",
+   "say": "polite",
+   "zh": "有礼貌的",
+   "pos": [
+    -9,
+    4
+   ]
+  },
+  {
+   "id": "ws_castle",
+   "say": "castle",
+   "zh": "城堡",
+   "pos": [
+    -18,
+    -1
+   ]
+  },
+  {
+   "id": "ws_built",
+   "say": "Do you know when the castle was built?",
+   "zh": "你知道这座城堡是什么时候建的吗？",
+   "pos": [
+    -21,
+    -13
+   ]
+  },
+  {
+   "id": "ws_left",
+   "say": "turn left",
+   "zh": "向左转",
+   "pos": [
+    14,
+    -3
+   ]
+  },
+  {
+   "id": "ws_door",
+   "say": "Could you please open the door?",
+   "zh": "请你开一下门好吗？",
+   "pos": [
+    -7,
+    -14
+   ]
+  },
+  {
+   "id": "ws_stamps",
+   "say": "stamps",
+   "zh": "邮票",
+   "pos": [
+    25,
+    -40
+   ]
+  },
+  {
+   "id": "ws_buy",
+   "say": "Do you know where I can buy stamps?",
+   "zh": "你知道我在哪里能买到邮票吗？",
+   "pos": [
+    18,
+    -33
+   ]
+  },
+  {
+   "id": "ws_how",
+   "say": "Could you tell me how to get to the tower?",
+   "zh": "你能告诉我怎么去古塔吗？",
+   "pos": [
+    -36,
+    -5
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_wonder",
+   "say": "I wonder who wore this crown.",
+   "zh": "我想知道谁戴过这顶王冠。",
+   "pos": [
+    9,
+    -34
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_postwhere",
+   "say": "Excuse me, do you know where the post office is?",
+   "zh": "打扰一下，你知道邮局在哪里吗？",
+   "pos": [
+    -18,
+    -41
+   ],
+   "hidden": true
+  }
+ ],
+ "spellIdeas": [
+  {
+   "say": "Open the chest!",
+   "zh": "打开骑士厅的宝箱（会发现秘密哦）",
+   "near": "chest"
+  },
+  {
+   "say": "Make the owl fly!",
+   "zh": "让猫头鹰飞起来（它藏着秘密）",
+   "near": "owl"
+  },
+  {
+   "say": "Make the dragon statue fly!",
+   "zh": "让金龙雕像飞起来",
+   "near": "dragon"
+  },
+  {
+   "say": "Make the knight armor dance!",
+   "zh": "让骑士盔甲跳舞",
+   "near": "armor"
+  },
+  {
+   "say": "Make the throne gold!",
+   "zh": "把王座变成金色",
+   "near": "throne"
+  },
+  {
+   "say": "Make the vase big!",
+   "zh": "把青花瓷瓶变大",
+   "near": "vase"
+  },
+  {
+   "say": "Make Sir Bob small!",
+   "zh": "把守卫变小（他会生气吗？）",
+   "near": "guard"
+  },
+  {
+   "say": "Make the horse dance!",
+   "zh": "让骑士的马跳舞",
+   "near": "horse"
+  },
+  {
+   "say": "Make Sparky sing!",
+   "zh": "让小龙唱歌",
+   "near": "sparky"
+  },
+  {
+   "say": "Light the lamp!",
+   "zh": "点亮城堡里的灯",
+   "near": "lamp2"
+  },
+  {
+   "say": "Make the cannon jump!",
+   "zh": "让大炮跳一跳",
+   "near": "cannon"
+  },
+  {
+   "say": "Make it night!",
+   "zh": "让天黑下来，看古堡夜景"
+  },
+  {
+   "say": "Be invisible!",
+   "zh": "隐身，偷偷溜过去"
+  },
+  {
+   "say": "Turn the painting into a cake!",
+   "zh": "把油画变成蛋糕",
+   "near": "painting"
+  },
+  {
+   "say": "Light the post office!",
+   "zh": "点亮邮局",
+   "near": "post_office"
+  },
+  {
+   "say": "Could you please open the gate?",
+   "zh": "请打开城门（礼貌地说）"
+  },
+  {
+   "say": "Could you please move the cannon to the left?",
+   "zh": "请把大炮移到左边"
+  },
+  {
+   "say": "Make the crown gold!",
+   "zh": "把王冠变成金色"
+  },
+  {
+   "say": "Put the crown on a cloud!",
+   "zh": "让王冠坐上云朵"
+  },
+  {
+   "say": "Make the knight armor invisible!",
+   "zh": "让骑士盔甲隐身"
+  },
+  {
+   "say": "Turn the horse into a dragon!",
+   "zh": "把马变成小龙"
+  },
+  {
+   "say": "Move the vase to the right!",
+   "zh": "把花瓶移到右边"
+  },
+  {
+   "say": "Everybody, freeze!",
+   "zh": "让大家都冻住"
+  },
+  {
+   "say": "Shooting stars!",
+   "zh": "召唤流星"
+  },
+  {
+   "say": "Fireworks!",
+   "zh": "放烟花"
+  }
+ ]
+}

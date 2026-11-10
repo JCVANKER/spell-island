@@ -1,0 +1,1917 @@
+{
+ "id": "flying-classroom",
+ "order": 3,
+ "grade": "四年级上册",
+ "gradeNum": 4,
+ "unit": "Unit · My classroom: Where is it?（教室与方位 in/on/under）",
+ "title": "The Flying Classroom",
+ "titleZh": "会飞的教室",
+ "scene": "classroom",
+ "bounds": 24,
+ "intro": [
+  "我们来到了一间超大的魔法教室！一阵调皮的魔法风把东西吹得到处都是。",
+  "有人问“Where is …?”，就用 in、on、under、near 回答：“It's under the desk.” 先去黑板前找 Miss White 吧：“Go to Miss White!”"
+ ],
+ "vocab": [
+  "classroom",
+  "desk",
+  "chair",
+  "blackboard",
+  "schoolbag",
+  "pencil box",
+  "book",
+  "door",
+  "window",
+  "light",
+  "computer",
+  "picture",
+  "in",
+  "on",
+  "under",
+  "near"
+ ],
+ "patterns": [
+  "Where is the schoolbag? It's under the desk.",
+  "It's in / on / near the …",
+  "Put the book on the desk.",
+  "What's in the classroom?",
+  "Open the door. Turn on the light."
+ ],
+ "spawn": {
+  "pos": [
+   0,
+   0,
+   16
+  ],
+  "rot": 3.14159
+ },
+ "zones": [
+  {
+   "id": "entrance",
+   "name": "Classroom Door",
+   "zh": "教室门口",
+   "pos": [
+    0,
+    18
+   ],
+   "r": 5
+  },
+  {
+   "id": "stage",
+   "name": "Blackboard Stage",
+   "zh": "黑板讲台",
+   "pos": [
+    0,
+    -17
+   ],
+   "r": 6
+  },
+  {
+   "id": "desks",
+   "name": "Desk Rows",
+   "zh": "课桌区",
+   "pos": [
+    0,
+    -3
+   ],
+   "r": 7
+  },
+  {
+   "id": "reading",
+   "name": "Reading Corner",
+   "zh": "读书角",
+   "pos": [
+    -15,
+    -12
+   ],
+   "r": 6
+  },
+  {
+   "id": "computer",
+   "name": "Computer Corner",
+   "zh": "电脑角",
+   "pos": [
+    15,
+    -12
+   ],
+   "r": 6
+  },
+  {
+   "id": "art",
+   "name": "Art Corner",
+   "zh": "美术角",
+   "pos": [
+    -16,
+    6
+   ],
+   "r": 5
+  },
+  {
+   "id": "music",
+   "name": "Music Corner",
+   "zh": "音乐角",
+   "pos": [
+    16,
+    6
+   ],
+   "r": 5
+  },
+  {
+   "id": "window",
+   "name": "Window Garden",
+   "zh": "窗边小花园",
+   "pos": [
+    12,
+    18
+   ],
+   "r": 5
+  },
+  {
+   "id": "lost",
+   "name": "Lost and Found",
+   "zh": "失物招领处",
+   "pos": [
+    -12,
+    17
+   ],
+   "r": 5
+  }
+ ],
+ "decor": [
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     22
+    ],
+    [
+     0,
+     -14
+    ]
+   ],
+   "w": 3,
+   "color": "#c86a5a"
+  },
+  {
+   "k": "plaza",
+   "at": [
+    0,
+    -17
+   ],
+   "r": 5.5,
+   "color": "#d8b88a"
+  },
+  {
+   "k": "plaza",
+   "at": [
+    -15,
+    -12
+   ],
+   "r": 5,
+   "color": "#c8b0dc"
+  },
+  {
+   "k": "plaza",
+   "at": [
+    15,
+    -12
+   ],
+   "r": 5,
+   "color": "#a8c8e8"
+  },
+  {
+   "k": "plaza",
+   "at": [
+    -16,
+    6
+   ],
+   "r": 4.5,
+   "color": "#f2cc8f"
+  },
+  {
+   "k": "plaza",
+   "at": [
+    16,
+    6
+   ],
+   "r": 4.5,
+   "color": "#b8dcb0"
+  },
+  {
+   "k": "plaza",
+   "at": [
+    -12,
+    17
+   ],
+   "r": 4,
+   "color": "#e8c8c8"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     10
+    ],
+    [
+     -13,
+     6
+    ]
+   ],
+   "w": 2.2,
+   "color": "#d8a888"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     10
+    ],
+    [
+     13,
+     6
+    ]
+   ],
+   "w": 2.2,
+   "color": "#d8a888"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     -11
+    ],
+    [
+     -12,
+     -12
+    ]
+   ],
+   "w": 2.2,
+   "color": "#d8a888"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     -11
+    ],
+    [
+     12,
+     -12
+    ]
+   ],
+   "w": 2.2,
+   "color": "#d8a888"
+  },
+  {
+   "k": "shelf",
+   "at": [
+    -21.5,
+    -9
+   ],
+   "rot": 1.5708,
+   "w": 4,
+   "h": 3.2
+  },
+  {
+   "k": "shelf",
+   "at": [
+    -17,
+    -18.5
+   ],
+   "rot": 0.5,
+   "w": 4,
+   "h": 3.2
+  },
+  {
+   "k": "model",
+   "m": "book_pile",
+   "at": [
+    -19.5,
+    -14.5
+   ]
+  },
+  {
+   "k": "model",
+   "m": "potted_plant",
+   "at": [
+    -11,
+    -19
+   ]
+  },
+  {
+   "k": "model",
+   "m": "potted_plant",
+   "at": [
+    8,
+    -20
+   ]
+  },
+  {
+   "k": "model",
+   "m": "globe",
+   "at": [
+    -12.5,
+    -6
+   ],
+   "s": 0.8
+  },
+  {
+   "k": "model",
+   "m": "desk",
+   "at": [
+    -10,
+    -2
+   ],
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "desk",
+   "at": [
+    10,
+    -2
+   ],
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "school_chair",
+   "at": [
+    -10,
+    -0.6
+   ],
+   "rot": 3.14,
+   "solid": 0.4
+  },
+  {
+   "k": "model",
+   "m": "school_chair",
+   "at": [
+    10,
+    -0.6
+   ],
+   "rot": 3.14,
+   "solid": 0.4
+  },
+  {
+   "k": "model",
+   "m": "school_chair",
+   "at": [
+    -5,
+    2.4
+   ],
+   "rot": 3.14,
+   "solid": 0.4
+  },
+  {
+   "k": "model",
+   "m": "easel",
+   "at": [
+    -21,
+    9
+   ],
+   "rot": 1.2,
+   "solid": 0.5
+  },
+  {
+   "k": "model",
+   "m": "painting_frame",
+   "at": [
+    -20.5,
+    1.5
+   ],
+   "rot": 1.4,
+   "solid": 0.6
+  },
+  {
+   "k": "model",
+   "m": "drum_set",
+   "at": [
+    15,
+    10.5
+   ],
+   "rot": 3.4,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "microphone",
+   "at": [
+    12.5,
+    3
+   ]
+  },
+  {
+   "k": "model",
+   "m": "school_chair",
+   "at": [
+    16,
+    -12.4
+   ],
+   "rot": 3.14,
+   "solid": 0.4
+  },
+  {
+   "k": "model",
+   "m": "potted_plant",
+   "at": [
+    16,
+    21
+   ]
+  },
+  {
+   "k": "model",
+   "m": "potted_plant",
+   "at": [
+    6.5,
+    20
+   ]
+  },
+  {
+   "k": "model",
+   "m": "flowers",
+   "at": [
+    17.5,
+    16.5
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    9,
+    14.5
+   ],
+   "rot": 0.6,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "schoolbag",
+   "at": [
+    -11,
+    20
+   ]
+  },
+  {
+   "k": "model",
+   "m": "book_pile",
+   "at": [
+    -8,
+    20.5
+   ]
+  }
+ ],
+ "things": [
+  {
+   "id": "door",
+   "name": "door",
+   "zh": "门",
+   "model": "magic_door",
+   "pos": [
+    0,
+    0,
+    22.5
+   ],
+   "aliases": [
+    "classroom door"
+   ],
+   "radius": 0.6,
+   "can": [
+    "open"
+   ],
+   "params": {
+    "h": 3.2
+   }
+  },
+  {
+   "id": "poster",
+   "name": "poster",
+   "zh": "海报",
+   "model": "signpost",
+   "pos": [
+    -4,
+    0,
+    19
+   ],
+   "aliases": [
+    "sign"
+   ],
+   "radius": 0.3,
+   "can": [
+    "read"
+   ],
+   "text": "Our classroom is big and clean.\nThere are twenty desks and a big blackboard.\nWe love our classroom!"
+  },
+  {
+   "id": "window",
+   "name": "window",
+   "zh": "窗户",
+   "model": "none",
+   "pos": [
+    8.2,
+    3,
+    27.5
+   ],
+   "aliases": [
+    "windows"
+   ],
+   "radius": 0,
+   "label": true
+  },
+  {
+   "id": "board",
+   "name": "blackboard",
+   "zh": "黑板",
+   "model": "blackboard",
+   "pos": [
+    0,
+    0,
+    -21
+   ],
+   "aliases": [
+    "board"
+   ],
+   "radius": 1.0,
+   "can": [
+    "read"
+   ],
+   "text": "Welcome to Class 4A!\nWhere is it?\nIn, on, under!"
+  },
+  {
+   "id": "tdesk",
+   "name": "teacher desk",
+   "zh": "讲台",
+   "model": "desk",
+   "pos": [
+    4.5,
+    0,
+    -16
+   ],
+   "aliases": [
+    "teacher's desk",
+    "big desk"
+   ],
+   "radius": 0.9,
+   "scale": 1.2
+  },
+  {
+   "id": "clock",
+   "name": "clock",
+   "zh": "挂钟",
+   "model": "wall_clock",
+   "pos": [
+    -4.5,
+    3.2,
+    -21.2
+   ],
+   "aliases": [
+    "wall clock"
+   ],
+   "radius": 0
+  },
+  {
+   "id": "picture",
+   "name": "picture",
+   "zh": "图画",
+   "model": "painting_frame",
+   "pos": [
+    -9,
+    0,
+    -19
+   ],
+   "aliases": [
+    "painting"
+   ],
+   "radius": 0.6,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "desk1",
+   "name": "desk",
+   "zh": "课桌",
+   "model": "desk",
+   "pos": [
+    -5,
+    0,
+    -7
+   ],
+   "aliases": [
+    "table"
+   ],
+   "radius": 0.9,
+   "label": true
+  },
+  {
+   "id": "desk2",
+   "name": "desk",
+   "zh": "课桌",
+   "model": "desk",
+   "pos": [
+    5,
+    0,
+    -7
+   ],
+   "aliases": [
+    "table"
+   ],
+   "radius": 0.9,
+   "label": false
+  },
+  {
+   "id": "desk3",
+   "name": "desk",
+   "zh": "课桌",
+   "model": "desk",
+   "pos": [
+    -5,
+    0,
+    1
+   ],
+   "aliases": [
+    "table"
+   ],
+   "radius": 0.9,
+   "label": false
+  },
+  {
+   "id": "desk4",
+   "name": "desk",
+   "zh": "课桌",
+   "model": "desk",
+   "pos": [
+    5,
+    0,
+    1
+   ],
+   "aliases": [
+    "table"
+   ],
+   "radius": 0.9,
+   "label": false
+  },
+  {
+   "id": "chair1",
+   "name": "chair",
+   "zh": "椅子",
+   "model": "school_chair",
+   "pos": [
+    5,
+    0,
+    2.6
+   ],
+   "aliases": [
+    "seat"
+   ],
+   "rot": 3.14,
+   "radius": 0.4,
+   "label": true,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "chair2",
+   "name": "chair",
+   "zh": "椅子",
+   "model": "school_chair",
+   "pos": [
+    -5,
+    0,
+    -5.4
+   ],
+   "aliases": [
+    "seat"
+   ],
+   "rot": 3.14,
+   "radius": 0.4,
+   "label": false,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "bag",
+   "name": "schoolbag",
+   "zh": "书包",
+   "model": "schoolbag",
+   "pos": [
+    -4.8,
+    0,
+    -7.3
+   ],
+   "aliases": [
+    "bag",
+    "school bag",
+    "backpack"
+   ],
+   "tags": [
+    "blue"
+   ],
+   "color": "blue",
+   "radius": 0,
+   "can": [
+    "pick",
+    "fly"
+   ]
+  },
+  {
+   "id": "pencilbox",
+   "name": "pencil box",
+   "zh": "铅笔盒",
+   "model": "pencil_box",
+   "pos": [
+    5,
+    0.95,
+    -7
+   ],
+   "aliases": [
+    "pencil case",
+    "pencil"
+   ],
+   "radius": 0,
+   "can": [
+    "pick",
+    "fly"
+   ]
+  },
+  {
+   "id": "book",
+   "name": "book",
+   "zh": "书",
+   "model": "book_pile",
+   "pos": [
+    2.6,
+    0,
+    -2
+   ],
+   "aliases": [
+    "english book"
+   ],
+   "radius": 0.4,
+   "can": [
+    "pick",
+    "fly"
+   ],
+   "params": {
+    "h": 0.5
+   }
+  },
+  {
+   "id": "ball",
+   "name": "football",
+   "zh": "足球",
+   "model": "soccer_ball",
+   "pos": [
+    5.2,
+    0,
+    2.7
+   ],
+   "aliases": [
+    "ball",
+    "soccer ball"
+   ],
+   "radius": 0,
+   "can": [
+    "pick",
+    "fly"
+   ]
+  },
+  {
+   "id": "lantern",
+   "name": "lamp",
+   "zh": "灯",
+   "model": "lantern",
+   "pos": [
+    -11.5,
+    0,
+    -15.5
+   ],
+   "aliases": [
+    "lantern",
+    "light"
+   ],
+   "radius": 0.4,
+   "can": [
+    "light"
+   ],
+   "params": {
+    "h": 2.2
+   }
+  },
+  {
+   "id": "storybooks",
+   "name": "storybooks",
+   "zh": "故事书",
+   "model": "book_pile",
+   "pos": [
+    -17.5,
+    0,
+    -9.5
+   ],
+   "aliases": [
+    "story books"
+   ],
+   "radius": 0.5,
+   "can": [
+    "pick",
+    "fly"
+   ]
+  },
+  {
+   "id": "story_sign",
+   "name": "story sign",
+   "zh": "故事牌",
+   "model": "signpost",
+   "pos": [
+    -11,
+    0,
+    -8.5
+   ],
+   "aliases": [
+    "sign",
+    "board"
+   ],
+   "radius": 0.3,
+   "can": [
+    "read"
+   ],
+   "text": "Where is the cat?\nIt's on the chair.\nWhere is the ball?\nIt's under the chair."
+  },
+  {
+   "id": "desk5",
+   "name": "desk",
+   "zh": "电脑桌",
+   "model": "desk",
+   "pos": [
+    16,
+    0,
+    -14
+   ],
+   "aliases": [
+    "computer desk",
+    "table"
+   ],
+   "radius": 0.9,
+   "label": false
+  },
+  {
+   "id": "computer",
+   "name": "computer",
+   "zh": "电脑",
+   "model": "computer",
+   "pos": [
+    16,
+    0.95,
+    -14
+   ],
+   "aliases": [
+    "pc"
+   ],
+   "radius": 0,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "desk6",
+   "name": "desk",
+   "zh": "课桌",
+   "model": "desk",
+   "pos": [
+    19.5,
+    0,
+    -8.5
+   ],
+   "aliases": [
+    "table"
+   ],
+   "radius": 0.9,
+   "label": false
+  },
+  {
+   "id": "globe",
+   "name": "globe",
+   "zh": "地球仪",
+   "model": "globe",
+   "pos": [
+    19.5,
+    0.95,
+    -8.5
+   ],
+   "aliases": [
+    "earth"
+   ],
+   "radius": 0,
+   "can": [
+    "pick",
+    "fly"
+   ]
+  },
+  {
+   "id": "easel",
+   "name": "easel",
+   "zh": "画架",
+   "model": "easel",
+   "pos": [
+    -19,
+    0,
+    4
+   ],
+   "aliases": [
+    "drawing"
+   ],
+   "radius": 0.6,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "crayons",
+   "name": "crayon box",
+   "zh": "蜡笔盒",
+   "model": "crayon_box",
+   "pos": [
+    -17.6,
+    0,
+    5.4
+   ],
+   "aliases": [
+    "crayons",
+    "crayon"
+   ],
+   "radius": 0,
+   "can": [
+    "pick",
+    "fly"
+   ]
+  },
+  {
+   "id": "piano",
+   "name": "piano",
+   "zh": "钢琴",
+   "model": "piano",
+   "pos": [
+    19.5,
+    0,
+    5
+   ],
+   "radius": 1.0,
+   "rot": -1.5708,
+   "reveal": [
+    "ws_near"
+   ],
+   "revealOn": "sing"
+  },
+  {
+   "id": "chair3",
+   "name": "blue chair",
+   "zh": "蓝椅子",
+   "model": "school_chair",
+   "pos": [
+    13,
+    0,
+    18
+   ],
+   "aliases": [
+    "chair"
+   ],
+   "tags": [
+    "blue"
+   ],
+   "color": "blue",
+   "radius": 0.4,
+   "label": false
+  },
+  {
+   "id": "cat",
+   "name": "cat",
+   "zh": "小猫",
+   "model": "cat",
+   "pos": [
+    13,
+    0.55,
+    18
+   ],
+   "aliases": [
+    "kitty"
+   ],
+   "tags": [
+    "small",
+    "grey"
+   ],
+   "color": "grey",
+   "radius": 0,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Meow! I am on the chair!",
+    "Meow... Where is my ball?"
+   ],
+   "reveal": [
+    "ws_onchair"
+   ],
+   "revealOn": "hop"
+  },
+  {
+   "id": "chest",
+   "name": "lost and found box",
+   "zh": "失物招领箱",
+   "model": "treasure_chest",
+   "pos": [
+    -14,
+    0,
+    17
+   ],
+   "aliases": [
+    "box",
+    "chest",
+    "lost box"
+   ],
+   "radius": 0.6,
+   "can": [
+    "open",
+    "fly"
+   ],
+   "reveal": [
+    "ws_where"
+   ],
+   "revealOn": "open"
+  }
+ ],
+ "npcs": [
+  {
+   "id": "white",
+   "name": "Miss White",
+   "zh": "怀特老师",
+   "model": "teacher",
+   "pos": [
+    -3,
+    0,
+    -15
+   ],
+   "aliases": [
+    "teacher",
+    "miss",
+    "white"
+   ],
+   "idle": [
+    "Thank you! Our classroom is tidy now!",
+    "Where is the schoolbag? It's under the desk.",
+    "Open the door, please. Turn on the light, please."
+   ],
+   "chatter": [
+    "What's in the classroom? A blackboard, many desks and chairs!",
+    "Where is my clock? Oh, it's near the blackboard.",
+    "Put the books on the desk, please!"
+   ],
+   "voice": "teacher",
+   "persona": "Miss White, a kind grade-4 English teacher in a big magic classroom; asks \"Where is …?\" and likes a tidy classroom; very simple English",
+   "greet": "Good morning! I'm Miss White. Welcome to our classroom!",
+   "radius": 0.8
+  },
+  {
+   "id": "mike",
+   "name": "Mike",
+   "zh": "迈克",
+   "model": "student",
+   "pos": [
+    -10.5,
+    0,
+    14.5
+   ],
+   "aliases": [
+    "boy",
+    "mike"
+   ],
+   "idle": [
+    "Thank you! My things are in my schoolbag now.",
+    "Where is my ruler? Oh, it's under the desk!"
+   ],
+   "chatter": [
+    "Where is my book? Is it on the desk?",
+    "Where is my ball? Is it under the chair?",
+    "Oh no! Where is my pencil box?"
+   ],
+   "voice": "child",
+   "persona": "Mike, a messy but friendly classmate who always loses things; very simple English",
+   "greet": "Hi, I'm Mike! I can't find my things!",
+   "radius": 0.8
+  },
+  {
+   "id": "sarah",
+   "name": "Sarah",
+   "zh": "萨拉",
+   "model": "art_girl",
+   "pos": [
+    -14,
+    0,
+    8.5
+   ],
+   "aliases": [
+    "girl",
+    "sarah"
+   ],
+   "idle": [
+    "Look at my picture! It's colourful!",
+    "My crayons are near the easel."
+   ],
+   "chatter": [
+    "Where are my crayons? Are they in my bag?",
+    "I like drawing. Do you like drawing?"
+   ],
+   "voice": "child",
+   "persona": "Sarah, a girl who loves drawing in the art corner; very simple English",
+   "greet": "Hi! I'm Sarah. I like drawing!",
+   "radius": 0.8
+  },
+  {
+   "id": "hoot",
+   "name": "Professor Hoot",
+   "zh": "猫头鹰教授",
+   "model": "owl",
+   "pos": [
+    -14.5,
+    0,
+    -12
+   ],
+   "aliases": [
+    "owl",
+    "hoot",
+    "professor"
+   ],
+   "idle": [
+    "Hoo! Books are my friends!",
+    "The cat is on the chair. Hoo hoo!"
+   ],
+   "chatter": [
+    "Hoo! Where is my book? It's on the shelf!",
+    "In, on, under! Hoo hoo!"
+   ],
+   "voice": "animal",
+   "persona": "Professor Hoot, a wise old owl who lives in the reading corner and loves storybooks; very simple English",
+   "greet": "Hoo hoo! Welcome to the reading corner! Hoo!",
+   "radius": 0.8
+  },
+  {
+   "id": "john",
+   "name": "John",
+   "zh": "约翰",
+   "model": "student",
+   "pos": [
+    12.5,
+    0,
+    -9.5
+   ],
+   "aliases": [
+    "boy",
+    "john"
+   ],
+   "idle": [
+    "The globe is on the desk!",
+    "I like the computer!"
+   ],
+   "chatter": [
+    "Where is the globe? It's on the desk.",
+    "The computer is on the desk, near the window."
+   ],
+   "voice": "child",
+   "persona": "John, a boy who loves computers and maps in the computer corner; very simple English",
+   "greet": "Hi! I'm John. Look at the computer!",
+   "radius": 0.8
+  }
+ ],
+ "quests": [
+  {
+   "id": "cr_where",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "white",
+   "titleZh": "回答老师：书包在哪里？",
+   "title": "Where is the schoolbag?",
+   "intro": [
+    "Oh dear, the magic wind came! Someone's schoolbag is on the floor. Look at the first desk."
+   ],
+   "model": [
+    "It's under the desk."
+   ],
+   "done": [
+    "Yes! It's under the desk. Well done!"
+   ],
+   "prompt": "Where is the schoolbag? Look at the desk.",
+   "accept": [
+    [
+     "under",
+     "near",
+     "next to",
+     "by",
+     "beside"
+    ]
+   ],
+   "tipZh": "看看书包在课桌的哪里？用 in / on / under 回答：“It's under the desk.”"
+  },
+  {
+   "id": "cr_door",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "white",
+   "titleZh": "用咒语打开教室的门",
+   "title": "Open the door",
+   "intro": [
+    "It's hot in here. The door is near the poster. Can you open the door with magic?"
+   ],
+   "model": [
+    "Open the door!"
+   ],
+   "done": [
+    "Thank you! What a nice breeze!"
+   ],
+   "prompt": "Say: Open the door!",
+   "goal": "open:door",
+   "needs": "cr_where"
+  },
+  {
+   "id": "cr_light",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "white",
+   "titleZh": "读书角太黑了：把灯打开",
+   "title": "Turn on the light",
+   "intro": [
+    "The reading corner is so dark. Professor Hoot can't read! Please turn on the light."
+   ],
+   "model": [
+    "Turn on the light!"
+   ],
+   "done": [
+    "Thank you! Now the reading corner is bright!"
+   ],
+   "prompt": "Say: Turn on the light!",
+   "goal": "light:lantern",
+   "needs": "cr_door",
+   "tipZh": "读书角的灯没开。念咒语：“Turn on the light!” 也可以说“Light the lamp!”"
+  },
+  {
+   "id": "cr_what",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "white",
+   "titleZh": "回答老师：教室里有什么？",
+   "title": "What's in the classroom?",
+   "intro": [
+    "Look around! We have a big classroom."
+   ],
+   "model": [
+    "A blackboard and many desks.",
+    "Many desks and chairs."
+   ],
+   "done": [
+    "Yes! A blackboard, many desks and chairs. What a nice classroom!"
+   ],
+   "prompt": "What's in the classroom?",
+   "accept": [
+    [
+     "blackboard",
+     "board",
+     "desk",
+     "chair",
+     "door",
+     "window",
+     "computer",
+     "book",
+     "light",
+     "picture",
+     "piano",
+     "clock",
+     "bag",
+     "schoolbag",
+     "globe",
+     "easel",
+     "teacher"
+    ]
+   ],
+   "needs": "cr_light",
+   "tipZh": "说说教室里有什么，比如：“A blackboard and many desks.”"
+  },
+  {
+   "id": "cr_write",
+   "kind": "write",
+   "skill": "写",
+   "giver": "white",
+   "titleZh": "写出单词：老师用粉笔在上面写字",
+   "title": "Write the word",
+   "intro": [
+    "One more! Write a word for me."
+   ],
+   "model": [
+    "blackboard"
+   ],
+   "done": [
+    "Excellent! B-L-A-C-K-B-O-A-R-D!"
+   ],
+   "prompt": "I write on it with chalk. It is green or black. Write the word.",
+   "accept": [
+    [
+     "blackboard",
+     "board",
+     "black board"
+    ]
+   ],
+   "needs": "cr_what"
+  },
+  {
+   "id": "cr_party",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "white",
+   "titleZh": "教室整整齐齐啦！变出泡泡庆祝",
+   "title": "Make bubbles!",
+   "intro": [
+    "Hooray! Our classroom is clean and tidy now! Let's have a little party. Can you make bubbles?"
+   ],
+   "model": [
+    "Make bubbles!"
+   ],
+   "done": [
+    "Wow! Bubbles everywhere! Thank you, little wizard! Class can start now!"
+   ],
+   "prompt": "Say: Make bubbles!",
+   "goal": "bubbles",
+   "needs": "cr_write"
+  },
+  {
+   "id": "cr_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "poster",
+   "titleZh": "读海报：教室大不大？",
+   "title": "Read the poster",
+   "intro": [],
+   "model": [],
+   "done": [
+    "Right! Our classroom is big and clean."
+   ],
+   "passage": "Our classroom is big and clean. There are twenty desks and a big blackboard. We love our classroom!",
+   "prompt": "Is the classroom big?",
+   "options": [
+    "Yes, it is.",
+    "No, it isn't."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "cr_put",
+   "kind": "do",
+   "skill": "说",
+   "giver": "mike",
+   "titleZh": "帮 Mike 把书放到课桌上",
+   "title": "Put the book on the desk",
+   "intro": [
+    "My book is on the floor, near the desks! Can you put it on the desk, please?"
+   ],
+   "model": [
+    "Put the book on the desk."
+   ],
+   "done": [
+    "Thank you! Now my book is on the desk!"
+   ],
+   "prompt": "Say: Put the book on the desk.",
+   "goal": "put:book:*:on",
+   "tipZh": "书掉在课桌区的地上。说：“Put the book on the desk.”"
+  },
+  {
+   "id": "cr_listen",
+   "kind": "listen",
+   "skill": "听",
+   "giver": "mike",
+   "titleZh": "听 Mike 说，书在哪里？",
+   "title": "Listen and choose",
+   "intro": [
+    "Listen! Where is my storybook?"
+   ],
+   "model": [],
+   "done": [
+    "Yes! It's in my schoolbag. Thanks!"
+   ],
+   "prompt": "Where is the book?",
+   "audio": "My pencil box is on the chair. My ruler is under the desk. And my storybook is in my schoolbag.",
+   "options": [
+    "On the chair",
+    "In the schoolbag",
+    "Under the desk"
+   ],
+   "answer": 1,
+   "video": "classroom.mp4",
+   "needs": "cr_put"
+  },
+  {
+   "id": "mike_bag",
+   "kind": "do",
+   "skill": "说",
+   "giver": "mike",
+   "titleZh": "把铅笔盒放进书包里",
+   "title": "Put the pencil box in the schoolbag",
+   "intro": [
+    "My pencil box is on the desk. My schoolbag is under the desk. Can you put the pencil box in the schoolbag?"
+   ],
+   "model": [
+    "Put the pencil box in the schoolbag."
+   ],
+   "done": [
+    "Great! My pencil box is in my schoolbag. I can't lose it now!"
+   ],
+   "goal": "put:pencilbox:bag:in",
+   "needs": "cr_listen",
+   "tipZh": "说：“Put the pencil box in the schoolbag.” 注意用 in（在……里面）。"
+  },
+  {
+   "id": "mike_ball",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "mike",
+   "titleZh": "告诉 Mike：足球在哪里？",
+   "title": "Where is my ball?",
+   "intro": [
+    "Oh no! Where is my football? Look near the desks!"
+   ],
+   "model": [
+    "It's under the chair."
+   ],
+   "done": [
+    "Under the chair! There it is! Thank you!"
+   ],
+   "prompt": "Where is my football?",
+   "accept": [
+    [
+     "under"
+    ],
+    [
+     "chair",
+     "seat"
+    ]
+   ],
+   "needs": "mike_bag",
+   "tipZh": "足球在课桌区一把椅子的下面。回答：“It's under the chair.”"
+  },
+  {
+   "id": "sarah_crayon",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "sarah",
+   "titleZh": "告诉 Sarah：蜡笔盒在哪里？",
+   "title": "Where is my crayon box?",
+   "intro": [
+    "I want to draw a picture, but where is my crayon box? Is it in my bag?"
+   ],
+   "model": [
+    "It's near the easel."
+   ],
+   "done": [
+    "Near the easel! Yes! Thank you!"
+   ],
+   "prompt": "Where is my crayon box?",
+   "accept": [
+    [
+     "near",
+     "next to",
+     "beside",
+     "by",
+     "under"
+    ]
+   ],
+   "tipZh": "蜡笔盒就在画架旁边。回答：“It's near the easel.”"
+  },
+  {
+   "id": "sarah_paint",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "sarah",
+   "titleZh": "把画架变成彩虹色",
+   "title": "Make the easel rainbow",
+   "intro": [
+    "My easel is so plain. Can you make it colourful? Make it rainbow!"
+   ],
+   "model": [
+    "Make the easel rainbow!"
+   ],
+   "done": [
+    "Wow! A rainbow easel! I like it!"
+   ],
+   "prompt": "Say: Make the easel rainbow!",
+   "goal": "tint:easel:rainbow",
+   "needs": "sarah_crayon"
+  },
+  {
+   "id": "hoot_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "story_sign",
+   "titleZh": "大声读出故事牌",
+   "title": "Read the story sign",
+   "intro": [],
+   "model": [
+    "Where is the cat? It's on the chair."
+   ],
+   "done": [
+    "Hoo hoo! You read it very well!"
+   ],
+   "passage": "Where is the cat? It's on the chair. Where is the ball? It's under the chair.",
+   "readAloud": true,
+   "prompt": "Read the sign aloud."
+  },
+  {
+   "id": "hoot_write",
+   "kind": "write",
+   "skill": "写",
+   "giver": "hoot",
+   "titleZh": "看窗边的小猫，写出方位词",
+   "title": "Write the word",
+   "intro": [
+    "Hoo! Look at the cat in the Window Garden. Is the cat on the chair or under the chair?"
+   ],
+   "model": [
+    "on"
+   ],
+   "done": [
+    "Hoo hoo! O-N, on! The cat is on the chair!"
+   ],
+   "prompt": "The cat is ___ the chair. Write the word.",
+   "accept": [
+    [
+     "on"
+    ]
+   ],
+   "tipZh": "窗边的小猫坐在椅子上面。写“on”。"
+  },
+  {
+   "id": "hoot_books",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "hoot",
+   "titleZh": "会飞的教室：让故事书飞起来",
+   "title": "Make the storybooks fly",
+   "intro": [
+    "Hoo! This is the Flying Classroom! Can you make my storybooks fly?"
+   ],
+   "model": [
+    "Make the storybooks fly!"
+   ],
+   "done": [
+    "Hoo hoo! Flying books! What fun!"
+   ],
+   "prompt": "Say: Make the storybooks fly!",
+   "goal": "fly:storybooks",
+   "needs": "hoot_write"
+  },
+  {
+   "id": "john_where",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "john",
+   "titleZh": "回答 John：地球仪在哪里？",
+   "title": "Where is the globe?",
+   "intro": [
+    "Where is the globe? I can't see it! Is it under the desk?"
+   ],
+   "model": [
+    "It's on the desk."
+   ],
+   "done": [
+    "Oh! It's on the desk. Thank you!"
+   ],
+   "prompt": "Where is the globe?",
+   "accept": [
+    [
+     "on",
+     "near"
+    ],
+    [
+     "desk",
+     "table",
+     "computer"
+    ]
+   ],
+   "tipZh": "地球仪就在电脑角的桌子上。回答：“It's on the desk.”"
+  },
+  {
+   "id": "john_computer",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "john",
+   "titleZh": "用咒语打开电脑",
+   "title": "Turn on the computer",
+   "intro": [
+    "Now I want to see a map on the computer. Can you turn on the computer?"
+   ],
+   "model": [
+    "Turn on the computer!"
+   ],
+   "done": [
+    "Thank you! Look, a map of the world!"
+   ],
+   "prompt": "Say: Turn on the computer!",
+   "goal": "light:computer",
+   "needs": "john_where"
+  }
+ ],
+ "words": [
+  {
+   "id": "ws_desk",
+   "say": "desk",
+   "zh": "课桌",
+   "pos": [
+    -2,
+    -9.5
+   ]
+  },
+  {
+   "id": "ws_chair",
+   "say": "chair",
+   "zh": "椅子",
+   "pos": [
+    8,
+    4.5
+   ]
+  },
+  {
+   "id": "ws_blackboard",
+   "say": "blackboard",
+   "zh": "黑板",
+   "pos": [
+    3,
+    -19.5
+   ]
+  },
+  {
+   "id": "ws_schoolbag",
+   "say": "schoolbag",
+   "zh": "书包",
+   "pos": [
+    -8,
+    -6
+   ]
+  },
+  {
+   "id": "ws_pencilbox",
+   "say": "pencil box",
+   "zh": "铅笔盒",
+   "pos": [
+    8.5,
+    -8.5
+   ]
+  },
+  {
+   "id": "ws_door",
+   "say": "door",
+   "zh": "门",
+   "pos": [
+    3.5,
+    20
+   ]
+  },
+  {
+   "id": "ws_window",
+   "say": "window",
+   "zh": "窗户",
+   "pos": [
+    9.5,
+    21
+   ]
+  },
+  {
+   "id": "ws_light",
+   "say": "light",
+   "zh": "灯",
+   "pos": [
+    -9,
+    -16
+   ]
+  },
+  {
+   "id": "ws_in",
+   "say": "in",
+   "zh": "在……里",
+   "pos": [
+    -2.5,
+    10
+   ]
+  },
+  {
+   "id": "ws_on",
+   "say": "on",
+   "zh": "在……上",
+   "pos": [
+    2.5,
+    7
+   ]
+  },
+  {
+   "id": "ws_under",
+   "say": "under",
+   "zh": "在……下",
+   "pos": [
+    -8.5,
+    3
+   ]
+  },
+  {
+   "id": "ws_nearw",
+   "say": "near",
+   "zh": "在……附近",
+   "pos": [
+    -19,
+    9.5
+   ]
+  },
+  {
+   "id": "ws_underdesk",
+   "say": "It's under the desk.",
+   "zh": "它在课桌下面。",
+   "pos": [
+    -2,
+    -4
+   ]
+  },
+  {
+   "id": "ws_inbag",
+   "say": "It's in the schoolbag.",
+   "zh": "它在书包里。",
+   "pos": [
+    -7,
+    11
+   ]
+  },
+  {
+   "id": "ws_put",
+   "say": "Put the book on the desk.",
+   "zh": "把书放在课桌上。",
+   "pos": [
+    2.5,
+    -12
+   ]
+  },
+  {
+   "id": "ws_where",
+   "say": "Where is the schoolbag?",
+   "zh": "书包在哪里？",
+   "pos": [
+    -17,
+    14.5
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_onchair",
+   "say": "It's on the chair.",
+   "zh": "它在椅子上。",
+   "pos": [
+    10,
+    18.5
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_near",
+   "say": "It's near the window.",
+   "zh": "它在窗户附近。",
+   "pos": [
+    21,
+    9
+   ],
+   "hidden": true
+  }
+ ],
+ "spellIdeas": [
+  {
+   "say": "Make the book fly!",
+   "zh": "让书飞起来",
+   "near": "book"
+  },
+  {
+   "say": "Open the box!",
+   "zh": "打开失物招领箱（会有秘密哦）",
+   "near": "chest"
+  },
+  {
+   "say": "Make the piano sing!",
+   "zh": "让钢琴唱歌（会有秘密哦）",
+   "near": "piano"
+  },
+  {
+   "say": "Make the cat jump!",
+   "zh": "让小猫跳一跳（会有秘密哦）",
+   "near": "cat"
+  },
+  {
+   "say": "Make the desk small!",
+   "zh": "把课桌变小",
+   "near": "desk1"
+  },
+  {
+   "say": "Light the lamp!",
+   "zh": "点亮台灯",
+   "near": "lantern"
+  },
+  {
+   "say": "Make the schoolbag red!",
+   "zh": "把书包变成红色",
+   "near": "bag"
+  },
+  {
+   "say": "Make Mike fly!",
+   "zh": "让 Mike 飞起来",
+   "near": "mike"
+  },
+  {
+   "say": "Make the globe spin!",
+   "zh": "让地球仪转起来",
+   "near": "globe"
+  },
+  {
+   "say": "Make the clock glow!",
+   "zh": "让挂钟发光",
+   "near": "clock"
+  },
+  {
+   "say": "Make three chairs!",
+   "zh": "变出三把椅子",
+   "near": "chair1"
+  },
+  {
+   "say": "Make the blackboard pink!",
+   "zh": "把黑板变成粉色",
+   "near": "board"
+  },
+  {
+   "say": "Make the football big!",
+   "zh": "把足球变大",
+   "near": "ball"
+  },
+  {
+   "say": "Make Professor Hoot dance!",
+   "zh": "让猫头鹰教授跳舞",
+   "near": "hoot"
+  },
+  {
+   "say": "Turn the cat into a tiger!",
+   "zh": "把小猫变成老虎",
+   "near": "cat"
+  },
+  {
+   "say": "Make it night!",
+   "zh": "让天黑下来"
+  },
+  {
+   "say": "Move the desk to the left!",
+   "zh": "把课桌移到左边"
+  },
+  {
+   "say": "Move the chair to the right!",
+   "zh": "把椅子移到右边"
+  },
+  {
+   "say": "Put the schoolbag on a cloud!",
+   "zh": "让书包坐上云朵"
+  },
+  {
+   "say": "Make the chair invisible!",
+   "zh": "让椅子隐身"
+  },
+  {
+   "say": "Make the globe gold!",
+   "zh": "把地球仪变成金色"
+  },
+  {
+   "say": "Make the clock big!",
+   "zh": "把钟变大"
+  },
+  {
+   "say": "Make the door blue!",
+   "zh": "把门变成蓝色"
+  },
+  {
+   "say": "Turn the cat into a rabbit!",
+   "zh": "把小猫变成兔子"
+  },
+  {
+   "say": "Make it rain stars!",
+   "zh": "教室里下星星雨"
+  },
+  {
+   "say": "Everybody, jump!",
+   "zh": "让大家一起跳"
+  }
+ ]
+}

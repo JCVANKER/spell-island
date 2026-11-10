@@ -1,0 +1,31 @@
+{
+  "name": "spell-island",
+  "private": true,
+  "version": "0.1.0",
+  "description": "咒语岛 —— 用声音指挥小魔法师的 3D 英语探索游戏（豆包语音 + 豆包大模型）",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c magenta,cyan \"pnpm --filter @spell/server dev\" \"pnpm --filter @spell/web dev\"",
+    "dev:lan": "concurrently -k -n server,web -c magenta,cyan \"pnpm --filter @spell/server dev\" \"pnpm --filter @spell/web dev:lan\"",
+    "build": "pnpm --filter @spell/web build",
+    "start": "pnpm build && pnpm --filter @spell/server start",
+    "validate": "tsx tools/validate-worlds.ts",
+    "pregen": "tsx tools/pregen-voice.ts",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "dotenv": "^16.6.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

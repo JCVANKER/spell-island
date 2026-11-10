@@ -1,0 +1,2438 @@
+{
+ "id": "talent-club",
+ "order": 8,
+ "grade": "七年级下册",
+ "gradeNum": 7,
+ "unit": "Unit · Can you play the guitar?（能力与社团 can）",
+ "title": "Talent Club Fair",
+ "titleZh": "才艺社团节",
+ "scene": "club",
+ "bounds": 52,
+ "intro": [
+  "欢迎来到才艺社团节！音乐社、舞蹈社、美术社、棋社、游泳社都在招新。",
+  "说说你会做什么：“I can …”，也问问别人：“Can you …?” 先去社团广场找格林老师：“Go to Ms Green!”"
+ ],
+ "vocab": [
+  "club",
+  "join",
+  "guitar",
+  "drums",
+  "piano",
+  "violin",
+  "sing",
+  "dance",
+  "draw",
+  "swim",
+  "chess",
+  "play chess",
+  "speak English",
+  "tell stories",
+  "can",
+  "can't",
+  "be good at",
+  "show"
+ ],
+ "patterns": [
+  "Can you play the guitar? Yes, I can. / No, I can't.",
+  "What club do you want to join? I want to join the music club.",
+  "I can sing and dance.",
+  "Can she draw? Yes, she can.",
+  "You can join the chess club."
+ ],
+ "spawn": {
+  "pos": [
+   0,
+   0,
+   44
+  ],
+  "rot": 3.14159
+ },
+ "zones": [
+  {
+   "id": "gate",
+   "name": "Fair Gate",
+   "zh": "社团节大门",
+   "pos": [
+    0,
+    38
+   ],
+   "r": 8
+  },
+  {
+   "id": "plaza",
+   "name": "Club Square",
+   "zh": "社团广场",
+   "pos": [
+    0,
+    8
+   ],
+   "r": 10
+  },
+  {
+   "id": "music",
+   "name": "Music Club Stage",
+   "zh": "音乐社舞台",
+   "pos": [
+    -26,
+    -12
+   ],
+   "r": 11
+  },
+  {
+   "id": "dance",
+   "name": "Dance Club Floor",
+   "zh": "舞蹈社舞池",
+   "pos": [
+    26,
+    -12
+   ],
+   "r": 10
+  },
+  {
+   "id": "chess",
+   "name": "Chess Club Garden",
+   "zh": "棋社花园",
+   "pos": [
+    -28,
+    18
+   ],
+   "r": 10
+  },
+  {
+   "id": "art",
+   "name": "Art Club Studio",
+   "zh": "美术社画室",
+   "pos": [
+    28,
+    20
+   ],
+   "r": 10
+  },
+  {
+   "id": "pool",
+   "name": "Swimming Club Pool",
+   "zh": "游泳社泳池",
+   "pos": [
+    0,
+    -30
+   ],
+   "r": 10
+  },
+  {
+   "id": "sports",
+   "name": "Sports Club Field",
+   "zh": "体育社球场",
+   "pos": [
+    -25,
+    -38
+   ],
+   "r": 9
+  },
+  {
+   "id": "story",
+   "name": "English Story Corner",
+   "zh": "英语故事角",
+   "pos": [
+    25,
+    -38
+   ],
+   "r": 9
+  }
+ ],
+ "decor": [
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     50
+    ],
+    [
+     0,
+     8
+    ]
+   ],
+   "w": 4
+  },
+  {
+   "k": "model",
+   "m": "lantern",
+   "at": [
+    -3,
+    35
+   ]
+  },
+  {
+   "k": "model",
+   "m": "lantern",
+   "at": [
+    3,
+    35
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    -15,
+    34
+   ],
+   "to": [
+    -5,
+    34
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    5,
+    34
+   ],
+   "to": [
+    15,
+    34
+   ]
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -6,
+    30
+   ],
+   "rot": 1.57
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    6,
+    30
+   ],
+   "rot": 1.57
+  },
+  {
+   "k": "tree",
+   "at": [
+    -11,
+    42
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "tree",
+   "at": [
+    11,
+    42
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -16,
+    30
+   ],
+   "r": 6,
+   "n": 40
+  },
+  {
+   "k": "meadow",
+   "at": [
+    15,
+    30
+   ],
+   "r": 6,
+   "n": 40
+  },
+  {
+   "k": "plaza",
+   "at": [
+    0,
+    8
+   ],
+   "r": 9,
+   "color": "#e8d6a8"
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    -8,
+    4
+   ],
+   "rot": 1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    9,
+    9
+   ],
+   "rot": -1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -5,
+    -1
+   ],
+   "rot": 0.3
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    5,
+    -1
+   ],
+   "rot": -0.3
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    -10,
+    14
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    11,
+    16
+   ]
+  },
+  {
+   "k": "lamp",
+   "at": [
+    -3,
+    24
+   ]
+  },
+  {
+   "k": "lamp",
+   "at": [
+    3,
+    26
+   ]
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     8
+    ],
+    [
+     -14,
+     2
+    ],
+    [
+     -24,
+     -6
+    ]
+   ],
+   "w": 3.2
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     8
+    ],
+    [
+     14,
+     2
+    ],
+    [
+     24,
+     -6
+    ]
+   ],
+   "w": 3.2
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     8
+    ],
+    [
+     -16,
+     14
+    ],
+    [
+     -24,
+     17
+    ]
+   ],
+   "w": 3
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     8
+    ],
+    [
+     16,
+     14
+    ],
+    [
+     23,
+     18
+    ]
+   ],
+   "w": 3
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     8
+    ],
+    [
+     0,
+     -22
+    ]
+   ],
+   "w": 3.2
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     -22
+    ],
+    [
+     -11,
+     -28
+    ],
+    [
+     -22,
+     -35
+    ]
+   ],
+   "w": 2.8
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     -22
+    ],
+    [
+     11,
+     -28
+    ],
+    [
+     22,
+     -35
+    ]
+   ],
+   "w": 2.8
+  },
+  {
+   "k": "plaza",
+   "at": [
+    -27,
+    -14
+   ],
+   "r": 7,
+   "color": "#c99a6a"
+  },
+  {
+   "k": "house",
+   "at": [
+    -27,
+    -26
+   ],
+   "rot": 0,
+   "w": 7,
+   "h": 4.2,
+   "wall": "#f2d7b0",
+   "roof": "#7f5fb8"
+  },
+  {
+   "k": "model",
+   "m": "lantern",
+   "at": [
+    -19,
+    -23
+   ]
+  },
+  {
+   "k": "lamp",
+   "at": [
+    -16,
+    -10
+   ]
+  },
+  {
+   "k": "pine",
+   "at": [
+    -38,
+    -6
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "pine",
+   "at": [
+    -40,
+    -16
+   ],
+   "s": 1.3
+  },
+  {
+   "k": "plaza",
+   "at": [
+    26,
+    -14
+   ],
+   "r": 7,
+   "color": "#e9c3dc"
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    26,
+    -23
+   ],
+   "rot": 0
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    19,
+    -21
+   ],
+   "rot": 0.8
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    35,
+    -8
+   ],
+   "rot": -1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "lantern",
+   "at": [
+    20,
+    -6
+   ]
+  },
+  {
+   "k": "tree",
+   "at": [
+    40,
+    -14
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "tree",
+   "at": [
+    38,
+    -24
+   ],
+   "s": 1.1
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -28,
+    24
+   ],
+   "r": 6,
+   "n": 45
+  },
+  {
+   "k": "grove",
+   "at": [
+    -42,
+    24
+   ],
+   "r": 6,
+   "n": 6,
+   "kind": "tree"
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    -21,
+    24
+   ],
+   "rot": 3.14,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    -32,
+    12
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    -20,
+    11
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    -38,
+    10
+   ],
+   "to": [
+    -38,
+    28
+   ]
+  },
+  {
+   "k": "plaza",
+   "at": [
+    28,
+    19
+   ],
+   "r": 6,
+   "color": "#f3e3c8"
+  },
+  {
+   "k": "house",
+   "at": [
+    38,
+    22
+   ],
+   "rot": -1.57,
+   "w": 5,
+   "h": 3.6,
+   "wall": "#fbe9d2",
+   "roof": "#e07a5f"
+  },
+  {
+   "k": "model",
+   "m": "potted_plant",
+   "at": [
+    22,
+    25
+   ]
+  },
+  {
+   "k": "model",
+   "m": "potted_plant",
+   "at": [
+    33,
+    28
+   ]
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    27,
+    29
+   ],
+   "rot": 0
+  },
+  {
+   "k": "meadow",
+   "at": [
+    18,
+    26
+   ],
+   "r": 5,
+   "n": 35
+  },
+  {
+   "k": "pond",
+   "at": [
+    0,
+    -33
+   ],
+   "r": 5,
+   "sx": 1.4
+  },
+  {
+   "k": "model",
+   "m": "umbrella",
+   "at": [
+    9,
+    -23
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    -10,
+    -38
+   ],
+   "rot": 0.6,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    -4,
+    -42
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    4,
+    -43
+   ]
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -25,
+    -38
+   ],
+   "r": 7,
+   "n": 30
+  },
+  {
+   "k": "fence",
+   "from": [
+    -34,
+    -31
+   ],
+   "to": [
+    -28,
+    -31
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    -34,
+    -31
+   ],
+   "to": [
+    -34,
+    -44
+   ]
+  },
+  {
+   "k": "pine",
+   "at": [
+    -14,
+    -46
+   ],
+   "s": 1.1
+  },
+  {
+   "k": "pine",
+   "at": [
+    -36,
+    -26
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "shelf",
+   "at": [
+    27,
+    -44
+   ],
+   "rot": 0,
+   "w": 4,
+   "h": 3.2
+  },
+  {
+   "k": "shelf",
+   "at": [
+    33,
+    -38
+   ],
+   "rot": -1.57,
+   "w": 4,
+   "h": 3.2
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    19,
+    -42
+   ],
+   "rot": 0.8,
+   "solid": 0.9
+  },
+  {
+   "k": "tree",
+   "at": [
+    14,
+    -45
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "lamp",
+   "at": [
+    21,
+    -30
+   ]
+  },
+  {
+   "k": "grove",
+   "at": [
+    -46,
+    0
+   ],
+   "r": 6,
+   "n": 6,
+   "kind": "pine"
+  },
+  {
+   "k": "grove",
+   "at": [
+    46,
+    2
+   ],
+   "r": 6,
+   "n": 6,
+   "kind": "mix"
+  },
+  {
+   "k": "grove",
+   "at": [
+    -38,
+    40
+   ],
+   "r": 6,
+   "n": 6,
+   "kind": "mix"
+  },
+  {
+   "k": "grove",
+   "at": [
+    38,
+    40
+   ],
+   "r": 6,
+   "n": 6,
+   "kind": "mix"
+  },
+  {
+   "k": "grove",
+   "at": [
+    0,
+    60
+   ],
+   "r": 10,
+   "n": 8,
+   "kind": "pine",
+   "s": 1.2
+  },
+  {
+   "k": "grove",
+   "at": [
+    0,
+    -54
+   ],
+   "r": 10,
+   "n": 7,
+   "kind": "tree"
+  }
+ ],
+ "things": [
+  {
+   "id": "gate_sign",
+   "name": "welcome sign",
+   "zh": "欢迎牌",
+   "model": "signpost",
+   "pos": [
+    -4,
+    0,
+    39
+   ],
+   "aliases": [
+    "sign",
+    "board",
+    "welcome board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Talent Club Fair\nWhat can you do?\nCan you sing, dance, draw or swim?\nCome and join a club!"
+  },
+  {
+   "id": "balloon",
+   "name": "hot air balloon",
+   "zh": "热气球",
+   "model": "hot_air_balloon",
+   "pos": [
+    -14,
+    0,
+    25
+   ],
+   "aliases": [
+    "balloon"
+   ],
+   "tags": [
+    "big"
+   ],
+   "radius": 1.6,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "fountain",
+   "name": "fountain",
+   "zh": "喷泉",
+   "model": "fountain",
+   "pos": [
+    0,
+    0,
+    6
+   ],
+   "radius": 1.8,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "poster",
+   "name": "club poster",
+   "zh": "社团海报",
+   "model": "signpost",
+   "pos": [
+    4,
+    0,
+    17
+   ],
+   "aliases": [
+    "poster",
+    "board",
+    "club board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Join a club today!\nMusic Club: Can you sing or play the guitar?\nDance Club: Can you dance?\nArt Club: Can you draw?\nChess Club: Can you play chess?\nSwimming Club: Can you swim?"
+  },
+  {
+   "id": "lamp1",
+   "name": "lamp",
+   "zh": "路灯",
+   "model": "lamp_post",
+   "pos": [
+    -6,
+    0,
+    20
+   ],
+   "aliases": [
+    "light",
+    "lamp post"
+   ],
+   "radius": 0.3,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "lamp2",
+   "name": "lamp",
+   "zh": "路灯",
+   "model": "lamp_post",
+   "pos": [
+    7,
+    0,
+    23
+   ],
+   "aliases": [
+    "light",
+    "lamp post"
+   ],
+   "radius": 0.3,
+   "can": [
+    "light"
+   ],
+   "label": false
+  },
+  {
+   "id": "music_sign",
+   "name": "music club sign",
+   "zh": "音乐社牌子",
+   "model": "signpost",
+   "pos": [
+    -15,
+    0,
+    -3
+   ],
+   "aliases": [
+    "music sign",
+    "sign"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Music Club\nCan you sing? Can you play the drums?\nCome and show us!"
+  },
+  {
+   "id": "drums",
+   "name": "drums",
+   "zh": "架子鼓",
+   "model": "drum_set",
+   "pos": [
+    -28,
+    0,
+    -17
+   ],
+   "aliases": [
+    "drum",
+    "drum set"
+   ],
+   "radius": 1.0,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "piano",
+   "name": "piano",
+   "zh": "钢琴",
+   "model": "piano",
+   "pos": [
+    -22,
+    0,
+    -18
+   ],
+   "tags": [
+    "black"
+   ],
+   "color": "black",
+   "radius": 1.0,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "mic",
+   "name": "microphone",
+   "zh": "麦克风",
+   "model": "microphone",
+   "pos": [
+    -26,
+    0,
+    -12
+   ],
+   "aliases": [
+    "mic"
+   ],
+   "radius": 0.3,
+   "can": [
+    "fly",
+    "pick"
+   ]
+  },
+  {
+   "id": "violin",
+   "name": "violin",
+   "zh": "小提琴",
+   "model": "violin",
+   "pos": [
+    -31,
+    0,
+    -10
+   ],
+   "radius": 0.3,
+   "can": [
+    "fly",
+    "pick"
+   ]
+  },
+  {
+   "id": "stage_light",
+   "name": "stage light",
+   "zh": "舞台灯",
+   "model": "lantern",
+   "pos": [
+    -33,
+    0,
+    -17
+   ],
+   "aliases": [
+    "stage lamp",
+    "spotlight"
+   ],
+   "radius": 0.4,
+   "can": [
+    "light"
+   ],
+   "params": {
+    "h": 2.6
+   }
+  },
+  {
+   "id": "party_light",
+   "name": "party light",
+   "zh": "彩灯",
+   "model": "lantern",
+   "pos": [
+    32,
+    0,
+    -18
+   ],
+   "aliases": [
+    "disco light",
+    "party lamp"
+   ],
+   "radius": 0.4,
+   "can": [
+    "light"
+   ],
+   "params": {
+    "h": 2.6
+   }
+  },
+  {
+   "id": "cat",
+   "name": "cat",
+   "zh": "小猫",
+   "model": "cat",
+   "pos": [
+    29,
+    0,
+    -7
+   ],
+   "aliases": [
+    "kiki",
+    "kitty"
+   ],
+   "tags": [
+    "small",
+    "grey"
+   ],
+   "color": "grey",
+   "radius": 0.4,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Meow! I can't dance. Can you make me dance?",
+    "Meow! I can sing. Meow, meow!"
+   ],
+   "reveal": [
+    "ws_cant"
+   ],
+   "revealOn": "dance"
+  },
+  {
+   "id": "chess",
+   "name": "chess table",
+   "zh": "棋桌",
+   "model": "chess_table",
+   "pos": [
+    -26,
+    0,
+    16
+   ],
+   "aliases": [
+    "chess",
+    "chess club"
+   ],
+   "radius": 1.0,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "chest",
+   "name": "treasure chest",
+   "zh": "宝箱",
+   "model": "treasure_chest",
+   "pos": [
+    -34,
+    0,
+    22
+   ],
+   "aliases": [
+    "chest",
+    "box",
+    "treasure"
+   ],
+   "radius": 0.6,
+   "can": [
+    "open",
+    "fly"
+   ],
+   "reveal": [
+    "ws_good"
+   ],
+   "revealOn": "open"
+  },
+  {
+   "id": "easel",
+   "name": "easel",
+   "zh": "画架",
+   "model": "easel",
+   "pos": [
+    24,
+    0,
+    15
+   ],
+   "aliases": [
+    "painting easel",
+    "drawing"
+   ],
+   "radius": 0.6,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "startTint": "grey"
+   },
+   "reveal": [
+    "ws_artclub"
+   ],
+   "revealOn": "tint"
+  },
+  {
+   "id": "crayons",
+   "name": "crayon box",
+   "zh": "蜡笔盒",
+   "model": "crayon_box",
+   "pos": [
+    33,
+    0,
+    24
+   ],
+   "aliases": [
+    "crayons",
+    "crayon"
+   ],
+   "radius": 0.3,
+   "can": [
+    "pick",
+    "fly"
+   ]
+  },
+  {
+   "id": "painting",
+   "name": "castle painting",
+   "zh": "城堡画",
+   "model": "painting_frame",
+   "pos": [
+    34,
+    0,
+    14
+   ],
+   "aliases": [
+    "painting",
+    "picture"
+   ],
+   "radius": 0.8,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "swim_sign",
+   "name": "swimming sign",
+   "zh": "游泳社牌子",
+   "model": "signpost",
+   "pos": [
+    -10,
+    0,
+    -18
+   ],
+   "aliases": [
+    "swim sign",
+    "sign"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Swimming Club\nCan you swim? Come and swim with us!\nYou can't swim? We can teach you!"
+  },
+  {
+   "id": "ball",
+   "name": "beach ball",
+   "zh": "沙滩球",
+   "model": "beach_ball",
+   "pos": [
+    5,
+    0,
+    -24
+   ],
+   "aliases": [
+    "ball"
+   ],
+   "radius": 0.4,
+   "can": [
+    "fly",
+    "pick"
+   ]
+  },
+  {
+   "id": "duck",
+   "name": "duck",
+   "zh": "鸭子",
+   "model": "duck",
+   "pos": [
+    -8,
+    0,
+    -30
+   ],
+   "tags": [
+    "yellow",
+    "small"
+   ],
+   "color": "yellow",
+   "radius": 0.4,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Quack! I can swim! Can you swim?",
+    "Quack, quack! I want to join the swimming club!"
+   ]
+  },
+  {
+   "id": "frog",
+   "name": "frog",
+   "zh": "青蛙",
+   "model": "frog",
+   "pos": [
+    8,
+    0,
+    -38
+   ],
+   "tags": [
+    "green",
+    "small"
+   ],
+   "color": "green",
+   "radius": 0.3,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Ribbit! I can jump, but I can't sing!",
+    "Ribbit! Can you swim like me?"
+   ]
+  },
+  {
+   "id": "pingpong",
+   "name": "ping-pong table",
+   "zh": "乒乓球桌",
+   "model": "pingpong_table",
+   "pos": [
+    -24,
+    0,
+    -41
+   ],
+   "aliases": [
+    "ping pong table",
+    "ping-pong",
+    "table tennis"
+   ],
+   "radius": 1.3,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "soccer",
+   "name": "soccer ball",
+   "zh": "足球",
+   "model": "soccer_ball",
+   "pos": [
+    -29,
+    0,
+    -34
+   ],
+   "aliases": [
+    "football"
+   ],
+   "radius": 0.3,
+   "can": [
+    "fly",
+    "pick"
+   ]
+  },
+  {
+   "id": "dog",
+   "name": "dog",
+   "zh": "小狗",
+   "model": "dog",
+   "pos": [
+    -18,
+    0,
+    -38
+   ],
+   "aliases": [
+    "max",
+    "puppy"
+   ],
+   "tags": [
+    "brown"
+   ],
+   "color": "brown",
+   "radius": 0.5,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Woof! I can run fast. Can you?",
+    "Woof, woof! Can you play soccer with me?"
+   ]
+  },
+  {
+   "id": "story_sign",
+   "name": "story club sign",
+   "zh": "英语故事社牌子",
+   "model": "signpost",
+   "pos": [
+    16,
+    0,
+    -37
+   ],
+   "aliases": [
+    "story sign",
+    "sign"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "English Story Club\nCan you speak English?\nCan you tell stories?\nJoin us every Friday!"
+  },
+  {
+   "id": "books",
+   "name": "storybooks",
+   "zh": "故事书",
+   "model": "book_pile",
+   "pos": [
+    23,
+    0,
+    -41
+   ],
+   "aliases": [
+    "books",
+    "book",
+    "story books"
+   ],
+   "radius": 0.5,
+   "can": [
+    "fly",
+    "pick"
+   ]
+  },
+  {
+   "id": "owl",
+   "name": "owl",
+   "zh": "猫头鹰",
+   "model": "owl",
+   "pos": [
+    29,
+    0,
+    -34
+   ],
+   "aliases": [
+    "professor owl"
+   ],
+   "tags": [
+    "brown"
+   ],
+   "radius": 0.4,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Hoo! Can you speak English? I can!",
+    "Hoo, hoo! I can tell stories in English."
+   ]
+  }
+ ],
+ "npcs": [
+  {
+   "id": "green",
+   "name": "Ms Green",
+   "zh": "格林老师",
+   "model": "teacher",
+   "pos": [
+    -4,
+    0,
+    11
+   ],
+   "aliases": [
+    "teacher",
+    "ms green",
+    "green",
+    "miss green"
+   ],
+   "idle": [
+    "Every club needs new members. What club do you want to join?",
+    "You can join more than one club!",
+    "Look around. What can you do?"
+   ],
+   "chatter": [
+    "Can you sing? You can join the music club!",
+    "Can you draw? The art club is over there.",
+    "Can you swim? Go and see Coach Dan at the pool!"
+   ],
+   "voice": "teacher",
+   "persona": "Ms Green, the friendly teacher who runs the school's Talent Club Fair; natural, short grade-7 English with can/can't, clubs and 'want to join'",
+   "greet": "Welcome to the Talent Club Fair! I'm Ms Green. What can you do?",
+   "radius": 0.8
+  },
+  {
+   "id": "leo",
+   "name": "Leo",
+   "zh": "利奥",
+   "model": "guitar_boy",
+   "pos": [
+    -20,
+    0,
+    -9
+   ],
+   "aliases": [
+    "leo",
+    "boy",
+    "guitar boy"
+   ],
+   "idle": [
+    "Music is cool!",
+    "I can play the guitar, but I can't sing."
+   ],
+   "chatter": [
+    "I can play the guitar, but I can't sing.",
+    "Can you play the drums? Come and try!",
+    "I want to start a band. Can you sing?"
+   ],
+   "voice": "youngman",
+   "persona": "Leo, a cool teen guitar player in the music club who can't sing well and wants to start a band; grade-7 English with can/can't",
+   "greet": "Hey! I'm Leo. I can play the guitar. Can you?",
+   "radius": 0.8
+  },
+  {
+   "id": "nina",
+   "name": "Nina",
+   "zh": "妮娜",
+   "model": "dancer_girl",
+   "pos": [
+    21,
+    0,
+    -10
+   ],
+   "aliases": [
+    "nina",
+    "dancer"
+   ],
+   "idle": [
+    "One, two, three, dance!",
+    "Dancing is fun!"
+   ],
+   "chatter": [
+    "Can you dance? Come and dance with me!",
+    "I can dance, but I can't swim.",
+    "I can sing and dance!"
+   ],
+   "voice": "lady",
+   "persona": "Nina, an energetic dancer in the dance club who can dance but can't swim; grade-7 English",
+   "greet": "Hi! I'm Nina from the dance club. I can dance all day!",
+   "radius": 0.8
+  },
+  {
+   "id": "lily",
+   "name": "Lily",
+   "zh": "莉莉",
+   "model": "art_girl",
+   "pos": [
+    29,
+    0,
+    19
+   ],
+   "aliases": [
+    "lily",
+    "artist",
+    "art girl"
+   ],
+   "idle": [
+    "I'm good at drawing animals.",
+    "Colours make me happy!"
+   ],
+   "chatter": [
+    "Can you draw? Draw with me!",
+    "I'm good at drawing animals.",
+    "You can join the art club!"
+   ],
+   "voice": "child",
+   "persona": "Lily, a creative girl in the art club who is good at drawing animals; grade-7 English",
+   "greet": "Hello! I'm Lily. I can draw, and I love colours!",
+   "radius": 0.8
+  },
+  {
+   "id": "tony",
+   "name": "Tony",
+   "zh": "托尼",
+   "model": "student",
+   "pos": [
+    6,
+    0,
+    3
+   ],
+   "aliases": [
+    "tony",
+    "boy"
+   ],
+   "idle": [
+    "Chess is my favourite!",
+    "Can you play chess?"
+   ],
+   "chatter": [
+    "I can't dance. But I can play chess!",
+    "What club can I join?",
+    "Can you play chess?"
+   ],
+   "voice": "child",
+   "persona": "Tony, a shy boy who can play chess and speak English well but can't dance; grade-7 English",
+   "greet": "Hi, I'm Tony. I can play chess, but I can't dance.",
+   "radius": 0.8
+  },
+  {
+   "id": "dan",
+   "name": "Coach Dan",
+   "zh": "丹教练",
+   "model": "ranger",
+   "pos": [
+    -5,
+    0,
+    -21
+   ],
+   "aliases": [
+    "coach",
+    "dan",
+    "coach dan",
+    "man"
+   ],
+   "idle": [
+    "Swimming is good for you!",
+    "Don't worry. We can teach you!"
+   ],
+   "chatter": [
+    "Can you swim? Join the swimming club!",
+    "Ducks can swim. Can you?",
+    "I can swim and I can play soccer."
+   ],
+   "voice": "man",
+   "persona": "Coach Dan, the sporty swimming coach who also loves soccer; short grade-7 English with can/can't",
+   "greet": "Hello! I'm Coach Dan. Can you swim?",
+   "radius": 0.8
+  }
+ ],
+ "quests": [
+  {
+   "id": "tc_join",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "green",
+   "titleZh": "告诉格林老师你想参加哪个社团",
+   "title": "What club do you want to join?",
+   "intro": [
+    "We have a music club, a dance club, an art club, a chess club and a swimming club."
+   ],
+   "model": [
+    "I want to join the music club.",
+    "I want to join the art club."
+   ],
+   "done": [
+    "Great choice! Welcome to the club!"
+   ],
+   "prompt": "What club do you want to join?",
+   "accept": [
+    [
+     "join",
+     "want",
+     "like"
+    ],
+    [
+     "music",
+     "dance",
+     "chess",
+     "art",
+     "swim",
+     "swimming",
+     "english",
+     "story",
+     "sports",
+     "soccer",
+     "ping pong",
+     "drawing"
+    ]
+   ],
+   "tipZh": "格林老师问你想参加什么社团。回答：“I want to join the … club.” 比如 music / art / chess。"
+  },
+  {
+   "id": "tc_listen",
+   "kind": "listen",
+   "skill": "听",
+   "giver": "green",
+   "titleZh": "听 Tony 的自我介绍，选出他不会做的事",
+   "title": "Listen and choose",
+   "intro": [
+    "Listen to Tony. He wants to join a club too."
+   ],
+   "model": [],
+   "done": [
+    "Yes! Tony can't dance, but he can play chess."
+   ],
+   "prompt": "What can't Tony do?",
+   "audio": "Hi, I'm Tony. I can't dance, but I can play chess. I can speak English well, too. I want to join the chess club.",
+   "options": [
+    "Play chess",
+    "Dance",
+    "Speak English"
+   ],
+   "answer": 1,
+   "video": "club.mp4",
+   "needs": "tc_join"
+  },
+  {
+   "id": "tc_write",
+   "kind": "write",
+   "skill": "写",
+   "giver": "green",
+   "titleZh": "写出 Ann 适合的社团",
+   "title": "Write the club",
+   "intro": [
+    "Ann can swim very well. Can you write her club on our list?"
+   ],
+   "model": [
+    "swimming"
+   ],
+   "done": [
+    "S-W-I-M-M-I-N-G! The swimming club. Perfect!"
+   ],
+   "prompt": "Ann can swim very well. She can join the ___ club.",
+   "accept": [
+    [
+     "swim",
+     "swimming"
+    ]
+   ],
+   "needs": "tc_listen",
+   "tipZh": "Ann 游泳很棒。她可以参加什么社团？写：swimming"
+  },
+  {
+   "id": "tc_show",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "green",
+   "titleZh": "大家都找到社团啦！放烟花开启才艺秀",
+   "title": "Start the Talent Show",
+   "intro": [
+    "Everyone has a club now! Can you start our Talent Show with some magic?"
+   ],
+   "model": [
+    "Fireworks!"
+   ],
+   "done": [
+    "Wow! Music, dancing, drawing and chess... What a Talent Show! Thank you!"
+   ],
+   "prompt": "Say: Fireworks!",
+   "goal": "fireworks",
+   "needs": "tc_write",
+   "tipZh": "用烟花开启才艺秀：“Fireworks!”"
+  },
+  {
+   "id": "tc_poster",
+   "kind": "read",
+   "skill": "读",
+   "giver": "poster",
+   "titleZh": "读社团海报：会画画的 Lucy 能参加哪个社团？",
+   "title": "Read the poster",
+   "intro": [],
+   "model": [],
+   "done": [
+    "Right! Lucy can draw, so she can join the art club."
+   ],
+   "passage": "Join a club today!\nMusic Club: Can you sing or play the guitar?\nDance Club: Can you dance?\nArt Club: Can you draw?\nChess Club: Can you play chess?\nSwimming Club: Can you swim?",
+   "prompt": "Lucy can draw. Which club can she join?",
+   "options": [
+    "The art club",
+    "The music club",
+    "The swimming club"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "tc_music_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "music_sign",
+   "titleZh": "大声读出音乐社的牌子",
+   "title": "Read the music sign",
+   "intro": [],
+   "model": [
+    "Can you sing? Can you play the drums?"
+   ],
+   "done": [
+    "Great reading! Go and see Leo on the stage!"
+   ],
+   "passage": "Can you sing? Can you play the drums? Come and show us!",
+   "readAloud": true,
+   "prompt": "Read the sign aloud."
+  },
+  {
+   "id": "tc_guitar",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "leo",
+   "titleZh": "回答 Leo：你会弹吉他吗？",
+   "title": "Can you play the guitar?",
+   "intro": [
+    "I want to start a band. I need friends!"
+   ],
+   "model": [
+    "Yes, I can.",
+    "No, I can't."
+   ],
+   "done": [
+    "Cool! Everyone can join our music club!"
+   ],
+   "prompt": "Can you play the guitar?",
+   "accept": [
+    [
+     "yes",
+     "no",
+     "i can",
+     "can not",
+     "a little"
+    ]
+   ],
+   "tipZh": "Leo 问你会不会弹吉他。会就说“Yes, I can.”，不会就说“No, I can't.”"
+  },
+  {
+   "id": "tc_piano",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "leo",
+   "titleZh": "钢琴会唱歌吗？用魔法让它唱起来",
+   "title": "Make the piano sing",
+   "intro": [
+    "Our band needs a piano player. Can the piano play by itself? Use your magic!"
+   ],
+   "model": [
+    "Make the piano sing!"
+   ],
+   "done": [
+    "Ha ha! The piano can sing! What a cool band!"
+   ],
+   "prompt": "Say: Make the piano sing!",
+   "goal": "sing:piano",
+   "needs": "tc_guitar",
+   "tipZh": "让钢琴自己唱歌：“Make the piano sing!”"
+  },
+  {
+   "id": "tc_leo_sing",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "leo",
+   "titleZh": "Leo 会弹吉他但不会唱歌：帮帮他",
+   "title": "Make Leo sing",
+   "intro": [
+    "I can play the guitar, but I can't sing. Can you help me?"
+   ],
+   "model": [
+    "Make Leo sing!"
+   ],
+   "done": [
+    "La la la! Now I can sing AND play the guitar! Thank you!"
+   ],
+   "prompt": "Say: Make Leo sing!",
+   "goal": "sing:leo",
+   "needs": "tc_piano",
+   "tipZh": "Leo 不会唱歌。念咒语：“Make Leo sing!”"
+  },
+  {
+   "id": "tc_can",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "nina",
+   "titleZh": "告诉 Nina 你会做的两件事",
+   "title": "What can you do?",
+   "intro": [
+    "Tell me about you! What can you do?"
+   ],
+   "model": [
+    "I can sing and I can dance.",
+    "I can swim and draw."
+   ],
+   "done": [
+    "Wow, you are so talented!"
+   ],
+   "prompt": "What can you do? Tell me two things.",
+   "accept": [
+    [
+     "i can"
+    ]
+   ],
+   "judge": "The child says what they can do using 'I can ...', ideally two things (e.g. 'I can sing and dance').",
+   "tipZh": "说两件你会做的事：“I can … and I can …”"
+  },
+  {
+   "id": "tc_dance",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "nina",
+   "titleZh": "让小魔法师跳一段舞给 Nina 看",
+   "title": "Show me your dance",
+   "intro": [
+    "Can you dance? Show me!"
+   ],
+   "model": [
+    "Dance!"
+   ],
+   "done": [
+    "Wow! You can dance! Come and join our club!"
+   ],
+   "prompt": "Say: Dance!",
+   "goal": "dance",
+   "needs": "tc_can",
+   "tipZh": "让魔法师跳舞：“Dance!”"
+  },
+  {
+   "id": "tc_ask",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "nina",
+   "titleZh": "轮到你提问：用 Can you …? 问 Nina",
+   "title": "Ask Nina a question",
+   "intro": [
+    "Now you ask me! Ask me a question with \"Can you...?\""
+   ],
+   "model": [
+    "Can you swim?",
+    "Can you play the piano?"
+   ],
+   "done": [
+    "Good question! I can't swim, but I can dance all day!"
+   ],
+   "prompt": "Ask me: Can you ...?",
+   "accept": [
+    [
+     "can you"
+    ],
+    [
+     "sing",
+     "dance",
+     "swim",
+     "draw",
+     "play",
+     "speak",
+     "run",
+     "jump",
+     "cook",
+     "ride",
+     "write",
+     "tell",
+     "read",
+     "paint",
+     "skate"
+    ]
+   ],
+   "judge": "The child asks Nina a yes/no question about an ability that starts with 'Can you ...?'",
+   "needs": "tc_dance",
+   "tipZh": "用“Can you …?”问 Nina 会不会做某件事，比如“Can you swim?”"
+  },
+  {
+   "id": "tc_she",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "lily",
+   "titleZh": "回答 Lily：Nina 会跳舞吗？",
+   "title": "Can she dance?",
+   "intro": [
+    "Look at Nina on the dance floor. Can she dance?"
+   ],
+   "model": [
+    "Yes, she can."
+   ],
+   "done": [
+    "Yes, she can! She is a great dancer. I can draw her!"
+   ],
+   "prompt": "Can she dance?",
+   "accept": [
+    [
+     "yes",
+     "she can"
+    ]
+   ],
+   "tipZh": "Lily 问 Nina 会不会跳舞。回答：“Yes, she can.”"
+  },
+  {
+   "id": "tc_paint",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "lily",
+   "titleZh": "画架变灰了：把它变成彩虹色",
+   "title": "Make the easel rainbow",
+   "intro": [
+    "I can draw, but my easel is all grey! Can you make it colourful?"
+   ],
+   "model": [
+    "Make the easel rainbow!"
+   ],
+   "done": [
+    "Wow! Rainbow colours! Now I can draw a rainbow picture!"
+   ],
+   "prompt": "Say: Make the easel rainbow!",
+   "goal": "tint:easel:rainbow",
+   "needs": "tc_she",
+   "tipZh": "把画架变成彩虹色：“Make the easel rainbow!”"
+  },
+  {
+   "id": "tc_tony",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "tony",
+   "titleZh": "帮 Tony 选社团：You can join …",
+   "title": "What club can I join?",
+   "intro": [
+    "I can play chess, but I can't dance or sing. What club can I join?"
+   ],
+   "model": [
+    "You can join the chess club."
+   ],
+   "done": [
+    "The chess club! That's a great idea!"
+   ],
+   "prompt": "What club can I join?",
+   "accept": [
+    [
+     "join",
+     "can"
+    ],
+    [
+     "chess"
+    ]
+   ],
+   "tipZh": "Tony 会下棋。告诉他：“You can join the chess club.”"
+  },
+  {
+   "id": "tc_tony_go",
+   "kind": "guide",
+   "skill": "说",
+   "giver": "tony",
+   "titleZh": "Tony 找不到棋社：带他去棋桌那里",
+   "title": "Take Tony to the chess club",
+   "intro": [
+    "But where is the chess club? I can't find it. Can you take me there?"
+   ],
+   "model": [
+    "Follow me, please.",
+    "Go to the chess table."
+   ],
+   "done": [
+    "Here it is! Thank you. Now I can play chess with new friends!"
+   ],
+   "prompt": "Please take me to the chess club.",
+   "to": "chess",
+   "needs": "tc_tony",
+   "tipZh": "棋社在西边的花园里。说“Go to the chess table.”，Tony 会跟着你走。"
+  },
+  {
+   "id": "tc_swim",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "dan",
+   "titleZh": "回答丹教练：你会游泳吗？",
+   "title": "Can you swim?",
+   "intro": [
+    "The ducks can swim. Can you?"
+   ],
+   "model": [
+    "Yes, I can.",
+    "No, I can't."
+   ],
+   "done": [
+    "Good! If you can't swim, we can teach you!"
+   ],
+   "prompt": "Can you swim?",
+   "accept": [
+    [
+     "yes",
+     "no",
+     "i can",
+     "can not",
+     "a little"
+    ]
+   ],
+   "tipZh": "教练问你会不会游泳。回答“Yes, I can.”或“No, I can't.”"
+  },
+  {
+   "id": "tc_sports",
+   "kind": "listen",
+   "skill": "听",
+   "giver": "dan",
+   "titleZh": "听 Sam 说话，选出他不会做的事",
+   "title": "Listen to Sam",
+   "intro": [
+    "Sam wants to join a club. Listen to him."
+   ],
+   "model": [],
+   "done": [
+    "Right! Sam can't swim, so he wants to join the sports club."
+   ],
+   "prompt": "What can't Sam do?",
+   "audio": "Hi, I'm Sam. I can't swim, but I can play ping-pong very well. I can play soccer, too. So I want to join the sports club.",
+   "options": [
+    "Swim",
+    "Play ping-pong",
+    "Play soccer"
+   ],
+   "answer": 0,
+   "needs": "tc_swim"
+  },
+  {
+   "id": "tc_ducks",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "dan",
+   "titleZh": "游泳社需要更多会游泳的成员：变出更多鸭子",
+   "title": "More ducks!",
+   "intro": [
+    "Our swimming club needs more members! Ducks can swim very well. Can you make more ducks?"
+   ],
+   "model": [
+    "Make three ducks!"
+   ],
+   "done": [
+    "Ha ha! Three ducks! They can all swim. Welcome to the club!"
+   ],
+   "prompt": "Say: Make three ducks!",
+   "goal": "clone:duck",
+   "needs": "tc_sports",
+   "tipZh": "变出更多鸭子：“Make three ducks!”"
+  }
+ ],
+ "words": [
+  {
+   "id": "ws_join",
+   "say": "join",
+   "zh": "加入",
+   "pos": [
+    3,
+    30
+   ]
+  },
+  {
+   "id": "ws_club",
+   "say": "club",
+   "zh": "社团",
+   "pos": [
+    -2,
+    17
+   ]
+  },
+  {
+   "id": "ws_want",
+   "say": "I want to join the music club.",
+   "zh": "我想加入音乐社。",
+   "pos": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "ws_canyou",
+   "say": "Can you play the guitar?",
+   "zh": "你会弹吉他吗？",
+   "pos": [
+    -10,
+    0
+   ]
+  },
+  {
+   "id": "ws_guitar",
+   "say": "guitar",
+   "zh": "吉他",
+   "pos": [
+    -17,
+    -13
+   ]
+  },
+  {
+   "id": "ws_drums",
+   "say": "play the drums",
+   "zh": "打鼓",
+   "pos": [
+    -31,
+    -21
+   ]
+  },
+  {
+   "id": "ws_piano",
+   "say": "piano",
+   "zh": "钢琴",
+   "pos": [
+    -19,
+    -21
+   ]
+  },
+  {
+   "id": "ws_sing",
+   "say": "sing",
+   "zh": "唱歌",
+   "pos": [
+    -24,
+    -7
+   ]
+  },
+  {
+   "id": "ws_dance",
+   "say": "dance",
+   "zh": "跳舞",
+   "pos": [
+    24,
+    -17
+   ]
+  },
+  {
+   "id": "ws_icans",
+   "say": "I can sing and dance.",
+   "zh": "我会唱歌和跳舞。",
+   "pos": [
+    18,
+    -14
+   ]
+  },
+  {
+   "id": "ws_chess",
+   "say": "play chess",
+   "zh": "下国际象棋",
+   "pos": [
+    -22,
+    20
+   ]
+  },
+  {
+   "id": "ws_draw",
+   "say": "draw",
+   "zh": "画画",
+   "pos": [
+    25,
+    23
+   ]
+  },
+  {
+   "id": "ws_swim",
+   "say": "swim",
+   "zh": "游泳",
+   "pos": [
+    -12,
+    -32
+   ]
+  },
+  {
+   "id": "ws_english",
+   "say": "speak English",
+   "zh": "说英语",
+   "pos": [
+    26,
+    -31
+   ]
+  },
+  {
+   "id": "ws_cant",
+   "say": "No, I can't.",
+   "zh": "不，我不会。",
+   "pos": [
+    32,
+    -4
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_good",
+   "say": "I'm good at chess.",
+   "zh": "我擅长下棋。",
+   "pos": [
+    -37,
+    18
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_artclub",
+   "say": "You can join the art club.",
+   "zh": "你可以加入美术社。",
+   "pos": [
+    21,
+    12
+   ],
+   "hidden": true
+  }
+ ],
+ "spellIdeas": [
+  {
+   "say": "Make the cat dance!",
+   "zh": "让小猫跳舞（会发现秘密哦）",
+   "near": "cat"
+  },
+  {
+   "say": "Open the chest!",
+   "zh": "打开棋社花园的宝箱",
+   "near": "chest"
+  },
+  {
+   "say": "Light the stage light!",
+   "zh": "点亮舞台灯",
+   "near": "stage_light"
+  },
+  {
+   "say": "Make the drums jump!",
+   "zh": "让架子鼓跳起来",
+   "near": "drums"
+  },
+  {
+   "say": "Make the chess table spin!",
+   "zh": "让棋桌转起来",
+   "near": "chess"
+  },
+  {
+   "say": "Make Nina sing!",
+   "zh": "让 Nina 唱歌",
+   "near": "nina"
+  },
+  {
+   "say": "Make the hot air balloon fly!",
+   "zh": "让热气球飞起来",
+   "near": "balloon"
+  },
+  {
+   "say": "Make the violin big!",
+   "zh": "把小提琴变大",
+   "near": "violin"
+  },
+  {
+   "say": "Make the dog dance!",
+   "zh": "让小狗跳舞",
+   "near": "dog"
+  },
+  {
+   "say": "Turn the soccer ball into a pumpkin!",
+   "zh": "把足球变成南瓜",
+   "near": "soccer"
+  },
+  {
+   "say": "Make the owl sing!",
+   "zh": "让猫头鹰唱歌",
+   "near": "owl"
+  },
+  {
+   "say": "Light the party light!",
+   "zh": "点亮舞池彩灯",
+   "near": "party_light"
+  },
+  {
+   "say": "Make it night!",
+   "zh": "让天黑下来，开晚会"
+  },
+  {
+   "say": "Make bubbles!",
+   "zh": "变出好多泡泡"
+  },
+  {
+   "say": "Make the frog jump!",
+   "zh": "让青蛙跳一跳",
+   "near": "frog"
+  },
+  {
+   "say": "Everybody, sing!",
+   "zh": "让大家一起唱歌"
+  },
+  {
+   "say": "Everybody, dance!",
+   "zh": "让大家一起跳舞"
+  },
+  {
+   "say": "Make the piano sing!",
+   "zh": "让钢琴唱歌"
+  },
+  {
+   "say": "Make the violin dance!",
+   "zh": "让小提琴跳舞"
+  },
+  {
+   "say": "Make it rain notes!",
+   "zh": "下一场音符雨"
+  },
+  {
+   "say": "Make the microphone gold!",
+   "zh": "把麦克风变成金色"
+  },
+  {
+   "say": "Put the drums on a cloud!",
+   "zh": "让鼓坐上云朵"
+  },
+  {
+   "say": "Fireworks!",
+   "zh": "为表演放烟花"
+  },
+  {
+   "say": "Shooting stars!",
+   "zh": "召唤流星"
+  },
+  {
+   "say": "Make me big!",
+   "zh": "把 Milo 变成巨人"
+  }
+ ]
+}

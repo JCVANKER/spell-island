@@ -1,0 +1,9 @@
+{
+  "name": "spell-island",
+  "productName": "\u5492\u8bed\u5c9b",
+  "version": "1.3.1",
+  "description": "\u5492\u8bed\u5c9b Spell Island \u2014\u2014 \u7528\u58f0\u97f3\u6307\u6325\u5c0f\u9b54\u6cd5\u5e08\u7684 3D \u82f1\u8bed\u63a2\u7d22\u6e38\u620f",
+  "author": "ncjng",
+  "type": "module",
+  "main": "main.mjs"
+}

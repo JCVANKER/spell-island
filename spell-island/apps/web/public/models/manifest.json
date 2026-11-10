@@ -1,0 +1,935 @@
+{
+ "wizard": {
+  "file": "wizard.glb",
+  "h": 1.7,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "broom": {
+  "file": "broom.glb",
+  "h": 1.6,
+  "yaw": -1.5708,
+  "shadow": 0
+ },
+ "owl": {
+  "file": "owl.glb",
+  "h": 1.0,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "red_panda": {
+  "file": "red_panda.glb",
+  "h": 1.0,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "capybara": {
+  "file": "capybara.glb",
+  "h": 0.9,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "baby_dragon": {
+  "file": "baby_dragon.glb",
+  "h": 1.0,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "penguin": {
+  "file": "penguin.glb",
+  "h": 1.0,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "wizard_tower": {
+  "file": "wizard_tower.glb",
+  "h": 8.0,
+  "yaw": -1.5708
+ },
+ "portal_arch": {
+  "file": "portal_arch.glb",
+  "h": 3.2,
+  "yaw": -1.5708
+ },
+ "pig": {
+  "file": "pig.glb",
+  "h": 0.9,
+  "alive": true,
+  "yaw": 3.1416
+ },
+ "treasure_chest": {
+  "file": "treasure_chest.glb",
+  "h": 1.0,
+  "yaw": -1.5708
+ },
+ "signpost": {
+  "file": "signpost.glb",
+  "h": 2.2,
+  "yaw": -1.5708
+ },
+ "cake": {
+  "file": "cake.glb",
+  "h": 0.6,
+  "yaw": -1.5708
+ },
+ "zookeeper": {
+  "file": "zookeeper.glb",
+  "h": 1.85,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "duck": {
+  "file": "duck.glb",
+  "h": 0.6,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "cat": {
+  "file": "cat.glb",
+  "h": 0.6,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "dog": {
+  "file": "dog.glb",
+  "h": 0.8,
+  "alive": true,
+  "yaw": 3.1416
+ },
+ "panda": {
+  "file": "panda.glb",
+  "h": 1.3,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "monkey": {
+  "file": "monkey.glb",
+  "h": 1.0,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "rabbit": {
+  "file": "rabbit.glb",
+  "h": 0.6,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "fruit_seller": {
+  "file": "fruit_seller.glb",
+  "h": 1.85,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "watermelon": {
+  "file": "watermelon.glb",
+  "h": 0.5,
+  "yaw": -1.5708
+ },
+ "fruit_basket": {
+  "file": "fruit_basket.glb",
+  "h": 0.7,
+  "yaw": -1.5708
+ },
+ "teacher": {
+  "file": "teacher.glb",
+  "h": 1.85,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "student": {
+  "file": "student.glb",
+  "h": 1.45,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "desk": {
+  "file": "desk.glb",
+  "h": 1.0,
+  "yaw": -1.5708
+ },
+ "blackboard": {
+  "file": "blackboard.glb",
+  "h": 2.4,
+  "yaw": -1.5708
+ },
+ "schoolbag": {
+  "file": "schoolbag.glb",
+  "h": 0.6,
+  "yaw": -1.5708
+ },
+ "pencil_box": {
+  "file": "pencil_box.glb",
+  "h": 0.25,
+  "yaw": -1.5708
+ },
+ "weatherman": {
+  "file": "weatherman.glb",
+  "h": 1.85,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "girl_raincoat": {
+  "file": "girl_raincoat.glb",
+  "h": 1.4,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "umbrella": {
+  "file": "umbrella.glb",
+  "h": 1.2,
+  "yaw": -1.5708
+ },
+ "kite": {
+  "file": "kite.glb",
+  "h": 1.0,
+  "wobble": 0.3,
+  "yaw": -1.5708
+ },
+ "windmill": {
+  "file": "windmill.glb",
+  "h": 5.0,
+  "yaw": -1.5708
+ },
+ "ranger": {
+  "file": "ranger.glb",
+  "h": 1.85,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "boat": {
+  "file": "boat.glb",
+  "h": 1.2,
+  "yaw": -1.5708
+ },
+ "bridge": {
+  "file": "bridge.glb",
+  "h": 2.0,
+  "yaw": -1.5708
+ },
+ "flowers": {
+  "file": "flowers.glb",
+  "h": 0.6,
+  "wobble": 0.5,
+  "yaw": -1.5708
+ },
+ "cabin": {
+  "file": "cabin.glb",
+  "h": 3.5,
+  "yaw": -1.5708
+ },
+ "snowman": {
+  "file": "snowman.glb",
+  "h": 1.7,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "girl_scarf": {
+  "file": "girl_scarf.glb",
+  "h": 1.4,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "swing": {
+  "file": "swing.glb",
+  "h": 2.4,
+  "yaw": -1.5708
+ },
+ "tourist": {
+  "file": "tourist.glb",
+  "h": 1.85,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "museum": {
+  "file": "museum.glb",
+  "h": 6.0,
+  "yaw": -1.5708
+ },
+ "post_office": {
+  "file": "post_office.glb",
+  "h": 4.5,
+  "yaw": -1.5708
+ },
+ "hospital": {
+  "file": "hospital.glb",
+  "h": 5.0,
+  "yaw": -1.5708
+ },
+ "cinema": {
+  "file": "cinema.glb",
+  "h": 5.0,
+  "yaw": -1.5708
+ },
+ "bookstore": {
+  "file": "bookstore.glb",
+  "h": 4.5,
+  "yaw": -1.5708
+ },
+ "guitar_boy": {
+  "file": "guitar_boy.glb",
+  "h": 1.6,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "dancer_girl": {
+  "file": "dancer_girl.glb",
+  "h": 1.6,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "drum_set": {
+  "file": "drum_set.glb",
+  "h": 1.4,
+  "yaw": -1.5708
+ },
+ "chess_table": {
+  "file": "chess_table.glb",
+  "h": 1.0,
+  "yaw": -1.5708
+ },
+ "healer": {
+  "file": "healer.glb",
+  "h": 1.75,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "sick_boy": {
+  "file": "sick_boy.glb",
+  "h": 1.45,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "cauldron": {
+  "file": "cauldron.glb",
+  "h": 1.1,
+  "yaw": -1.5708
+ },
+ "herb_hut": {
+  "file": "herb_hut.glb",
+  "h": 4.0,
+  "yaw": -1.5708
+ },
+ "guard": {
+  "file": "guard.glb",
+  "h": 1.9,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "guide": {
+  "file": "guide.glb",
+  "h": 1.8,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "knight_armor": {
+  "file": "knight_armor.glb",
+  "h": 2.0,
+  "yaw": -1.5708
+ },
+ "dragon_statue": {
+  "file": "dragon_statue.glb",
+  "h": 2.5,
+  "yaw": -1.5708
+ },
+ "castle_gate": {
+  "file": "castle_gate.glb",
+  "h": 6.0,
+  "yaw": -1.5708
+ },
+ "bench": {
+  "file": "bench.glb",
+  "h": 1.0,
+  "yaw": -1.5708
+ },
+ "fountain": {
+  "file": "fountain.glb",
+  "h": 2.2,
+  "yaw": -1.5708
+ },
+ "flower_bed": {
+  "file": "flower_bed.glb",
+  "h": 0.7,
+  "wobble": 0.3,
+  "yaw": -1.5708
+ },
+ "bush": {
+  "file": "bush.glb",
+  "h": 1.1,
+  "wobble": 0.25,
+  "yaw": -1.5708
+ },
+ "hot_air_balloon": {
+  "file": "hot_air_balloon.glb",
+  "h": 4.5,
+  "yaw": -1.5708
+ },
+ "tiger": {
+  "file": "tiger.glb",
+  "h": 1.1,
+  "alive": true,
+  "yaw": 3.1416
+ },
+ "brown_bear": {
+  "file": "brown_bear.glb",
+  "h": 1.4,
+  "alive": true,
+  "yaw": 3.1416
+ },
+ "parrot": {
+  "file": "parrot.glb",
+  "h": 0.7,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "frog": {
+  "file": "frog.glb",
+  "h": 0.4,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "sheep": {
+  "file": "sheep.glb",
+  "h": 0.9,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "horse": {
+  "file": "horse.glb",
+  "h": 1.6,
+  "alive": true,
+  "yaw": 3.1416
+ },
+ "zoo_gate": {
+  "file": "zoo_gate.glb",
+  "h": 4.0,
+  "yaw": -1.5708
+ },
+ "ice_cream_cart": {
+  "file": "ice_cream_cart.glb",
+  "h": 2.0,
+  "yaw": -1.5708
+ },
+ "apple_crate": {
+  "file": "apple_crate.glb",
+  "h": 0.7,
+  "yaw": -1.5708
+ },
+ "banana_bunch": {
+  "file": "banana_bunch.glb",
+  "h": 0.5,
+  "yaw": -1.5708
+ },
+ "grapes": {
+  "file": "grapes.glb",
+  "h": 0.5,
+  "yaw": -1.5708
+ },
+ "strawberry_basket": {
+  "file": "strawberry_basket.glb",
+  "h": 0.5,
+  "yaw": -1.5708
+ },
+ "orange_crate": {
+  "file": "orange_crate.glb",
+  "h": 0.7,
+  "yaw": -1.5708
+ },
+ "juice_stand": {
+  "file": "juice_stand.glb",
+  "h": 2.6,
+  "yaw": -1.5708
+ },
+ "shopper_girl": {
+  "file": "shopper_girl.glb",
+  "h": 1.4,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "granny": {
+  "file": "granny.glb",
+  "h": 1.6,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "school_chair": {
+  "file": "school_chair.glb",
+  "h": 0.9,
+  "yaw": -1.5708
+ },
+ "wall_clock": {
+  "file": "wall_clock.glb",
+  "h": 0.6,
+  "yaw": -1.5708
+ },
+ "globe": {
+  "file": "globe.glb",
+  "h": 0.8,
+  "yaw": -1.5708
+ },
+ "computer": {
+  "file": "computer.glb",
+  "h": 0.7,
+  "yaw": -1.5708
+ },
+ "potted_plant": {
+  "file": "potted_plant.glb",
+  "h": 0.9,
+  "wobble": 0.3,
+  "yaw": -1.5708
+ },
+ "crayon_box": {
+  "file": "crayon_box.glb",
+  "h": 0.3,
+  "yaw": -1.5708
+ },
+ "weather_vane": {
+  "file": "weather_vane.glb",
+  "h": 3.0,
+  "yaw": -1.5708
+ },
+ "rain_boots": {
+  "file": "rain_boots.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "sunglasses": {
+  "file": "sunglasses.glb",
+  "h": 0.2,
+  "yaw": -1.5708
+ },
+ "sled": {
+  "file": "sled.glb",
+  "h": 0.6,
+  "yaw": -1.5708
+ },
+ "woolly_hat": {
+  "file": "woolly_hat.glb",
+  "h": 0.3,
+  "yaw": -1.5708
+ },
+ "girl_sunhat": {
+  "file": "girl_sunhat.glb",
+  "h": 1.4,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "swan": {
+  "file": "swan.glb",
+  "h": 0.9,
+  "alive": true,
+  "yaw": 0.0
+ },
+ "deer": {
+  "file": "deer.glb",
+  "h": 1.4,
+  "alive": true,
+  "yaw": 3.1416
+ },
+ "squirrel": {
+  "file": "squirrel.glb",
+  "h": 0.5,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "tent": {
+  "file": "tent.glb",
+  "h": 1.6,
+  "yaw": -1.5708
+ },
+ "picnic_table": {
+  "file": "picnic_table.glb",
+  "h": 1.0,
+  "yaw": -1.5708
+ },
+ "fish": {
+  "file": "fish.glb",
+  "h": 0.5,
+  "alive": true,
+  "yaw": 3.1416
+ },
+ "leaf_pile": {
+  "file": "leaf_pile.glb",
+  "h": 0.6,
+  "yaw": -1.5708
+ },
+ "beach_ball": {
+  "file": "beach_ball.glb",
+  "h": 0.5,
+  "yaw": -1.5708
+ },
+ "sandcastle": {
+  "file": "sandcastle.glb",
+  "h": 0.9,
+  "yaw": -1.5708
+ },
+ "scarecrow": {
+  "file": "scarecrow.glb",
+  "h": 1.9,
+  "wobble": 0.15,
+  "yaw": -1.5708
+ },
+ "pumpkin": {
+  "file": "pumpkin.glb",
+  "h": 0.6,
+  "yaw": -1.5708
+ },
+ "city_bus": {
+  "file": "city_bus.glb",
+  "h": 3.2,
+  "yaw": -1.5708
+ },
+ "bicycle": {
+  "file": "bicycle.glb",
+  "h": 1.1,
+  "yaw": -1.5708
+ },
+ "taxi": {
+  "file": "taxi.glb",
+  "h": 1.6,
+  "yaw": -1.5708
+ },
+ "traffic_light": {
+  "file": "traffic_light.glb",
+  "h": 3.0,
+  "yaw": -1.5708
+ },
+ "school_building": {
+  "file": "school_building.glb",
+  "h": 6.0,
+  "yaw": -1.5708
+ },
+ "supermarket": {
+  "file": "supermarket.glb",
+  "h": 5.0,
+  "yaw": -1.5708
+ },
+ "police_officer": {
+  "file": "police_officer.glb",
+  "h": 1.8,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "bus_stop": {
+  "file": "bus_stop.glb",
+  "h": 2.6,
+  "yaw": -1.5708
+ },
+ "piano": {
+  "file": "piano.glb",
+  "h": 1.5,
+  "yaw": -1.5708
+ },
+ "violin": {
+  "file": "violin.glb",
+  "h": 0.7,
+  "yaw": -1.5708
+ },
+ "microphone": {
+  "file": "microphone.glb",
+  "h": 1.7,
+  "yaw": -1.5708
+ },
+ "easel": {
+  "file": "easel.glb",
+  "h": 1.7,
+  "yaw": -1.5708
+ },
+ "pingpong_table": {
+  "file": "pingpong_table.glb",
+  "h": 1.0,
+  "yaw": -1.5708
+ },
+ "soccer_ball": {
+  "file": "soccer_ball.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "art_girl": {
+  "file": "art_girl.glb",
+  "h": 1.5,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "teapot": {
+  "file": "teapot.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "medicine_bottle": {
+  "file": "medicine_bottle.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "herb_plant": {
+  "file": "herb_plant.glb",
+  "h": 0.7,
+  "wobble": 0.35,
+  "yaw": -1.5708
+ },
+ "honey_jar": {
+  "file": "honey_jar.glb",
+  "h": 0.35,
+  "yaw": -1.5708
+ },
+ "sick_girl": {
+  "file": "sick_girl.glb",
+  "h": 1.4,
+  "alive": true,
+  "yaw": -1.5708
+ },
+ "cozy_bed": {
+  "file": "cozy_bed.glb",
+  "h": 1.0,
+  "yaw": -1.5708
+ },
+ "painting_frame": {
+  "file": "painting_frame.glb",
+  "h": 1.6,
+  "yaw": -1.5708
+ },
+ "crown_display": {
+  "file": "crown_display.glb",
+  "h": 1.4,
+  "yaw": -1.5708
+ },
+ "throne": {
+  "file": "throne.glb",
+  "h": 2.0,
+  "yaw": -1.5708
+ },
+ "vase": {
+  "file": "vase.glb",
+  "h": 0.9,
+  "yaw": -1.5708
+ },
+ "ticket_booth": {
+  "file": "ticket_booth.glb",
+  "h": 2.6,
+  "yaw": -1.5708
+ },
+ "gift_shop": {
+  "file": "gift_shop.glb",
+  "h": 3.0,
+  "yaw": -1.5708
+ },
+ "cannon": {
+  "file": "cannon.glb",
+  "h": 1.0,
+  "yaw": 0.0
+ },
+ "round_tree": {
+  "file": "round_tree.glb",
+  "h": 4.2,
+  "wobble": 0.15,
+  "yaw": -1.5708
+ },
+ "pine": {
+  "file": "pine.glb",
+  "h": 4.5,
+  "wobble": 0.1,
+  "yaw": -1.5708
+ },
+ "lamp_post": {
+  "file": "lamp_post.glb",
+  "h": 3.6,
+  "yaw": -1.5708
+ },
+ "cottage": {
+  "file": "cottage.glb",
+  "h": 4.5,
+  "yaw": -1.5708
+ },
+ "cottage_blue": {
+  "file": "cottage_blue.glb",
+  "h": 4.5,
+  "yaw": -1.5708
+ },
+ "rock": {
+  "file": "rock.glb",
+  "h": 1.0,
+  "yaw": -1.5708
+ },
+ "fence": {
+  "file": "fence.glb",
+  "h": 1.0,
+  "yaw": -1.5708
+ },
+ "food_apple": {
+  "file": "food_apple.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_banana": {
+  "file": "food_banana.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_orange": {
+  "file": "food_orange.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_pear": {
+  "file": "food_pear.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_watermelon": {
+  "file": "food_watermelon.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_grapes": {
+  "file": "food_grapes.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_durian": {
+  "file": "food_durian.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_strawberry": {
+  "file": "food_strawberry.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_peach": {
+  "file": "food_peach.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_lemon": {
+  "file": "food_lemon.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_mango": {
+  "file": "food_mango.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_ice_cream": {
+  "file": "food_ice_cream.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_pizza": {
+  "file": "food_pizza.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_bread": {
+  "file": "food_bread.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_candy": {
+  "file": "food_candy.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_cookie": {
+  "file": "food_cookie.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_carrot": {
+  "file": "food_carrot.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_egg": {
+  "file": "food_egg.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_hamburger": {
+  "file": "food_hamburger.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_hot_dog": {
+  "file": "food_hot_dog.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_noodles": {
+  "file": "food_noodles.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "food_rice": {
+  "file": "food_rice.glb",
+  "h": 0.4,
+  "yaw": -1.5708
+ },
+ "elephant_mom": {
+  "file": "elephant_mom.glb",
+  "h": 3.0,
+  "alive": true,
+  "yaw": 3.1416
+ },
+ "baby_elephant": {
+  "file": "baby_elephant.glb",
+  "h": 1.6,
+  "alive": true,
+  "yaw": 3.1416
+ },
+ "giraffe": {
+  "file": "giraffe.glb",
+  "h": 5.0,
+  "alive": true,
+  "yaw": 3.1416
+ },
+ "zebra": {
+  "file": "zebra.glb",
+  "h": 1.8,
+  "alive": true,
+  "yaw": 3.1416
+ },
+ "lion": {
+  "file": "lion.glb",
+  "h": 1.6,
+  "alive": true,
+  "yaw": 3.1416
+ },
+ "fruit_tree": {
+  "file": "fruit_tree.glb",
+  "h": 4.0,
+  "wobble": 0.35,
+  "yaw": -1.5708
+ },
+ "berry_bush": {
+  "file": "berry_bush.glb",
+  "h": 1.2,
+  "wobble": 0.4,
+  "yaw": -1.5708
+ },
+ "acacia": {
+  "file": "acacia.glb",
+  "h": 5.0,
+  "wobble": 0.2,
+  "yaw": -1.5708
+ },
+ "lantern": {
+  "file": "lantern.glb",
+  "h": 2.0,
+  "yaw": -1.5708
+ },
+ "magic_door": {
+  "file": "magic_door.glb",
+  "h": 3.2,
+  "yaw": -1.5708
+ },
+ "book_pile": {
+  "file": "book_pile.glb",
+  "h": 0.7,
+  "yaw": -1.5708
+ },
+ "stall_fruit": {
+  "file": "stall_fruit.glb",
+  "h": 3.0,
+  "yaw": -1.5708
+ }
+}

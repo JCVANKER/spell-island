@@ -1,0 +1,2413 @@
+{
+ "id": "nature-park",
+ "order": 5,
+ "grade": "五年级上册",
+ "gradeNum": 5,
+ "unit": "Unit · In a nature park: There is / There are…（自然公园）",
+ "title": "Green Nature Park",
+ "titleZh": "绿野自然公园",
+ "scene": "park",
+ "bounds": 54,
+ "intro": [
+  "欢迎来到绿野自然公园！这里有河、有湖、有森林、有大山，还有一个小村庄。",
+  "护林员 Sam 正在画新的公园地图，需要你帮忙。描述东西要用 There is / There are。先去找他：“Go to Ranger Sam!”"
+ ],
+ "vocab": [
+  "nature park",
+  "river",
+  "lake",
+  "forest",
+  "mountain",
+  "hill",
+  "bridge",
+  "boat",
+  "village",
+  "house",
+  "building",
+  "tree",
+  "flower",
+  "grass",
+  "cloud",
+  "there is",
+  "there are",
+  "is there",
+  "are there any"
+ ],
+ "patterns": [
+  "There is a river in the park.",
+  "There are three bridges.",
+  "Is there a lake? Yes, there is.",
+  "Are there any fish? Yes, there are.",
+  "Are there any tall buildings? No, there aren't."
+ ],
+ "spawn": {
+  "pos": [
+   0,
+   0,
+   46
+  ],
+  "rot": 3.14159
+ },
+ "zones": [
+  {
+   "id": "gate",
+   "name": "Park Gate",
+   "zh": "公园大门",
+   "pos": [
+    0,
+    40
+   ],
+   "r": 7
+  },
+  {
+   "id": "centre",
+   "name": "Visitor Centre",
+   "zh": "游客中心",
+   "pos": [
+    0,
+    22
+   ],
+   "r": 9
+  },
+  {
+   "id": "river",
+   "name": "Blue River",
+   "zh": "蓝色小河",
+   "pos": [
+    2,
+    -1
+   ],
+   "r": 9
+  },
+  {
+   "id": "lake",
+   "name": "Swan Lake",
+   "zh": "天鹅湖",
+   "pos": [
+    -30,
+    20
+   ],
+   "r": 12
+  },
+  {
+   "id": "meadow",
+   "name": "Flower Meadow",
+   "zh": "花草地",
+   "pos": [
+    30,
+    13
+   ],
+   "r": 10
+  },
+  {
+   "id": "balloon",
+   "name": "Balloon Hill",
+   "zh": "热气球山坡",
+   "pos": [
+    27,
+    37
+   ],
+   "r": 8
+  },
+  {
+   "id": "forest",
+   "name": "Deep Forest",
+   "zh": "密林",
+   "pos": [
+    -30,
+    -23
+   ],
+   "r": 12
+  },
+  {
+   "id": "camp",
+   "name": "Mountain Camp",
+   "zh": "山脚营地",
+   "pos": [
+    3,
+    -32
+   ],
+   "r": 10
+  },
+  {
+   "id": "village",
+   "name": "Hill Village",
+   "zh": "山坡村庄",
+   "pos": [
+    31,
+    -25
+   ],
+   "r": 11
+  }
+ ],
+ "decor": [
+  {
+   "k": "path",
+   "pts": [
+    [
+     -58,
+     0
+    ],
+    [
+     -34,
+     3
+    ],
+    [
+     -14,
+     -3
+    ],
+    [
+     8,
+     1
+    ],
+    [
+     24,
+     -4
+    ],
+    [
+     40,
+     0
+    ],
+    [
+     58,
+     -3
+    ]
+   ],
+   "w": 5.5,
+   "color": "#6fb8e0"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     50
+    ],
+    [
+     0,
+     30
+    ],
+    [
+     0,
+     22
+    ]
+   ],
+   "w": 4
+  },
+  {
+   "k": "plaza",
+   "at": [
+    0,
+    22
+   ],
+   "r": 7.5,
+   "color": "#e8d6a8"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     22
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     0,
+     -8
+    ],
+    [
+     2,
+     -24
+    ],
+    [
+     3,
+     -30
+    ]
+   ],
+   "w": 3.4
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     22
+    ],
+    [
+     -12,
+     16
+    ],
+    [
+     -19,
+     18
+    ]
+   ],
+   "w": 3
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     -19,
+     18
+    ],
+    [
+     -24,
+     10
+    ],
+    [
+     -30,
+     6
+    ],
+    [
+     -30,
+     -2
+    ],
+    [
+     -30,
+     -16
+    ]
+   ],
+   "w": 3
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     22
+    ],
+    [
+     14,
+     16
+    ],
+    [
+     24,
+     12
+    ]
+   ],
+   "w": 3
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     24,
+     12
+    ],
+    [
+     30,
+     6
+    ],
+    [
+     31,
+     -2
+    ],
+    [
+     31,
+     -12
+    ],
+    [
+     31,
+     -24
+    ]
+   ],
+   "w": 3
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     30
+    ],
+    [
+     14,
+     33
+    ],
+    [
+     24,
+     36
+    ]
+   ],
+   "w": 2.8
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     -30,
+     -16
+    ],
+    [
+     -14,
+     -26
+    ],
+    [
+     0,
+     -30
+    ]
+   ],
+   "w": 2.8
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     3,
+     -30
+    ],
+    [
+     18,
+     -26
+    ],
+    [
+     31,
+     -24
+    ]
+   ],
+   "w": 2.8
+  },
+  {
+   "k": "plaza",
+   "at": [
+    3,
+    -32
+   ],
+   "r": 5.5,
+   "color": "#d8c49a"
+  },
+  {
+   "k": "plaza",
+   "at": [
+    31,
+    -26
+   ],
+   "r": 5,
+   "color": "#e2cf9e"
+  },
+  {
+   "k": "pond",
+   "at": [
+    -30,
+    20
+   ],
+   "r": 7,
+   "sx": 1.3
+  },
+  {
+   "k": "rock",
+   "at": [
+    -38,
+    12
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "rock",
+   "at": [
+    -22,
+    29
+   ],
+   "s": 0.8
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    -17,
+    24
+   ],
+   "rot": -1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "mountain",
+   "at": [
+    -30,
+    -66
+   ],
+   "r": 22,
+   "h": 18,
+   "color": "#7fa36a",
+   "snow": true
+  },
+  {
+   "k": "mountain",
+   "at": [
+    6,
+    -70
+   ],
+   "r": 26,
+   "h": 24,
+   "color": "#86a870",
+   "snow": true
+  },
+  {
+   "k": "mountain",
+   "at": [
+    40,
+    -60
+   ],
+   "r": 18,
+   "h": 15,
+   "color": "#7fa36a",
+   "snow": true
+  },
+  {
+   "k": "rock",
+   "at": [
+    -6,
+    -37
+   ],
+   "s": 1.4
+  },
+  {
+   "k": "rock",
+   "at": [
+    12,
+    -40
+   ],
+   "s": 1.6
+  },
+  {
+   "k": "rock",
+   "at": [
+    -2,
+    -42
+   ],
+   "s": 1.0
+  },
+  {
+   "k": "pine",
+   "at": [
+    -19,
+    -29
+   ],
+   "s": 1.3
+  },
+  {
+   "k": "pine",
+   "at": [
+    -24,
+    -35
+   ],
+   "s": 1.4
+  },
+  {
+   "k": "pine",
+   "at": [
+    -33,
+    -35
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "pine",
+   "at": [
+    -37,
+    -23
+   ],
+   "s": 1.3
+  },
+  {
+   "k": "tree",
+   "at": [
+    -16,
+    -18
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "pine",
+   "at": [
+    -44,
+    -14
+   ],
+   "s": 1.3
+  },
+  {
+   "k": "tree",
+   "at": [
+    -28,
+    -14
+   ],
+   "s": 1.1
+  },
+  {
+   "k": "pine",
+   "at": [
+    -42,
+    -36
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "grove",
+   "at": [
+    -48,
+    -26
+   ],
+   "r": 7,
+   "n": 8,
+   "kind": "pine",
+   "s": 1.3
+  },
+  {
+   "k": "grove",
+   "at": [
+    -14,
+    -44
+   ],
+   "r": 5,
+   "n": 5,
+   "kind": "mix",
+   "s": 1.2
+  },
+  {
+   "k": "meadow",
+   "at": [
+    30,
+    12
+   ],
+   "r": 9,
+   "n": 90
+  },
+  {
+   "k": "meadow",
+   "at": [
+    27,
+    36
+   ],
+   "r": 7,
+   "n": 50
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -10,
+    34
+   ],
+   "r": 5,
+   "n": 30
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -24,
+    -6
+   ],
+   "r": 5,
+   "n": 30
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -5,
+    30
+   ],
+   "rot": 1.57
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    5,
+    31
+   ],
+   "rot": 1.57
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    38,
+    8
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    22,
+    6
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    36,
+    24
+   ]
+  },
+  {
+   "k": "tree",
+   "at": [
+    40,
+    16
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "tree",
+   "at": [
+    18,
+    24
+   ],
+   "s": 1.1
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    -7,
+    24
+   ],
+   "rot": 1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    8,
+    14
+   ],
+   "rot": -1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    -8,
+    27
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    9,
+    24
+   ]
+  },
+  {
+   "k": "house",
+   "at": [
+    19,
+    -35
+   ],
+   "rot": 0.3,
+   "w": 5,
+   "h": 3.6,
+   "wall": "#f6e0c2",
+   "roof": "#c8553d"
+  },
+  {
+   "k": "house",
+   "at": [
+    29,
+    -39
+   ],
+   "rot": 0,
+   "w": 5,
+   "h": 3.4,
+   "wall": "#e8f0d0",
+   "roof": "#5f9f4e"
+  },
+  {
+   "k": "house",
+   "at": [
+    39,
+    -33
+   ],
+   "rot": -0.4,
+   "w": 4.6,
+   "h": 3.4,
+   "wall": "#f4d8c8",
+   "roof": "#4f7fb8"
+  },
+  {
+   "k": "house",
+   "at": [
+    43,
+    -13
+   ],
+   "rot": -1.4,
+   "w": 4.6,
+   "h": 3.4,
+   "wall": "#f6e0c2",
+   "roof": "#d9a23a"
+  },
+  {
+   "k": "fence",
+   "from": [
+    20,
+    -24
+   ],
+   "to": [
+    20,
+    -30
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    20,
+    -30
+   ],
+   "to": [
+    28,
+    -32
+   ]
+  },
+  {
+   "k": "grove",
+   "at": [
+    0,
+    62
+   ],
+   "r": 10,
+   "n": 8,
+   "kind": "pine",
+   "s": 1.2
+  },
+  {
+   "k": "tree",
+   "at": [
+    -12,
+    42
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "tree",
+   "at": [
+    12,
+    44
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "pine",
+   "at": [
+    -46,
+    8
+   ],
+   "s": 1.3
+  },
+  {
+   "k": "pine",
+   "at": [
+    -44,
+    30
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "pine",
+   "at": [
+    50,
+    6
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "pine",
+   "at": [
+    46,
+    26
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "lamp",
+   "at": [
+    -3,
+    33
+   ]
+  },
+  {
+   "k": "lamp",
+   "at": [
+    3,
+    6
+   ]
+  },
+  {
+   "k": "lamp",
+   "at": [
+    -3,
+    -8
+   ]
+  }
+ ],
+ "things": [
+  {
+   "id": "park_sign",
+   "name": "park sign",
+   "zh": "公园告示牌",
+   "model": "signpost",
+   "pos": [
+    -4,
+    0,
+    37
+   ],
+   "aliases": [
+    "sign",
+    "board",
+    "welcome sign"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Welcome to Green Nature Park!\nThere is a river and a lake.\nThere are three bridges.\nPlease don't pick the flowers."
+  },
+  {
+   "id": "lamp1",
+   "name": "lamp",
+   "zh": "路灯",
+   "model": "lamp_post",
+   "pos": [
+    4,
+    0,
+    36
+   ],
+   "aliases": [
+    "light",
+    "lamp post"
+   ],
+   "radius": 0.3,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "station",
+   "name": "ranger station",
+   "zh": "护林站小木屋",
+   "model": "cabin",
+   "pos": [
+    -12,
+    0,
+    22
+   ],
+   "aliases": [
+    "cabin",
+    "house",
+    "station",
+    "log cabin"
+   ],
+   "rot": 1.5708,
+   "radius": 2.4,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "map_board",
+   "name": "park map",
+   "zh": "公园地图",
+   "model": "signpost",
+   "pos": [
+    6,
+    0,
+    27
+   ],
+   "aliases": [
+    "map",
+    "map board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "PARK MAP\nThere is a forest in the north-west.\nThere is a village in the north-east.\nThere are mountains near the camp."
+  },
+  {
+   "id": "river",
+   "name": "river",
+   "zh": "河",
+   "model": "none",
+   "pos": [
+    9,
+    0,
+    2
+   ],
+   "aliases": [
+    "stream",
+    "blue river"
+   ],
+   "radius": 0,
+   "label": true
+  },
+  {
+   "id": "bridge1",
+   "name": "bridge",
+   "zh": "桥",
+   "model": "bridge",
+   "pos": [
+    0,
+    0,
+    -0.5
+   ],
+   "aliases": [
+    "wooden bridge",
+    "big bridge"
+   ],
+   "rot": 0,
+   "radius": 0,
+   "label": true
+  },
+  {
+   "id": "bridge2",
+   "name": "bridge",
+   "zh": "桥",
+   "model": "bridge",
+   "pos": [
+    -30,
+    0,
+    1.8
+   ],
+   "aliases": [
+    "forest bridge"
+   ],
+   "rot": 0,
+   "radius": 0,
+   "label": false
+  },
+  {
+   "id": "bridge3",
+   "name": "bridge",
+   "zh": "桥",
+   "model": "bridge",
+   "pos": [
+    31,
+    0,
+    -2.3
+   ],
+   "aliases": [
+    "village bridge"
+   ],
+   "rot": 0,
+   "radius": 0,
+   "label": false
+  },
+  {
+   "id": "fish",
+   "name": "fish",
+   "zh": "鱼",
+   "model": "fish",
+   "pos": [
+    13,
+    0,
+    -0.5
+   ],
+   "tags": [
+    "orange",
+    "small"
+   ],
+   "color": "orange",
+   "radius": 0.3,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Blub, blub! There are many fish in the river!",
+    "Is there a river in the park? Yes, there is. I live here!"
+   ]
+  },
+  {
+   "id": "frog",
+   "name": "frog",
+   "zh": "青蛙",
+   "model": "frog",
+   "pos": [
+    -8,
+    0,
+    2.8
+   ],
+   "tags": [
+    "green",
+    "small"
+   ],
+   "color": "green",
+   "radius": 0.3,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Ribbit! There is a river. There are many bugs. Ribbit!"
+   ]
+  },
+  {
+   "id": "lake",
+   "name": "lake",
+   "zh": "湖",
+   "model": "none",
+   "pos": [
+    -30,
+    0,
+    20
+   ],
+   "aliases": [
+    "pond",
+    "swan lake"
+   ],
+   "radius": 0,
+   "label": true
+  },
+  {
+   "id": "boat",
+   "name": "boat",
+   "zh": "小船",
+   "model": "boat",
+   "pos": [
+    -21.5,
+    0.05,
+    23
+   ],
+   "tags": [
+    "red",
+    "small"
+   ],
+   "color": "red",
+   "radius": 0.6,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "swan",
+   "name": "swan",
+   "zh": "天鹅",
+   "model": "swan",
+   "pos": [
+    -33,
+    0,
+    17
+   ],
+   "tags": [
+    "white"
+   ],
+   "color": "white",
+   "radius": 0.5,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "There is a swan on the lake. It is me!",
+    "Are there any ducks? Yes, there are!"
+   ]
+  },
+  {
+   "id": "duck",
+   "name": "duck",
+   "zh": "鸭子",
+   "model": "duck",
+   "pos": [
+    -36,
+    0,
+    24
+   ],
+   "tags": [
+    "yellow",
+    "small"
+   ],
+   "color": "yellow",
+   "radius": 0.4,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Quack! There are two birds on the lake: a swan and me!"
+   ]
+  },
+  {
+   "id": "lake_sign",
+   "name": "lake sign",
+   "zh": "湖边告示牌",
+   "model": "signpost",
+   "pos": [
+    -19,
+    0,
+    14
+   ],
+   "aliases": [
+    "sign",
+    "board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "SWAN LAKE\nThere is a red boat on the lake.\nThere are swans and ducks, too.\nIs there a bridge? No, there isn't."
+  },
+  {
+   "id": "flowers",
+   "name": "flowers",
+   "zh": "花",
+   "model": "flowers",
+   "pos": [
+    30,
+    0,
+    9
+   ],
+   "aliases": [
+    "flower"
+   ],
+   "radius": 0,
+   "can": [
+    "grow"
+   ]
+  },
+  {
+   "id": "easel",
+   "name": "easel",
+   "zh": "画架",
+   "model": "easel",
+   "pos": [
+    35,
+    0,
+    16
+   ],
+   "aliases": [
+    "picture",
+    "painting"
+   ],
+   "radius": 0.6,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "rabbit",
+   "name": "rabbit",
+   "zh": "兔子",
+   "model": "rabbit",
+   "pos": [
+    24,
+    0,
+    18
+   ],
+   "tags": [
+    "white",
+    "small"
+   ],
+   "color": "white",
+   "radius": 0.4,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "There is green grass. There are many flowers. I love the meadow!"
+   ]
+  },
+  {
+   "id": "balloon",
+   "name": "hot air balloon",
+   "zh": "热气球",
+   "model": "hot_air_balloon",
+   "pos": [
+    30,
+    0,
+    39
+   ],
+   "aliases": [
+    "balloon"
+   ],
+   "radius": 1.8,
+   "can": [
+    "fly"
+   ],
+   "reveal": [
+    "ws_sky"
+   ],
+   "revealOn": "fly"
+  },
+  {
+   "id": "picnic",
+   "name": "picnic table",
+   "zh": "野餐桌",
+   "model": "picnic_table",
+   "pos": [
+    20,
+    0,
+    41
+   ],
+   "aliases": [
+    "table",
+    "picnic"
+   ],
+   "radius": 1.2
+  },
+  {
+   "id": "forest",
+   "name": "forest",
+   "zh": "森林",
+   "model": "none",
+   "pos": [
+    -32,
+    0,
+    -24
+   ],
+   "aliases": [
+    "woods",
+    "deep forest"
+   ],
+   "radius": 0,
+   "label": true
+  },
+  {
+   "id": "deer",
+   "name": "deer",
+   "zh": "小鹿",
+   "model": "deer",
+   "pos": [
+    -22,
+    0,
+    -12
+   ],
+   "tags": [
+    "brown"
+   ],
+   "color": "brown",
+   "radius": 0.6,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Shh! There are many trees in the forest. I can hide!"
+   ]
+  },
+  {
+   "id": "owl",
+   "name": "owl",
+   "zh": "猫头鹰",
+   "model": "owl",
+   "pos": [
+    -39,
+    0,
+    -16
+   ],
+   "aliases": [
+    "ollie"
+   ],
+   "tags": [
+    "brown"
+   ],
+   "color": "brown",
+   "radius": 0.4,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Hoo hoo! Is there a moon? Not yet... Zzz..."
+   ]
+  },
+  {
+   "id": "chest",
+   "name": "treasure chest",
+   "zh": "宝箱",
+   "model": "treasure_chest",
+   "pos": [
+    -40,
+    0,
+    -30
+   ],
+   "aliases": [
+    "chest",
+    "box",
+    "treasure"
+   ],
+   "radius": 0.6,
+   "can": [
+    "open",
+    "fly"
+   ],
+   "reveal": [
+    "ws_treasure"
+   ],
+   "revealOn": "open"
+  },
+  {
+   "id": "tent",
+   "name": "tent",
+   "zh": "帐篷",
+   "model": "tent",
+   "pos": [
+    9,
+    0,
+    -35
+   ],
+   "tags": [
+    "orange"
+   ],
+   "color": "orange",
+   "radius": 1.4,
+   "can": [
+    "open"
+   ]
+  },
+  {
+   "id": "lantern",
+   "name": "lantern",
+   "zh": "灯笼",
+   "model": "lantern",
+   "pos": [
+    -3,
+    0,
+    -30
+   ],
+   "aliases": [
+    "lamp",
+    "camp lamp"
+   ],
+   "radius": 0.4,
+   "can": [
+    "light"
+   ],
+   "reveal": [
+    "ws_stars"
+   ],
+   "revealOn": "light"
+  },
+  {
+   "id": "mountain",
+   "name": "mountain",
+   "zh": "山",
+   "model": "none",
+   "pos": [
+    6,
+    0,
+    -62
+   ],
+   "aliases": [
+    "mountains",
+    "hill",
+    "hills"
+   ],
+   "radius": 0,
+   "label": true,
+   "params": {
+    "unreachable": true
+   }
+  },
+  {
+   "id": "village_sign",
+   "name": "village sign",
+   "zh": "村口告示牌",
+   "model": "signpost",
+   "pos": [
+    22,
+    0,
+    -16
+   ],
+   "aliases": [
+    "sign",
+    "board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "HILL VILLAGE\nThere are many small houses.\nThere is a windmill.\nThere aren't any tall buildings."
+  },
+  {
+   "id": "windmill",
+   "name": "windmill",
+   "zh": "风车",
+   "model": "windmill",
+   "pos": [
+    44,
+    0,
+    -24
+   ],
+   "radius": 1.6,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "sheep",
+   "name": "sheep",
+   "zh": "绵羊",
+   "model": "sheep",
+   "pos": [
+    24,
+    0,
+    -27
+   ],
+   "tags": [
+    "white"
+   ],
+   "color": "white",
+   "radius": 0.6,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Baa! There are many houses in the village. Baa!"
+   ]
+  }
+ ],
+ "npcs": [
+  {
+   "id": "sam",
+   "name": "Ranger Sam",
+   "zh": "护林员山姆",
+   "model": "ranger",
+   "pos": [
+    3,
+    0,
+    19
+   ],
+   "aliases": [
+    "ranger",
+    "sam"
+   ],
+   "idle": [
+    "There is a river in the park. There are three bridges.",
+    "Is there a lake? Yes, there is!",
+    "Nature is beautiful. Please love it!"
+   ],
+   "chatter": [
+    "There is a forest in the north. There are many trees!",
+    "Is there a river in the park? Yes, there is.",
+    "There are three bridges over the river."
+   ],
+   "knows": [
+    "There is a river, a lake, a forest, a camp and a village in the park.",
+    "There are three bridges.",
+    "There aren't any tall buildings in the park."
+   ],
+   "voice": "man",
+   "persona": "Ranger Sam, a kind park ranger drawing a new park map; grade-5 English (There is / There are, Is there…? Are there any…?)",
+   "greet": "Hi there! I'm Ranger Sam. Welcome to Green Nature Park!",
+   "radius": 0.8
+  },
+  {
+   "id": "kevin",
+   "name": "Kevin",
+   "zh": "凯文",
+   "model": "student",
+   "pos": [
+    -5,
+    0,
+    27
+   ],
+   "aliases": [
+    "boy",
+    "kevin"
+   ],
+   "idle": [
+    "Boating is fun!",
+    "Are there any fish in the river? Yes, there are!"
+   ],
+   "chatter": [
+    "Is there a lake in the park? I want to go boating!",
+    "There is a boat on the lake. Cool!"
+   ],
+   "voice": "child",
+   "persona": "Kevin, a curious boy who wants to go boating and fishing; grade-5 English",
+   "greet": "Hi! I'm Kevin. I want to go boating!",
+   "radius": 0.8
+  },
+  {
+   "id": "lily",
+   "name": "Lily",
+   "zh": "莉莉",
+   "model": "art_girl",
+   "pos": [
+    31,
+    0,
+    15
+   ],
+   "aliases": [
+    "girl",
+    "lily",
+    "painter"
+   ],
+   "idle": [
+    "There are many flowers in my picture!",
+    "I love painting nature."
+   ],
+   "chatter": [
+    "There are many flowers in the meadow. So pretty!",
+    "There is a hot air balloon on the hill!"
+   ],
+   "voice": "child",
+   "persona": "Lily, a girl painting a picture of the nature park; grade-5 English",
+   "greet": "Hi! I'm Lily. I'm painting the park!",
+   "radius": 0.8
+  },
+  {
+   "id": "nutty",
+   "name": "Nutty",
+   "zh": "松鼠坚果",
+   "model": "squirrel",
+   "pos": [
+    -27,
+    0,
+    -27
+   ],
+   "aliases": [
+    "squirrel",
+    "nutty"
+   ],
+   "tags": [
+    "red"
+   ],
+   "color": "red",
+   "idle": [
+    "There are many trees here. I love my forest!",
+    "Is there a deer? Yes, there is!"
+   ],
+   "chatter": [
+    "There are many trees in the forest!",
+    "Is there an owl in the forest? Yes, there is. Shh, it is sleeping!"
+   ],
+   "voice": "animal",
+   "persona": "Nutty, a playful squirrel who lives in the forest and plays hide-and-seek; simple grade-5 English",
+   "greet": "Hi! I'm Nutty the squirrel. Welcome to my forest!",
+   "radius": 0.8
+  },
+  {
+   "id": "granny",
+   "name": "Granny Rose",
+   "zh": "罗丝奶奶",
+   "model": "granny",
+   "pos": [
+    34,
+    0,
+    -21
+   ],
+   "aliases": [
+    "granny",
+    "grandma",
+    "rose",
+    "old woman"
+   ],
+   "idle": [
+    "There aren't any tall buildings here. It's quiet.",
+    "There are many small houses in my village."
+   ],
+   "chatter": [
+    "There is a windmill in my village.",
+    "Are there any tall buildings? No, there aren't."
+   ],
+   "voice": "granny",
+   "persona": "Granny Rose, a kind old woman who lives in Hill Village; grade-5 English about her village",
+   "greet": "Hello, dear! I'm Granny Rose. Welcome to Hill Village!",
+   "radius": 0.8
+  }
+ ],
+ "quests": [
+  {
+   "id": "np_river",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "sam",
+   "titleZh": "回答护林员：公园里有河吗？",
+   "title": "Is there a river?",
+   "intro": [
+    "I'm making a new map of the park for our visitors. Can you help me?",
+    "Look around. Is there a river in the park?"
+   ],
+   "model": [
+    "Yes, there is."
+   ],
+   "done": [
+    "Yes, there is! There's a river in the park. I'll put it on the map."
+   ],
+   "prompt": "Is there a river in the park?",
+   "accept": [
+    [
+     "yes",
+     "there is"
+    ]
+   ],
+   "tipZh": "Sam 问：“公园里有河吗？”有的话就回答：“Yes, there is.”"
+  },
+  {
+   "id": "np_bridges",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "sam",
+   "titleZh": "沿着河数一数：有几座桥？",
+   "title": "How many bridges?",
+   "intro": [
+    "Now walk along the river and count the bridges."
+   ],
+   "model": [
+    "There are three bridges."
+   ],
+   "done": [
+    "Right! There are three bridges over the river."
+   ],
+   "prompt": "How many bridges are there?",
+   "accept": [
+    [
+     "three",
+     "3"
+    ]
+   ],
+   "needs": "np_river",
+   "tipZh": "沿着小河走一走，数一数有几座桥，然后说：“There are three bridges.”"
+  },
+  {
+   "id": "np_listen",
+   "kind": "listen",
+   "skill": "听",
+   "giver": "sam",
+   "titleZh": "听描述，选出村里没有的东西",
+   "title": "Listen and choose",
+   "intro": [
+    "My friend lives in a village. Listen to her."
+   ],
+   "model": [],
+   "done": [
+    "Yes! There isn't a mountain in her village."
+   ],
+   "prompt": "What isn't in her village?",
+   "audio": "In my village, there is a big lake and a small river. There are many trees and flowers. But there isn't a mountain.",
+   "options": [
+    "A lake",
+    "A mountain",
+    "Trees"
+   ],
+   "answer": 1,
+   "video": "park.mp4",
+   "needs": "np_bridges"
+  },
+  {
+   "id": "np_write",
+   "kind": "write",
+   "skill": "写",
+   "giver": "sam",
+   "titleZh": "写一句话：There is a … in the park.",
+   "title": "Write a sentence",
+   "intro": [
+    "Write about the park for our map!"
+   ],
+   "model": [
+    "There is a lake in the park."
+   ],
+   "done": [
+    "Wonderful sentence! It goes on the map."
+   ],
+   "prompt": "Write: There is a ___ in the park.",
+   "accept": [
+    [
+     "there is",
+     "theres",
+     "there are"
+    ],
+    [
+     "lake",
+     "river",
+     "bridge",
+     "boat",
+     "cabin",
+     "house",
+     "tree",
+     "flower",
+     "mountain",
+     "park",
+     "forest",
+     "village",
+     "windmill",
+     "tent",
+     "balloon"
+    ]
+   ],
+   "needs": "np_listen",
+   "tipZh": "写一句：“There is a … in the park.” 比如 lake、river、forest。"
+  },
+  {
+   "id": "np_party",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "sam",
+   "titleZh": "地图画好啦！放烟花庆祝",
+   "title": "Fireworks!",
+   "intro": [
+    "The map is finished! There is a river, a lake, a forest and a village. Let's celebrate!"
+   ],
+   "model": [
+    "Fireworks!"
+   ],
+   "done": [
+    "Wow! Thank you, little wizard! Now everyone can enjoy Green Nature Park!"
+   ],
+   "prompt": "Say: Fireworks!",
+   "goal": "fireworks",
+   "needs": "np_write"
+  },
+  {
+   "id": "np_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "park_sign",
+   "titleZh": "读告示牌：公园里不能做什么？",
+   "title": "Read the park sign",
+   "intro": [],
+   "model": [],
+   "done": [
+    "Right! Please don't pick the flowers."
+   ],
+   "passage": "Welcome to Green Nature Park! There is a river and a lake. There are three bridges. Please don't pick the flowers.",
+   "prompt": "What can't you do in the park?",
+   "options": [
+    "Go boating",
+    "Pick the flowers",
+    "Walk on the bridge"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "map_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "map_board",
+   "titleZh": "大声读出公园地图",
+   "title": "Read the map",
+   "intro": [],
+   "model": [
+    "There is a forest in the park."
+   ],
+   "done": [
+    "Great reading! Now you know the park."
+   ],
+   "passage": "There is a forest in the park. There are mountains near the camp.",
+   "readAloud": true,
+   "prompt": "Read the map aloud."
+  },
+  {
+   "id": "lake_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "lake_sign",
+   "titleZh": "读湖边告示牌：湖上有桥吗？",
+   "title": "Is there a bridge on the lake?",
+   "intro": [],
+   "model": [],
+   "done": [
+    "Right! There isn't a bridge on the lake. But there is a red boat!"
+   ],
+   "passage": "SWAN LAKE\nThere is a red boat on the lake.\nThere are swans and ducks, too.\nIs there a bridge? No, there isn't.",
+   "prompt": "Is there a bridge on the lake?",
+   "options": [
+    "Yes, there is.",
+    "No, there isn't.",
+    "Yes, there are."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "village_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "village_sign",
+   "titleZh": "大声读出村口告示牌",
+   "title": "Read the village sign",
+   "intro": [],
+   "model": [
+    "There are many small houses."
+   ],
+   "done": [
+    "Well done! There aren't any tall buildings in Hill Village."
+   ],
+   "passage": "There are many small houses. There aren't any tall buildings.",
+   "readAloud": true,
+   "prompt": "Read the sign aloud."
+  },
+  {
+   "id": "kv_boat",
+   "kind": "guide",
+   "skill": "说",
+   "giver": "kevin",
+   "titleZh": "带 Kevin 去天鹅湖坐船",
+   "title": "Take Kevin to the boat",
+   "intro": [
+    "Is there a lake in the park? I want to go boating!",
+    "Can you take me to the boat? I will follow you."
+   ],
+   "model": [
+    "Follow me!",
+    "Go to the boat."
+   ],
+   "done": [
+    "The boat! There is a boat on the lake! Thank you! Let's go boating!"
+   ],
+   "prompt": "Take me to the boat, please!",
+   "to": "boat",
+   "tipZh": "Kevin 会跟着你走。告诉小魔法师：“Go to the boat!” 小船在西边的天鹅湖。"
+  },
+  {
+   "id": "kv_fish",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "kevin",
+   "titleZh": "回答 Kevin：河里有鱼吗？",
+   "title": "Are there any fish?",
+   "intro": [
+    "I want to go fishing, too! Look at the Blue River."
+   ],
+   "model": [
+    "Yes, there are."
+   ],
+   "done": [
+    "Great! There are fish in the river!"
+   ],
+   "prompt": "Are there any fish in the river?",
+   "accept": [
+    [
+     "yes",
+     "there are"
+    ]
+   ],
+   "needs": "kv_boat",
+   "tipZh": "Kevin 问：“河里有鱼吗？”去河边看看，回答：“Yes, there are.”"
+  },
+  {
+   "id": "kv_jump",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "kevin",
+   "titleZh": "鱼在水下看不见：让鱼跳起来",
+   "title": "Make the fish jump",
+   "intro": [
+    "I can't see the fish. They are under the water!"
+   ],
+   "model": [
+    "Make the fish jump!"
+   ],
+   "done": [
+    "Wow! A jumping fish! There are fish in the river!"
+   ],
+   "prompt": "Say: Make the fish jump!",
+   "goal": "hop:fish",
+   "needs": "kv_fish",
+   "tipZh": "念咒语：“Make the fish jump!”"
+  },
+  {
+   "id": "kv_write",
+   "kind": "write",
+   "skill": "写",
+   "giver": "kevin",
+   "titleZh": "写单词：过河要走的东西",
+   "title": "Write the word",
+   "intro": [
+    "Spelling time! How do we walk over the river?"
+   ],
+   "model": [
+    "bridge"
+   ],
+   "done": [
+    "B-R-I-D-G-E! Bridge! Great spelling!"
+   ],
+   "prompt": "We walk over the river on a ___ . Write the word.",
+   "accept": [
+    [
+     "bridge"
+    ]
+   ],
+   "needs": "kv_jump"
+  },
+  {
+   "id": "ly_see",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "lily",
+   "titleZh": "告诉 Lily 你在花草地看到了什么",
+   "title": "What can you see?",
+   "intro": [
+    "I'm painting a picture of the park. Can you help me?"
+   ],
+   "model": [
+    "There are many flowers.",
+    "There is a hot air balloon."
+   ],
+   "done": [
+    "Yes! I will paint it. Thank you!"
+   ],
+   "prompt": "What can you see in the meadow?",
+   "accept": [
+    [
+     "there is",
+     "there are"
+    ]
+   ],
+   "judge": "The child describes something in the park with 'There is…' or 'There are…' (e.g. 'There are many flowers.'). Accept any sensible description.",
+   "tipZh": "Lily 问你在花草地看见了什么。用“There is a … / There are many …”回答。"
+  },
+  {
+   "id": "ly_flower",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "lily",
+   "titleZh": "画里还要更多花：变出花来",
+   "title": "Grow a flower",
+   "intro": [
+    "My picture needs more flowers. Can you help?"
+   ],
+   "model": [
+    "Grow a flower!"
+   ],
+   "done": [
+    "Lovely! Now there are many, many flowers!"
+   ],
+   "prompt": "Say: Grow a flower!",
+   "goal": "grow:flower|big:flowers",
+   "needs": "ly_see"
+  },
+  {
+   "id": "ly_rainbow",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "lily",
+   "titleZh": "天上还没有彩虹：变一道彩虹",
+   "title": "Make a rainbow",
+   "intro": [
+    "There isn't a rainbow in the sky. A rainbow will make my picture perfect!"
+   ],
+   "model": [
+    "Make a rainbow!"
+   ],
+   "done": [
+    "Beautiful! There is a rainbow over the park! My picture is finished!"
+   ],
+   "prompt": "Say: Make a rainbow!",
+   "goal": "rainbow",
+   "needs": "ly_flower"
+  },
+  {
+   "id": "nt_what",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "nutty",
+   "titleZh": "告诉松鼠：森林里有什么？",
+   "title": "What is there in the forest?",
+   "intro": [
+    "This is my forest. Look around!"
+   ],
+   "model": [
+    "There are many trees.",
+    "There is a deer."
+   ],
+   "done": [
+    "Yes! You have good eyes!"
+   ],
+   "prompt": "What is there in the forest?",
+   "accept": [
+    [
+     "there is",
+     "there are"
+    ]
+   ],
+   "judge": "The child says what is in the forest with 'There is…' or 'There are…' (trees, a deer, an owl, a chest…). Accept any sensible answer.",
+   "tipZh": "松鼠问森林里有什么。可以说：“There are many trees.” 或 “There is a deer.”"
+  },
+  {
+   "id": "nt_deer",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "nutty",
+   "titleZh": "小鹿躲起来了：把它叫过来",
+   "title": "Deer, come here!",
+   "intro": [
+    "My friend the deer is playing hide-and-seek. Is there a deer near here? Call her!"
+   ],
+   "model": [
+    "Deer, come here!"
+   ],
+   "done": [
+    "Ha ha! There she is! Thank you!"
+   ],
+   "prompt": "Say: Deer, come here!",
+   "goal": "summon:deer",
+   "needs": "nt_what",
+   "tipZh": "把小鹿叫过来：“Deer, come here!”"
+  },
+  {
+   "id": "nt_night",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "nutty",
+   "titleZh": "猫头鹰晚上才醒：让天黑下来",
+   "title": "Make it night",
+   "intro": [
+    "Ollie the owl is sleeping. Owls wake up at night. Can you make it night?"
+   ],
+   "model": [
+    "Make it night!"
+   ],
+   "done": [
+    "Hoo hoo! Ollie is awake! Look, there are many stars in the sky!"
+   ],
+   "prompt": "Say: Make it night!",
+   "goal": "night",
+   "needs": "nt_deer"
+  },
+  {
+   "id": "gr_windmill",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "granny",
+   "titleZh": "村里的风车不转了：让它转起来",
+   "title": "Make the windmill spin",
+   "intro": [
+    "There is a windmill in my village, but it's tired today. Can you help it?"
+   ],
+   "model": [
+    "Make the windmill spin!"
+   ],
+   "done": [
+    "Look, it is spinning again! Thank you, dear!"
+   ],
+   "prompt": "Say: Make the windmill spin!",
+   "goal": "spin:windmill|dance:windmill",
+   "tipZh": "让风车转起来：“Make the windmill spin!”"
+  },
+  {
+   "id": "gr_listen",
+   "kind": "listen",
+   "skill": "听",
+   "giver": "granny",
+   "titleZh": "听奶奶介绍村子，选出村里有的东西",
+   "title": "Listen and choose",
+   "intro": [
+    "Let me tell you about my village. Listen!"
+   ],
+   "model": [],
+   "done": [
+    "Yes! There is a windmill. But there aren't any tall buildings."
+   ],
+   "prompt": "What is there in Granny's village?",
+   "audio": "My village is next to the river. There are many small houses and there is a windmill. There aren't any tall buildings. It's quiet and beautiful.",
+   "options": [
+    "A windmill",
+    "A tall building",
+    "A big lake"
+   ],
+   "answer": 0,
+   "needs": "gr_windmill"
+  }
+ ],
+ "words": [
+  {
+   "id": "ws_river",
+   "say": "river",
+   "zh": "河",
+   "pos": [
+    5,
+    5
+   ]
+  },
+  {
+   "id": "ws_bridge",
+   "say": "bridge",
+   "zh": "桥",
+   "pos": [
+    -4,
+    -4
+   ]
+  },
+  {
+   "id": "ws_lake",
+   "say": "lake",
+   "zh": "湖",
+   "pos": [
+    -19,
+    26
+   ]
+  },
+  {
+   "id": "ws_boat",
+   "say": "boat",
+   "zh": "小船",
+   "pos": [
+    -24,
+    32
+   ]
+  },
+  {
+   "id": "ws_flower",
+   "say": "flower",
+   "zh": "花",
+   "pos": [
+    27,
+    5
+   ]
+  },
+  {
+   "id": "ws_grass",
+   "say": "grass",
+   "zh": "草",
+   "pos": [
+    36,
+    11
+   ]
+  },
+  {
+   "id": "ws_forest",
+   "say": "forest",
+   "zh": "森林",
+   "pos": [
+    -25,
+    -14
+   ]
+  },
+  {
+   "id": "ws_mountain",
+   "say": "mountain",
+   "zh": "山",
+   "pos": [
+    8,
+    -42
+   ]
+  },
+  {
+   "id": "ws_village",
+   "say": "village",
+   "zh": "村庄",
+   "pos": [
+    26,
+    -19
+   ]
+  },
+  {
+   "id": "ws_house",
+   "say": "house",
+   "zh": "房子",
+   "pos": [
+    34,
+    -31
+   ]
+  },
+  {
+   "id": "ws_tree",
+   "say": "tree",
+   "zh": "树",
+   "pos": [
+    -36,
+    -29
+   ]
+  },
+  {
+   "id": "ws_there_is",
+   "say": "There is a river in the park.",
+   "zh": "公园里有一条河。",
+   "pos": [
+    -6,
+    8
+   ]
+  },
+  {
+   "id": "ws_there_are",
+   "say": "There are three bridges.",
+   "zh": "有三座桥。",
+   "pos": [
+    22,
+    3
+   ]
+  },
+  {
+   "id": "ws_is_there",
+   "say": "Is there a lake? Yes, there is.",
+   "zh": "有湖吗？有。",
+   "pos": [
+    -15,
+    15
+   ]
+  },
+  {
+   "id": "ws_any",
+   "say": "Are there any tall buildings? No, there aren't.",
+   "zh": "有高楼吗？没有。",
+   "pos": [
+    37,
+    -20
+   ]
+  },
+  {
+   "id": "ws_sky",
+   "say": "There are many clouds in the sky.",
+   "zh": "天上有很多云。",
+   "pos": [
+    35,
+    34
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_treasure",
+   "say": "There is a treasure in the forest!",
+   "zh": "森林里有宝藏！",
+   "pos": [
+    -36,
+    -33
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_stars",
+   "say": "Are there any stars? Yes, there are.",
+   "zh": "有星星吗？有。",
+   "pos": [
+    -7,
+    -27
+   ],
+   "hidden": true
+  }
+ ],
+ "spellIdeas": [
+  {
+   "say": "Make the balloon fly!",
+   "zh": "让热气球飞起来（会发现秘密哦）",
+   "near": "balloon"
+  },
+  {
+   "say": "Open the chest!",
+   "zh": "打开森林里的宝箱",
+   "near": "chest"
+  },
+  {
+   "say": "Light the lantern!",
+   "zh": "点亮营地的灯笼",
+   "near": "lantern"
+  },
+  {
+   "say": "Make the boat fly!",
+   "zh": "让小船飞起来",
+   "near": "boat"
+  },
+  {
+   "say": "Make three swans!",
+   "zh": "变出三只天鹅",
+   "near": "swan"
+  },
+  {
+   "say": "Make the frog jump!",
+   "zh": "让青蛙跳一跳",
+   "near": "frog"
+  },
+  {
+   "say": "Make the deer dance!",
+   "zh": "让小鹿跳舞",
+   "near": "deer"
+  },
+  {
+   "say": "Turn the sheep into a panda!",
+   "zh": "把绵羊变成熊猫",
+   "near": "sheep"
+  },
+  {
+   "say": "Make the tent big!",
+   "zh": "把帐篷变大",
+   "near": "tent"
+  },
+  {
+   "say": "Light the ranger station!",
+   "zh": "点亮护林站",
+   "near": "station"
+  },
+  {
+   "say": "Grow a tree!",
+   "zh": "长出一棵树"
+  },
+  {
+   "say": "Make it rain!",
+   "zh": "让天下雨"
+  },
+  {
+   "say": "Make the owl sing!",
+   "zh": "让猫头鹰唱歌",
+   "near": "owl"
+  },
+  {
+   "say": "Make the rabbit pink!",
+   "zh": "把兔子变成粉色",
+   "near": "rabbit"
+  },
+  {
+   "say": "Make bubbles!",
+   "zh": "变出好多泡泡"
+  },
+  {
+   "say": "Make butterflies!",
+   "zh": "变出一群蝴蝶"
+  },
+  {
+   "say": "Make it rain flowers!",
+   "zh": "下一场花瓣雨"
+  },
+  {
+   "say": "Put the deer on a cloud!",
+   "zh": "让小鹿坐上云朵"
+  },
+  {
+   "say": "Move the boat to the left!",
+   "zh": "把小船移到左边"
+  },
+  {
+   "say": "Move the tent to the right!",
+   "zh": "把帐篷移到右边"
+  },
+  {
+   "say": "Make it foggy!",
+   "zh": "让森林起雾"
+  },
+  {
+   "say": "Turn the fish into a duck!",
+   "zh": "把鱼变成鸭子"
+  },
+  {
+   "say": "Make the windmill spin!",
+   "zh": "让风车转起来"
+  },
+  {
+   "say": "Shooting stars!",
+   "zh": "召唤流星"
+  },
+  {
+   "say": "Everybody, sing!",
+   "zh": "让大家一起唱歌"
+  }
+ ]
+}

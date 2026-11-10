@@ -1,0 +1,2288 @@
+{
+ "id": "herb-hut",
+ "order": 9,
+ "grade": "八年级下册",
+ "gradeNum": 8,
+ "unit": "Unit · What's the matter? You should…（健康与建议）",
+ "title": "Granny Herb's Hut",
+ "titleZh": "药草奶奶的小屋",
+ "scene": "herb",
+ "bounds": 52,
+ "intro": [
+  "森林里有一位药草奶奶，大家生病了都来找她。今天森林里好多朋友都不舒服！",
+  "先问“What's the matter?”，再用“You should …”给建议，最后用魔法帮他们。先去小屋找药草奶奶：“Go to Granny Herb!”"
+ ],
+ "vocab": [
+  "matter",
+  "cold",
+  "fever",
+  "headache",
+  "toothache",
+  "stomachache",
+  "sore throat",
+  "sore back",
+  "hurt",
+  "should",
+  "shouldn't",
+  "rest",
+  "lie down",
+  "see a doctor",
+  "see a dentist",
+  "hot tea with honey",
+  "medicine"
+ ],
+ "patterns": [
+  "What's the matter? I have a cold.",
+  "What should I do?",
+  "You should drink hot tea with honey.",
+  "You shouldn't eat too many sweets.",
+  "I hope you feel better soon."
+ ],
+ "spawn": {
+  "pos": [
+   0,
+   0,
+   44
+  ],
+  "rot": 3.14159
+ },
+ "zones": [
+  {
+   "id": "gate",
+   "name": "Forest Gate",
+   "zh": "森林入口",
+   "pos": [
+    0,
+    38
+   ],
+   "r": 8
+  },
+  {
+   "id": "hut",
+   "name": "Granny's Hut",
+   "zh": "药草小屋",
+   "pos": [
+    0,
+    4
+   ],
+   "r": 10
+  },
+  {
+   "id": "garden",
+   "name": "Herb Garden",
+   "zh": "药草园",
+   "pos": [
+    -26,
+    10
+   ],
+   "r": 10
+  },
+  {
+   "id": "tea",
+   "name": "Tea Corner",
+   "zh": "茶歇角",
+   "pos": [
+    26,
+    24
+   ],
+   "r": 9
+  },
+  {
+   "id": "pond",
+   "name": "Singing Pond",
+   "zh": "歌唱池塘",
+   "pos": [
+    28,
+    -4
+   ],
+   "r": 9
+  },
+  {
+   "id": "honey",
+   "name": "Honey Woods",
+   "zh": "蜂蜜林",
+   "pos": [
+    -26,
+    -20
+   ],
+   "r": 10
+  },
+  {
+   "id": "sweet",
+   "name": "Sweet Shop",
+   "zh": "糖果小铺",
+   "pos": [
+    0,
+    -30
+   ],
+   "r": 9
+  },
+  {
+   "id": "cabin",
+   "name": "Woodcutter's Cabin",
+   "zh": "伐木小屋",
+   "pos": [
+    26,
+    -30
+   ],
+   "r": 9
+  },
+  {
+   "id": "pines",
+   "name": "Sleepy Pines",
+   "zh": "瞌睡松林",
+   "pos": [
+    -24,
+    -40
+   ],
+   "r": 8
+  }
+ ],
+ "decor": [
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     50
+    ],
+    [
+     0,
+     10
+    ]
+   ],
+   "w": 3.6,
+   "color": "#d8c38e"
+  },
+  {
+   "k": "model",
+   "m": "lantern",
+   "at": [
+    -3,
+    35
+   ]
+  },
+  {
+   "k": "model",
+   "m": "lantern",
+   "at": [
+    3,
+    35
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    -14,
+    34
+   ],
+   "to": [
+    -5,
+    34
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    5,
+    34
+   ],
+   "to": [
+    14,
+    34
+   ]
+  },
+  {
+   "k": "grove",
+   "at": [
+    -15,
+    42
+   ],
+   "r": 5,
+   "n": 5,
+   "kind": "pine"
+  },
+  {
+   "k": "grove",
+   "at": [
+    15,
+    42
+   ],
+   "r": 5,
+   "n": 5,
+   "kind": "pine"
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -10,
+    26
+   ],
+   "r": 6,
+   "n": 45
+  },
+  {
+   "k": "meadow",
+   "at": [
+    10,
+    28
+   ],
+   "r": 6,
+   "n": 45
+  },
+  {
+   "k": "plaza",
+   "at": [
+    0,
+    5
+   ],
+   "r": 8,
+   "color": "#d9c79a"
+  },
+  {
+   "k": "model",
+   "m": "herb_plant",
+   "at": [
+    -11,
+    -9
+   ]
+  },
+  {
+   "k": "model",
+   "m": "herb_plant",
+   "at": [
+    9,
+    -6
+   ]
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -9,
+    -3
+   ],
+   "rot": 1.2
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    8,
+    13
+   ],
+   "rot": -2.4,
+   "solid": 0.9
+  },
+  {
+   "k": "lamp",
+   "at": [
+    -3,
+    18
+   ]
+  },
+  {
+   "k": "lamp",
+   "at": [
+    3,
+    20
+   ]
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     8
+    ],
+    [
+     -14,
+     9
+    ],
+    [
+     -23,
+     10
+    ]
+   ],
+   "w": 3,
+   "color": "#d8c38e"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     8
+    ],
+    [
+     14,
+     16
+    ],
+    [
+     23,
+     22
+    ]
+   ],
+   "w": 3,
+   "color": "#d8c38e"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     2,
+     4
+    ],
+    [
+     14,
+     -2
+    ],
+    [
+     24,
+     -4
+    ]
+   ],
+   "w": 3,
+   "color": "#d8c38e"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     -2,
+     2
+    ],
+    [
+     -14,
+     -10
+    ],
+    [
+     -22,
+     -17
+    ]
+   ],
+   "w": 3,
+   "color": "#d8c38e"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     4,
+     0
+    ],
+    [
+     7,
+     -12
+    ],
+    [
+     2,
+     -24
+    ]
+   ],
+   "w": 3,
+   "color": "#d8c38e"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     1,
+     -26
+    ],
+    [
+     13,
+     -30
+    ],
+    [
+     22,
+     -30
+    ]
+   ],
+   "w": 2.8,
+   "color": "#d8c38e"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     -1,
+     -26
+    ],
+    [
+     -12,
+     -33
+    ],
+    [
+     -20,
+     -38
+    ]
+   ],
+   "w": 2.8,
+   "color": "#d8c38e"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     27,
+     -12
+    ],
+    [
+     26,
+     -24
+    ]
+   ],
+   "w": 2.6,
+   "color": "#d8c38e"
+  },
+  {
+   "k": "fence",
+   "from": [
+    -37,
+    2
+   ],
+   "to": [
+    -37,
+    18
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    -37,
+    18
+   ],
+   "to": [
+    -20,
+    18
+   ]
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -24,
+    15
+   ],
+   "rot": 0
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -32,
+    15
+   ],
+   "rot": 0
+  },
+  {
+   "k": "model",
+   "m": "herb_plant",
+   "at": [
+    -34,
+    9
+   ]
+  },
+  {
+   "k": "model",
+   "m": "herb_plant",
+   "at": [
+    -27,
+    3
+   ]
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -28,
+    8
+   ],
+   "r": 5,
+   "n": 40
+  },
+  {
+   "k": "tree",
+   "at": [
+    35,
+    30
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "tree",
+   "at": [
+    18,
+    32
+   ],
+   "s": 1.1
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    32,
+    15
+   ]
+  },
+  {
+   "k": "meadow",
+   "at": [
+    27,
+    31
+   ],
+   "r": 4,
+   "n": 30
+  },
+  {
+   "k": "lamp",
+   "at": [
+    19,
+    18
+   ]
+  },
+  {
+   "k": "pond",
+   "at": [
+    30,
+    -6
+   ],
+   "r": 5,
+   "sx": 1.2
+  },
+  {
+   "k": "tree",
+   "at": [
+    19,
+    -13
+   ],
+   "s": 1.3
+  },
+  {
+   "k": "meadow",
+   "at": [
+    37,
+    3
+   ],
+   "r": 4,
+   "n": 30
+  },
+  {
+   "k": "rock",
+   "at": [
+    37,
+    -13
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "grove",
+   "at": [
+    -38,
+    -26
+   ],
+   "r": 6,
+   "n": 6,
+   "kind": "tree"
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -25,
+    -25
+   ],
+   "r": 4,
+   "n": 30
+  },
+  {
+   "k": "rock",
+   "at": [
+    -16,
+    -24
+   ],
+   "s": 1.0
+  },
+  {
+   "k": "tree",
+   "at": [
+    -31,
+    -10
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "house",
+   "at": [
+    0,
+    -39
+   ],
+   "rot": 0,
+   "w": 6,
+   "h": 3.8,
+   "wall": "#ffd6e0",
+   "roof": "#e85d8a"
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -6,
+    -35
+   ],
+   "rot": 1.57
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    9,
+    -36
+   ],
+   "rot": -0.5,
+   "solid": 0.9
+  },
+  {
+   "k": "rock",
+   "at": [
+    35,
+    -26
+   ],
+   "s": 0.9
+  },
+  {
+   "k": "rock",
+   "at": [
+    36,
+    -29
+   ],
+   "s": 0.7
+  },
+  {
+   "k": "pine",
+   "at": [
+    37,
+    -38
+   ],
+   "s": 1.3
+  },
+  {
+   "k": "pine",
+   "at": [
+    20,
+    -40
+   ],
+   "s": 1.1
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    31,
+    -24
+   ],
+   "rot": 3.14,
+   "solid": 0.9
+  },
+  {
+   "k": "grove",
+   "at": [
+    -35,
+    -40
+   ],
+   "r": 6,
+   "n": 7,
+   "kind": "pine"
+  },
+  {
+   "k": "pine",
+   "at": [
+    -14,
+    -46
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "model",
+   "m": "tent",
+   "at": [
+    -31,
+    -29
+   ],
+   "rot": 0.8,
+   "solid": 1.0
+  },
+  {
+   "k": "grove",
+   "at": [
+    -47,
+    6
+   ],
+   "r": 6,
+   "n": 7,
+   "kind": "pine"
+  },
+  {
+   "k": "grove",
+   "at": [
+    47,
+    10
+   ],
+   "r": 6,
+   "n": 7,
+   "kind": "pine"
+  },
+  {
+   "k": "grove",
+   "at": [
+    -40,
+    36
+   ],
+   "r": 6,
+   "n": 6,
+   "kind": "mix"
+  },
+  {
+   "k": "grove",
+   "at": [
+    40,
+    38
+   ],
+   "r": 6,
+   "n": 6,
+   "kind": "mix"
+  },
+  {
+   "k": "grove",
+   "at": [
+    0,
+    60
+   ],
+   "r": 10,
+   "n": 8,
+   "kind": "pine",
+   "s": 1.2
+  },
+  {
+   "k": "grove",
+   "at": [
+    0,
+    -56
+   ],
+   "r": 10,
+   "n": 7,
+   "kind": "pine"
+  },
+  {
+   "k": "grove",
+   "at": [
+    44,
+    -22
+   ],
+   "r": 5,
+   "n": 5,
+   "kind": "pine"
+  },
+  {
+   "k": "grove",
+   "at": [
+    -46,
+    -12
+   ],
+   "r": 5,
+   "n": 5,
+   "kind": "mix"
+  }
+ ],
+ "things": [
+  {
+   "id": "gate_sign",
+   "name": "clinic sign",
+   "zh": "诊所牌子",
+   "model": "signpost",
+   "pos": [
+    -4,
+    0,
+    39
+   ],
+   "aliases": [
+    "sign",
+    "board",
+    "welcome sign"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Granny Herb's Forest Clinic\nWhat's the matter?\nA cold? A fever? A headache?\nCome in. Granny can help!"
+  },
+  {
+   "id": "lamp1",
+   "name": "lamp",
+   "zh": "路灯",
+   "model": "lamp_post",
+   "pos": [
+    5,
+    0,
+    31
+   ],
+   "aliases": [
+    "light",
+    "lamp post"
+   ],
+   "radius": 0.3,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "hut",
+   "name": "hut",
+   "zh": "小屋",
+   "model": "herb_hut",
+   "pos": [
+    0,
+    0,
+    -4
+   ],
+   "aliases": [
+    "house",
+    "herb hut"
+   ],
+   "radius": 3.2,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "cauldron",
+   "name": "cauldron",
+   "zh": "魔法锅",
+   "model": "cauldron",
+   "pos": [
+    5,
+    0,
+    4
+   ],
+   "aliases": [
+    "pot",
+    "potion"
+   ],
+   "radius": 0.8,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "label",
+   "name": "medicine label",
+   "zh": "药签",
+   "model": "signpost",
+   "pos": [
+    -7,
+    0,
+    1
+   ],
+   "aliases": [
+    "label",
+    "sign"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Honey Lemon Tea\nFor a cold or a sore throat.\nDrink one cup three times a day.\nDo not drink it before you sleep."
+  },
+  {
+   "id": "bottle",
+   "name": "medicine bottle",
+   "zh": "药瓶",
+   "model": "medicine_bottle",
+   "pos": [
+    8,
+    0,
+    9
+   ],
+   "aliases": [
+    "medicine",
+    "bottle"
+   ],
+   "radius": 0.3,
+   "can": [
+    "pick",
+    "fly"
+   ]
+  },
+  {
+   "id": "lamp2",
+   "name": "hut lantern",
+   "zh": "小屋灯笼",
+   "model": "lantern",
+   "pos": [
+    -6,
+    0,
+    -7
+   ],
+   "aliases": [
+    "lantern"
+   ],
+   "radius": 0.4,
+   "can": [
+    "light"
+   ],
+   "params": {
+    "h": 2.2
+   }
+  },
+  {
+   "id": "mint",
+   "name": "mint",
+   "zh": "薄荷",
+   "model": "herb_plant",
+   "pos": [
+    -30,
+    0,
+    11
+   ],
+   "aliases": [
+    "herbs",
+    "herb",
+    "mint plant"
+   ],
+   "tags": [
+    "green"
+   ],
+   "radius": 0.3,
+   "can": [
+    "pick",
+    "grow"
+   ]
+  },
+  {
+   "id": "rabbit",
+   "name": "rabbit",
+   "zh": "小兔子",
+   "model": "rabbit",
+   "pos": [
+    -24,
+    0,
+    6
+   ],
+   "aliases": [
+    "bunny"
+   ],
+   "tags": [
+    "white",
+    "small"
+   ],
+   "color": "white",
+   "radius": 0.4,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Ouch! I fell and hurt my leg.",
+    "Ouch... Can you heal me, please?"
+   ],
+   "reveal": [
+    "ws_hurt"
+   ],
+   "revealOn": "heal"
+  },
+  {
+   "id": "scarecrow",
+   "name": "scarecrow",
+   "zh": "稻草人",
+   "model": "scarecrow",
+   "pos": [
+    -33,
+    0,
+    5
+   ],
+   "radius": 0.5,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "picnic",
+   "name": "picnic table",
+   "zh": "野餐桌",
+   "model": "picnic_table",
+   "pos": [
+    28,
+    0,
+    26
+   ],
+   "aliases": [
+    "table"
+   ],
+   "radius": 1.2,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "teapot",
+   "name": "teapot",
+   "zh": "茶壶",
+   "model": "teapot",
+   "pos": [
+    24,
+    0,
+    29
+   ],
+   "aliases": [
+    "tea",
+    "hot tea",
+    "pot of tea"
+   ],
+   "radius": 0.3,
+   "can": [
+    "pick",
+    "fly"
+   ]
+  },
+  {
+   "id": "bed",
+   "name": "cozy bed",
+   "zh": "小床",
+   "model": "cozy_bed",
+   "pos": [
+    32,
+    0,
+    20
+   ],
+   "aliases": [
+    "bed"
+   ],
+   "radius": 1.0,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "frog",
+   "name": "frog",
+   "zh": "青蛙",
+   "model": "frog",
+   "pos": [
+    35,
+    0,
+    1
+   ],
+   "tags": [
+    "green",
+    "small"
+   ],
+   "color": "green",
+   "radius": 0.3,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Ribbit! You should drink lots of water!",
+    "Ribbit! I never get a cold!"
+   ]
+  },
+  {
+   "id": "swan",
+   "name": "swan",
+   "zh": "天鹅",
+   "model": "swan",
+   "pos": [
+    37,
+    0,
+    -8
+   ],
+   "tags": [
+    "white"
+   ],
+   "color": "white",
+   "radius": 0.5,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "You should take a walk every day. It is good for you!"
+   ]
+  },
+  {
+   "id": "honey",
+   "name": "honey jar",
+   "zh": "蜂蜜罐",
+   "model": "honey_jar",
+   "pos": [
+    -29,
+    0,
+    -22
+   ],
+   "aliases": [
+    "honey",
+    "jar"
+   ],
+   "tags": [
+    "gold"
+   ],
+   "radius": 0.3,
+   "can": [
+    "pick",
+    "fly"
+   ]
+  },
+  {
+   "id": "berry",
+   "name": "berry bush",
+   "zh": "浆果丛",
+   "model": "berry_bush",
+   "pos": [
+    -20,
+    0,
+    -26
+   ],
+   "aliases": [
+    "bush",
+    "berries"
+   ],
+   "radius": 0.7,
+   "can": [
+    "grow"
+   ]
+  },
+  {
+   "id": "chest",
+   "name": "treasure chest",
+   "zh": "宝箱",
+   "model": "treasure_chest",
+   "pos": [
+    -33,
+    0,
+    -15
+   ],
+   "aliases": [
+    "chest",
+    "box",
+    "treasure"
+   ],
+   "radius": 0.6,
+   "can": [
+    "open",
+    "fly"
+   ],
+   "reveal": [
+    "ws_hope"
+   ],
+   "revealOn": "open"
+  },
+  {
+   "id": "cart",
+   "name": "candy cart",
+   "zh": "糖果车",
+   "model": "ice_cream_cart",
+   "pos": [
+    6,
+    0,
+    -31
+   ],
+   "aliases": [
+    "sweet cart",
+    "sweets cart"
+   ],
+   "radius": 1.3,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "tooth_sign",
+   "name": "teeth sign",
+   "zh": "护牙小贴士",
+   "model": "signpost",
+   "pos": [
+    7,
+    0,
+    -24
+   ],
+   "aliases": [
+    "sign",
+    "tooth sign",
+    "board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Happy Teeth Tips\nSweets are yummy, but you shouldn't eat too many.\nYou should brush your teeth twice a day.\nA toothache? You should see a dentist."
+  },
+  {
+   "id": "cabin",
+   "name": "cabin",
+   "zh": "小木屋",
+   "model": "cabin",
+   "pos": [
+    30,
+    0,
+    -35
+   ],
+   "aliases": [
+    "wood cabin",
+    "house"
+   ],
+   "radius": 2.5,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "computer",
+   "name": "computer",
+   "zh": "电脑",
+   "model": "computer",
+   "pos": [
+    27,
+    0,
+    -26
+   ],
+   "aliases": [
+    "laptop"
+   ],
+   "radius": 0.4,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "owl",
+   "name": "owl",
+   "zh": "猫头鹰",
+   "model": "owl",
+   "pos": [
+    -25,
+    0,
+    -43
+   ],
+   "tags": [
+    "brown"
+   ],
+   "radius": 0.4,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Hoo... I went to bed very late. I'm so tired.",
+    "Hoo... I should go to bed early."
+   ],
+   "reveal": [
+    "ws_late"
+   ],
+   "revealOn": "nap"
+  },
+  {
+   "id": "squirrel",
+   "name": "squirrel",
+   "zh": "松鼠",
+   "model": "squirrel",
+   "pos": [
+    -29,
+    0,
+    -36
+   ],
+   "tags": [
+    "brown",
+    "small"
+   ],
+   "radius": 0.3,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "I eat nuts, not candy! Healthy food is good for you!"
+   ]
+  },
+  {
+   "id": "moon_lamp",
+   "name": "moon lantern",
+   "zh": "月亮灯笼",
+   "model": "lantern",
+   "pos": [
+    -18,
+    0,
+    -42
+   ],
+   "aliases": [
+    "lantern",
+    "moon lamp"
+   ],
+   "radius": 0.4,
+   "can": [
+    "light"
+   ],
+   "params": {
+    "h": 2.4
+   }
+  }
+ ],
+ "npcs": [
+  {
+   "id": "granny",
+   "name": "Granny Herb",
+   "zh": "药草奶奶",
+   "model": "healer",
+   "pos": [
+    -4,
+    0,
+    6
+   ],
+   "aliases": [
+    "granny",
+    "healer",
+    "grandma"
+   ],
+   "idle": [
+    "When you have a cold, you should drink hot tea with honey.",
+    "Remember: you shouldn't eat too many sweets!",
+    "What's the matter? Tell Granny."
+   ],
+   "chatter": [
+    "What's the matter, dear? You look tired.",
+    "You should rest and drink lots of water.",
+    "If you have a fever, you should see a doctor."
+   ],
+   "voice": "granny",
+   "persona": "Granny Herb, a wise and kind herbal healer in the forest; natural, short grade-8 English about health problems and advice with should/shouldn't",
+   "greet": "Hello, dear. I'm Granny Herb. Is anyone sick today?",
+   "radius": 0.8
+  },
+  {
+   "id": "tim",
+   "name": "Tim",
+   "zh": "蒂姆",
+   "model": "sick_boy",
+   "pos": [
+    23,
+    0,
+    21
+   ],
+   "aliases": [
+    "tim",
+    "boy",
+    "sick boy"
+   ],
+   "ouch": "Ouch! I am already sick!",
+   "idle": [
+    "I feel much better now. Thank you!",
+    "Hot tea with honey is yummy!"
+   ],
+   "chatter": [
+    "Achoo! I have a cold.",
+    "My head hurts. I have a headache.",
+    "What should I do? Achoo!"
+   ],
+   "voice": "child",
+   "persona": "Tim, a boy with a cold and a headache who played in the rain; grade-8 English",
+   "greet": "Achoo! Achoo! Oh, hello...",
+   "radius": 0.8
+  },
+  {
+   "id": "polly",
+   "name": "Polly",
+   "zh": "鹦鹉波莉",
+   "model": "parrot",
+   "pos": [
+    22,
+    0,
+    -9
+   ],
+   "aliases": [
+    "polly",
+    "parrot",
+    "bird"
+   ],
+   "tags": [
+    "green"
+   ],
+   "idle": [
+    "La la la! My voice is back!",
+    "Honey is good for a sore throat!"
+   ],
+   "chatter": [
+    "Croak... I sang all night. Now my throat hurts.",
+    "Croak... What should I do?"
+   ],
+   "voice": "animal",
+   "persona": "Polly, a singing parrot who sang all night and now has a sore throat; short grade-8 English",
+   "greet": "Croak... hello... I have a sore throat.",
+   "radius": 0.8
+  },
+  {
+   "id": "bruno",
+   "name": "Bruno",
+   "zh": "棕熊布鲁诺",
+   "model": "brown_bear",
+   "pos": [
+    -23,
+    0,
+    -17
+   ],
+   "aliases": [
+    "bruno",
+    "bear",
+    "brown bear"
+   ],
+   "tags": [
+    "brown",
+    "big"
+   ],
+   "color": "brown",
+   "radius": 1.1,
+   "idle": [
+    "I feel better. I shouldn't eat so much honey!",
+    "Thank you, little wizard!"
+   ],
+   "chatter": [
+    "Ohhh... I ate too much honey. I have a stomachache.",
+    "I shouldn't eat so much honey..."
+   ],
+   "voice": "animal",
+   "persona": "Bruno, a big friendly brown bear who ate far too much honey and has a stomachache; short grade-8 English",
+   "greet": "Ohhh... my stomach... Hello, little wizard."
+  },
+  {
+   "id": "sue",
+   "name": "Sue",
+   "zh": "苏",
+   "model": "sick_girl",
+   "pos": [
+    -5,
+    0,
+    -26
+   ],
+   "aliases": [
+    "sue",
+    "girl",
+    "sick girl"
+   ],
+   "idle": [
+    "I won't eat so many sweets now.",
+    "I should brush my teeth twice a day!"
+   ],
+   "chatter": [
+    "Ouch! My tooth hurts!",
+    "I ate too many sweets last night.",
+    "Should I see a dentist?"
+   ],
+   "voice": "child",
+   "persona": "Sue, a girl who loves sweets and now has a toothache; grade-8 English",
+   "greet": "Ouch! My tooth... Hi, I'm Sue.",
+   "radius": 0.8
+  },
+  {
+   "id": "wood",
+   "name": "Mr Wood",
+   "zh": "伍德先生",
+   "model": "tourist",
+   "pos": [
+    23,
+    0,
+    -27
+   ],
+   "aliases": [
+    "mr wood",
+    "wood",
+    "man",
+    "old man",
+    "woodcutter"
+   ],
+   "idle": [
+    "I take a break every hour now!",
+    "My back feels much better. Thank you!"
+   ],
+   "chatter": [
+    "I sat at my computer all day. Now my back hurts.",
+    "I shouldn't sit for so long...",
+    "Oh, I have a sore back."
+   ],
+   "voice": "oldman",
+   "persona": "Mr Wood, a woodcutter whose back hurts after sitting at his computer all day; grade-8 English",
+   "greet": "Oh, my back... Hello there.",
+   "radius": 0.8
+  }
+ ],
+ "quests": [
+  {
+   "id": "hh_listen",
+   "kind": "listen",
+   "skill": "听",
+   "giver": "granny",
+   "titleZh": "听医生和女孩的对话，选出她怎么了",
+   "title": "Listen and choose",
+   "intro": [
+    "Before you help my friends, listen to this talk at the clinic."
+   ],
+   "model": [],
+   "done": [
+    "Yes, she has a toothache. Too many sweets!"
+   ],
+   "prompt": "What's the matter with the girl?",
+   "audio": "Doctor: What's the matter? Girl: I have a toothache. I ate a lot of candy last night. Doctor: You shouldn't eat too many sweets. You should see a dentist.",
+   "options": [
+    "She has a cold",
+    "She has a toothache",
+    "She has a sore back"
+   ],
+   "answer": 1,
+   "video": "herb.mp4"
+  },
+  {
+   "id": "hh_write",
+   "kind": "write",
+   "skill": "写",
+   "giver": "granny",
+   "titleZh": "写建议：发烧的人应该……",
+   "title": "Write advice",
+   "intro": [
+    "Write some advice for my notebook."
+   ],
+   "model": [
+    "You should see a doctor."
+   ],
+   "done": [
+    "Wise words! I will write them in my book."
+   ],
+   "prompt": "Someone has a fever. Write: You should ___.",
+   "accept": [
+    [
+     "should"
+    ],
+    [
+     "doctor",
+     "rest",
+     "water",
+     "medicine",
+     "bed",
+     "sleep",
+     "hospital",
+     "drink",
+     "lie"
+    ]
+   ],
+   "judge": "Advice for a fever using 'You should ...'.",
+   "needs": "hh_listen",
+   "tipZh": "发烧了应该怎么做？写一句“You should …”，比如“You should see a doctor.”"
+  },
+  {
+   "id": "hh_label",
+   "kind": "read",
+   "skill": "读",
+   "giver": "label",
+   "titleZh": "读药签：这种茶一天喝几次？",
+   "title": "Read the label",
+   "intro": [],
+   "model": [],
+   "done": [
+    "Right! Three times a day."
+   ],
+   "passage": "Honey Lemon Tea\nFor a cold or a sore throat.\nDrink one cup three times a day.\nDo not drink it before you sleep.",
+   "prompt": "How often should you drink the tea?",
+   "options": [
+    "Once a day",
+    "Three times a day",
+    "Before you sleep"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "hh_rainbow",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "granny",
+   "titleZh": "Tim 好起来啦！变一道彩虹给森林",
+   "title": "Make a rainbow",
+   "intro": [
+    "Tim feels better, and my friends are smiling again. Let's make the forest happy. Can you make a rainbow?"
+   ],
+   "model": [
+    "Make a rainbow!"
+   ],
+   "done": [
+    "How beautiful! I hope everyone feels better soon. Thank you, little healer!"
+   ],
+   "prompt": "Say: Make a rainbow!",
+   "goal": "rainbow",
+   "needs": "hh_heal",
+   "tipZh": "变出彩虹庆祝：“Make a rainbow!”"
+  },
+  {
+   "id": "hh_ask",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "tim",
+   "titleZh": "问问 Tim：你怎么了？",
+   "title": "Ask: What's the matter?",
+   "intro": [
+    "Achoo! Achoo! I feel terrible..."
+   ],
+   "model": [
+    "What's the matter?"
+   ],
+   "done": [
+    "I played in the rain. Now I have a cold. And I have a headache, too."
+   ],
+   "prompt": "(Ask Tim what is wrong.)",
+   "accept": [
+    [
+     "what is the matter",
+     "whats the matter",
+     "what s the matter",
+     "what is wrong",
+     "whats wrong",
+     "are you ok",
+     "what happened",
+     "are you sick"
+    ]
+   ],
+   "tipZh": "Tim 不舒服。用英语问问他怎么了：“What's the matter?”"
+  },
+  {
+   "id": "hh_advice",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "tim",
+   "titleZh": "给 Tim 建议：You should …",
+   "title": "Give Tim some advice",
+   "intro": [
+    "What should I do?"
+   ],
+   "model": [
+    "You should drink some hot tea.",
+    "You should lie down and rest."
+   ],
+   "done": [
+    "Good idea. Thank you!"
+   ],
+   "prompt": "What should I do?",
+   "accept": [
+    [
+     "should"
+    ],
+    [
+     "drink",
+     "rest",
+     "sleep",
+     "doctor",
+     "take",
+     "medicine",
+     "tea",
+     "water",
+     "lie down",
+     "bed",
+     "stay",
+     "eat",
+     "honey"
+    ]
+   ],
+   "judge": "Advice for a cold and a headache using should/shouldn't (rest, drink hot tea or water, see a doctor, go to bed early...).",
+   "needs": "hh_ask",
+   "tipZh": "用“You should …”给 Tim 出主意，比如“You should drink some hot tea.”"
+  },
+  {
+   "id": "hh_tea",
+   "kind": "do",
+   "skill": "说",
+   "giver": "tim",
+   "titleZh": "把茶壶拿给 Tim：热茶对感冒有好处",
+   "title": "Hot tea for Tim",
+   "intro": [
+    "Granny says hot tea with honey is good for a cold. Can you give me the teapot?"
+   ],
+   "model": [
+    "Pick up the teapot.",
+    "Give the teapot to Tim."
+   ],
+   "done": [
+    "Mmm, hot tea! Thank you. I feel warm now."
+   ],
+   "goal": "give:*:tim",
+   "needs": "hh_advice",
+   "tipZh": "先拿起茶壶：“Pick up the teapot.” 再给他：“Give the teapot to Tim.”"
+  },
+  {
+   "id": "hh_heal",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "tim",
+   "titleZh": "最后用魔法治好 Tim",
+   "title": "Heal Tim",
+   "intro": [
+    "The tea is nice, but I still feel tired. Can you add some magic?"
+   ],
+   "model": [
+    "Heal Tim!"
+   ],
+   "done": [
+    "Wow! My head doesn't hurt now. I feel great!"
+   ],
+   "prompt": "Say: Heal Tim!",
+   "goal": "heal:tim",
+   "needs": "hh_tea",
+   "tipZh": "念咒语：“Heal Tim!”"
+  },
+  {
+   "id": "hh_sue",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "sue",
+   "titleZh": "告诉 Sue 她得了什么病",
+   "title": "What do I have?",
+   "intro": [
+    "Ouch! I ate ten candies last night. Now my tooth hurts. What's the matter with me?"
+   ],
+   "model": [
+    "You have a toothache."
+   ],
+   "done": [
+    "A toothache! Oh no..."
+   ],
+   "prompt": "What's the matter with me?",
+   "accept": [
+    [
+     "toothache",
+     "tooth"
+    ]
+   ],
+   "tipZh": "Sue 牙疼。告诉她：“You have a toothache.”"
+  },
+  {
+   "id": "hh_sue_advice",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "sue",
+   "titleZh": "给 Sue 建议：should / shouldn't",
+   "title": "Advice for Sue",
+   "intro": [
+    "What should I do?"
+   ],
+   "model": [
+    "You should see a dentist.",
+    "You shouldn't eat so many sweets."
+   ],
+   "done": [
+    "OK. I will see a dentist. And no more candy at night!"
+   ],
+   "prompt": "What should I do?",
+   "accept": [
+    [
+     "should"
+    ],
+    [
+     "dentist",
+     "doctor",
+     "sweet",
+     "candy",
+     "brush",
+     "tooth",
+     "sugar",
+     "eat",
+     "water"
+    ]
+   ],
+   "judge": "Advice for a toothache with should/shouldn't (see a dentist, brush teeth, don't eat too many sweets).",
+   "needs": "hh_sue",
+   "tipZh": "可以说“You should see a dentist.”或者“You shouldn't eat so many sweets.”"
+  },
+  {
+   "id": "hh_cart",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "sue",
+   "titleZh": "Sue 一看到糖就想吃：让糖果车消失",
+   "title": "Hide the candy cart",
+   "intro": [
+    "Oh no, the candy cart! I want more sweets... Please help me!"
+   ],
+   "model": [
+    "Make the candy cart disappear!"
+   ],
+   "done": [
+    "Phew! No more sweets for me today. Thank you!"
+   ],
+   "prompt": "Say: Make the candy cart disappear!",
+   "goal": "vanish:cart",
+   "needs": "hh_sue_advice",
+   "tipZh": "让糖果车消失：“Make the candy cart disappear!”"
+  },
+  {
+   "id": "hh_teeth",
+   "kind": "read",
+   "skill": "读",
+   "giver": "tooth_sign",
+   "titleZh": "读护牙小贴士：一天应该刷几次牙？",
+   "title": "Read the tips",
+   "intro": [],
+   "model": [],
+   "done": [
+    "Right! You should brush your teeth twice a day."
+   ],
+   "passage": "Happy Teeth Tips\nSweets are yummy, but you shouldn't eat too many.\nYou should brush your teeth twice a day.\nA toothache? You should see a dentist.",
+   "prompt": "How often should you brush your teeth?",
+   "options": [
+    "Twice a day",
+    "Once a week",
+    "After every candy"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "hh_bruno",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "bruno",
+   "titleZh": "棕熊吃了太多蜂蜜肚子疼：给他建议",
+   "title": "Help Bruno",
+   "intro": [
+    "Ohhh... I ate five jars of honey. Now I have a stomachache."
+   ],
+   "model": [
+    "You should lie down and rest.",
+    "You shouldn't eat so much honey."
+   ],
+   "done": [
+    "You are right. I shouldn't eat so much honey..."
+   ],
+   "prompt": "What should I do?",
+   "accept": [
+    [
+     "should"
+    ]
+   ],
+   "judge": "Advice for a stomachache with should/shouldn't (rest, lie down, don't eat so much, drink warm water, see a doctor).",
+   "tipZh": "用“You should …”或“You shouldn't …”给棕熊出主意。"
+  },
+  {
+   "id": "hh_bruno_nap",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "bruno",
+   "titleZh": "棕熊该躺下休息了：让他睡一觉",
+   "title": "Make Bruno sleep",
+   "intro": [
+    "Granny says I should lie down and rest. But I can't sleep! Can you help me?"
+   ],
+   "model": [
+    "Make Bruno sleep!"
+   ],
+   "done": [
+    "Zzz... Zzz... (Bruno is sleeping. He will feel better soon.)"
+   ],
+   "prompt": "Say: Make Bruno sleep!",
+   "goal": "nap:bruno",
+   "needs": "hh_bruno",
+   "tipZh": "让棕熊睡一觉：“Make Bruno sleep!”"
+  },
+  {
+   "id": "hh_back",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "wood",
+   "titleZh": "给伍德先生的腰疼出主意",
+   "title": "Help Mr Wood",
+   "intro": [
+    "I sat at my computer all day. Now my back hurts."
+   ],
+   "model": [
+    "You should take a break and lie down.",
+    "You shouldn't sit for too long."
+   ],
+   "done": [
+    "That makes sense. I will rest now. Thank you!"
+   ],
+   "prompt": "What should I do?",
+   "accept": [
+    [
+     "should"
+    ],
+    [
+     "rest",
+     "lie down",
+     "break",
+     "doctor",
+     "move",
+     "walk",
+     "stand",
+     "exercise",
+     "sleep",
+     "stop",
+     "sit"
+    ]
+   ],
+   "judge": "Advice with should/shouldn't that suits a sore back (rest, lie down, take a break, see a doctor, don't sit too long).",
+   "tipZh": "伍德先生腰疼。可以说“You should take a break.”或“You shouldn't sit for too long.”"
+  },
+  {
+   "id": "hh_wood_heal",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "wood",
+   "titleZh": "用魔法治好伍德先生的腰",
+   "title": "Heal Mr Wood",
+   "intro": [
+    "A little magic would help my back, too..."
+   ],
+   "model": [
+    "Heal Mr Wood!"
+   ],
+   "done": [
+    "Oh! My back feels great! I can chop wood again!"
+   ],
+   "prompt": "Say: Heal Mr Wood!",
+   "goal": "heal:wood",
+   "needs": "hh_back",
+   "tipZh": "念咒语：“Heal Mr Wood!”"
+  },
+  {
+   "id": "hh_polly",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "polly",
+   "titleZh": "鹦鹉嗓子疼：给她建议",
+   "title": "Help Polly",
+   "intro": [
+    "Croak... I sang all night. Now I have a sore throat."
+   ],
+   "model": [
+    "You should drink warm water with honey.",
+    "You shouldn't sing so much."
+   ],
+   "done": [
+    "Croak... good idea. Honey! I need some honey!"
+   ],
+   "prompt": "What should I do?",
+   "accept": [
+    [
+     "should"
+    ]
+   ],
+   "judge": "Advice for a sore throat with should/shouldn't (drink warm water or tea with honey, rest your voice, don't sing so much).",
+   "tipZh": "波莉嗓子疼。说“You should drink warm water with honey.”"
+  },
+  {
+   "id": "hh_polly_honey",
+   "kind": "do",
+   "skill": "说",
+   "giver": "polly",
+   "titleZh": "去蜂蜜林拿蜂蜜罐，送给波莉",
+   "title": "Honey for Polly",
+   "intro": [
+    "Honey is good for a sore throat. There is a honey jar in the Honey Woods. Can you bring it to me?"
+   ],
+   "model": [
+    "Pick up the honey jar.",
+    "Give the honey jar to Polly."
+   ],
+   "done": [
+    "Mmm, honey! La la la! My voice is back! Thank you!"
+   ],
+   "goal": "give:*:polly",
+   "needs": "hh_polly",
+   "tipZh": "蜂蜜罐在西南边的蜂蜜林。“Pick up the honey jar.” 拿回来再说“Give the honey jar to Polly.”"
+  }
+ ],
+ "words": [
+  {
+   "id": "ws_matter",
+   "say": "What's the matter?",
+   "zh": "你怎么了？",
+   "pos": [
+    3,
+    29
+   ]
+  },
+  {
+   "id": "ws_fever",
+   "say": "fever",
+   "zh": "发烧",
+   "pos": [
+    -9,
+    12
+   ]
+  },
+  {
+   "id": "ws_medicine",
+   "say": "medicine",
+   "zh": "药",
+   "pos": [
+    11,
+    7
+   ]
+  },
+  {
+   "id": "ws_tea",
+   "say": "You should drink hot tea with honey.",
+   "zh": "你应该喝点加蜂蜜的热茶。",
+   "pos": [
+    12,
+    14
+   ]
+  },
+  {
+   "id": "ws_cold",
+   "say": "cold",
+   "zh": "感冒",
+   "pos": [
+    20,
+    26
+   ]
+  },
+  {
+   "id": "ws_havecold",
+   "say": "I have a cold.",
+   "zh": "我感冒了。",
+   "pos": [
+    27,
+    17
+   ]
+  },
+  {
+   "id": "ws_headache",
+   "say": "headache",
+   "zh": "头疼",
+   "pos": [
+    32,
+    28
+   ]
+  },
+  {
+   "id": "ws_throat",
+   "say": "sore throat",
+   "zh": "嗓子疼",
+   "pos": [
+    19,
+    -4
+   ]
+  },
+  {
+   "id": "ws_stomach",
+   "say": "stomachache",
+   "zh": "肚子疼",
+   "pos": [
+    -18,
+    -20
+   ]
+  },
+  {
+   "id": "ws_toothache",
+   "say": "toothache",
+   "zh": "牙疼",
+   "pos": [
+    -3,
+    -21
+   ]
+  },
+  {
+   "id": "ws_dentist",
+   "say": "see a dentist",
+   "zh": "看牙医",
+   "pos": [
+    10,
+    -27
+   ]
+  },
+  {
+   "id": "ws_sweets",
+   "say": "You shouldn't eat too many sweets.",
+   "zh": "你不应该吃太多糖。",
+   "pos": [
+    -9,
+    -32
+   ]
+  },
+  {
+   "id": "ws_back",
+   "say": "sore back",
+   "zh": "背疼",
+   "pos": [
+    19,
+    -32
+   ]
+  },
+  {
+   "id": "ws_rest",
+   "say": "rest",
+   "zh": "休息",
+   "pos": [
+    -15,
+    -40
+   ]
+  },
+  {
+   "id": "ws_should",
+   "say": "What should I do?",
+   "zh": "我该怎么办？",
+   "pos": [
+    -19,
+    14
+   ]
+  },
+  {
+   "id": "ws_hurt",
+   "say": "I hurt my leg.",
+   "zh": "我弄伤了腿。",
+   "pos": [
+    -21,
+    3
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_late",
+   "say": "You shouldn't go to bed late.",
+   "zh": "你不应该睡得太晚。",
+   "pos": [
+    -29,
+    -41
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_hope",
+   "say": "I hope you feel better soon.",
+   "zh": "希望你早日康复。",
+   "pos": [
+    -36,
+    -19
+   ],
+   "hidden": true
+  }
+ ],
+ "spellIdeas": [
+  {
+   "say": "Heal the rabbit!",
+   "zh": "治好受伤的小兔子（会发现秘密哦）",
+   "near": "rabbit"
+  },
+  {
+   "say": "Make the owl sleep!",
+   "zh": "让熬夜的猫头鹰去睡觉",
+   "near": "owl"
+  },
+  {
+   "say": "Open the chest!",
+   "zh": "打开蜂蜜林的宝箱",
+   "near": "chest"
+  },
+  {
+   "say": "Make the cauldron glow!",
+   "zh": "让魔法锅发光",
+   "near": "cauldron"
+  },
+  {
+   "say": "Light the hut!",
+   "zh": "点亮小屋",
+   "near": "hut"
+  },
+  {
+   "say": "Make the computer sleep!",
+   "zh": "让电脑休息一下",
+   "near": "computer"
+  },
+  {
+   "say": "Make the scarecrow dance!",
+   "zh": "让稻草人跳舞",
+   "near": "scarecrow"
+  },
+  {
+   "say": "Make the mint big!",
+   "zh": "把薄荷变大",
+   "near": "mint"
+  },
+  {
+   "say": "Make the frog sing!",
+   "zh": "让青蛙唱歌",
+   "near": "frog"
+  },
+  {
+   "say": "Make an apple!",
+   "zh": "变一个苹果，健康食物"
+  },
+  {
+   "say": "Make it rain!",
+   "zh": "给药草浇浇水"
+  },
+  {
+   "say": "Make it night!",
+   "zh": "让天黑，该睡觉啦"
+  },
+  {
+   "say": "Light the moon lantern!",
+   "zh": "点亮月亮灯笼",
+   "near": "moon_lamp"
+  },
+  {
+   "say": "Make the swan dance!",
+   "zh": "让天鹅跳舞",
+   "near": "swan"
+  },
+  {
+   "say": "Make three teapots!",
+   "zh": "变出三个茶壶",
+   "near": "teapot"
+  },
+  {
+   "say": "Make Bruno sleep!",
+   "zh": "让 Bruno 好好休息"
+  },
+  {
+   "say": "Everybody, sleep!",
+   "zh": "让大家都去休息"
+  },
+  {
+   "say": "Make it rain hearts!",
+   "zh": "下一场爱心雨，祝大家早日康复"
+  },
+  {
+   "say": "Make the frog happy!",
+   "zh": "让青蛙开心起来"
+  },
+  {
+   "say": "Make the teapot dance!",
+   "zh": "让茶壶跳舞"
+  },
+  {
+   "say": "Put the honey jar on a cloud!",
+   "zh": "让蜂蜜罐坐上云朵"
+  },
+  {
+   "say": "Make the candy cart invisible!",
+   "zh": "让糖果车隐身（少吃糖！）"
+  },
+  {
+   "say": "Make the cauldron rainbow!",
+   "zh": "把魔药锅变成彩虹色"
+  },
+  {
+   "say": "Shooting stars!",
+   "zh": "召唤流星"
+  },
+  {
+   "say": "Make butterflies!",
+   "zh": "变出一群蝴蝶"
+  }
+ ]
+}

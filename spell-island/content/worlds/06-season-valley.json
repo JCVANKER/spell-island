@@ -1,0 +1,2136 @@
+{
+ "id": "season-valley",
+ "order": 6,
+ "grade": "五年级下册",
+ "gradeNum": 5,
+ "unit": "Unit · My favourite season: Which season do you like best? Why?（季节）",
+ "title": "Four Seasons Valley",
+ "titleZh": "四季山谷",
+ "scene": "valley",
+ "start": {
+  "season": "summer"
+ },
+ "bounds": 52,
+ "intro": [
+  "欢迎来到四季山谷！这里有春之花园、夏日湖滩、秋天果园和冬日雪坡，季节也听你的魔法！",
+  "山谷里的每个人都有最喜欢的季节。先去季节广场找 Mia：“Go to Mia!”"
+ ],
+ "vocab": [
+  "season",
+  "spring",
+  "summer",
+  "autumn",
+  "fall",
+  "winter",
+  "best",
+  "why",
+  "because",
+  "warm",
+  "hot",
+  "cool",
+  "cold",
+  "fly kites",
+  "swim",
+  "pick apples",
+  "make a snowman",
+  "go on a picnic",
+  "leaves"
+ ],
+ "patterns": [
+  "Which season do you like best?",
+  "I like winter best.",
+  "Why? Because I can make a snowman.",
+  "Summer is hot. Autumn is golden.",
+  "Make it spring!"
+ ],
+ "spawn": {
+  "pos": [
+   0,
+   0,
+   44
+  ],
+  "rot": 3.14159
+ },
+ "zones": [
+  {
+   "id": "gate",
+   "name": "Valley Gate",
+   "zh": "山谷入口",
+   "pos": [
+    0,
+    38
+   ],
+   "r": 7
+  },
+  {
+   "id": "square",
+   "name": "Season Square",
+   "zh": "季节广场",
+   "pos": [
+    0,
+    14
+   ],
+   "r": 9
+  },
+  {
+   "id": "spring",
+   "name": "Spring Garden",
+   "zh": "春之花园",
+   "pos": [
+    -27,
+    22
+   ],
+   "r": 10
+  },
+  {
+   "id": "kites",
+   "name": "Kite Field",
+   "zh": "风筝草地",
+   "pos": [
+    -37,
+    0
+   ],
+   "r": 8
+  },
+  {
+   "id": "summer",
+   "name": "Summer Beach",
+   "zh": "夏日湖滩",
+   "pos": [
+    27,
+    19
+   ],
+   "r": 11
+  },
+  {
+   "id": "autumn",
+   "name": "Autumn Orchard",
+   "zh": "秋天果园",
+   "pos": [
+    -27,
+    -21
+   ],
+   "r": 11
+  },
+  {
+   "id": "winter",
+   "name": "Winter Hill",
+   "zh": "冬日雪坡",
+   "pos": [
+    26,
+    -23
+   ],
+   "r": 11
+  },
+  {
+   "id": "picnic",
+   "name": "Picnic Hill",
+   "zh": "野餐山坡",
+   "pos": [
+    0,
+    -34
+   ],
+   "r": 8
+  }
+ ],
+ "decor": [
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     50
+    ],
+    [
+     0,
+     30
+    ],
+    [
+     0,
+     14
+    ]
+   ],
+   "w": 4
+  },
+  {
+   "k": "plaza",
+   "at": [
+    0,
+    14
+   ],
+   "r": 8,
+   "color": "#e8d6a8"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     14
+    ],
+    [
+     -14,
+     18
+    ],
+    [
+     -24,
+     21
+    ]
+   ],
+   "w": 3
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     -14,
+     18
+    ],
+    [
+     -26,
+     8
+    ],
+    [
+     -34,
+     1
+    ]
+   ],
+   "w": 2.8
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     14
+    ],
+    [
+     14,
+     17
+    ],
+    [
+     22,
+     18
+    ]
+   ],
+   "w": 3
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     14
+    ],
+    [
+     -10,
+     0
+    ],
+    [
+     -22,
+     -14
+    ],
+    [
+     -26,
+     -19
+    ]
+   ],
+   "w": 3
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     14
+    ],
+    [
+     10,
+     0
+    ],
+    [
+     20,
+     -14
+    ],
+    [
+     24,
+     -19
+    ]
+   ],
+   "w": 3
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     6
+    ],
+    [
+     0,
+     -20
+    ],
+    [
+     0,
+     -30
+    ]
+   ],
+   "w": 3
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     -22,
+     -14
+    ],
+    [
+     -10,
+     -26
+    ],
+    [
+     0,
+     -30
+    ]
+   ],
+   "w": 2.6
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     20,
+     -14
+    ],
+    [
+     10,
+     -26
+    ],
+    [
+     0,
+     -30
+    ]
+   ],
+   "w": 2.6
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -27,
+    22
+   ],
+   "r": 9,
+   "n": 110
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -36,
+    2
+   ],
+   "r": 7,
+   "n": 50
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -20,
+    15
+   ],
+   "rot": 0.3
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -30,
+    15
+   ],
+   "rot": -0.3
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -27,
+    30
+   ],
+   "rot": 0
+  },
+  {
+   "k": "tree",
+   "at": [
+    -38,
+    18
+   ],
+   "s": 1.2,
+   "leaf": "#f4a6c8"
+  },
+  {
+   "k": "tree",
+   "at": [
+    -18,
+    31
+   ],
+   "s": 1.1,
+   "leaf": "#f4a6c8"
+  },
+  {
+   "k": "tree",
+   "at": [
+    -37,
+    32
+   ],
+   "s": 1.2,
+   "leaf": "#f7c6d9"
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    -16,
+    23
+   ],
+   "rot": -1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "windmill",
+   "at": [
+    -45,
+    8
+   ],
+   "rot": 0.6,
+   "solid": 1.4
+  },
+  {
+   "k": "plaza",
+   "at": [
+    25,
+    19
+   ],
+   "r": 8,
+   "color": "#f2dfa8"
+  },
+  {
+   "k": "pond",
+   "at": [
+    37,
+    20
+   ],
+   "r": 5,
+   "sx": 1.2
+  },
+  {
+   "k": "model",
+   "m": "boat",
+   "at": [
+    37,
+    24
+   ],
+   "rot": 0.4
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    16,
+    13
+   ]
+  },
+  {
+   "k": "tree",
+   "at": [
+    33,
+    30
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "tree",
+   "at": [
+    42,
+    10
+   ],
+   "s": 1.1
+  },
+  {
+   "k": "tree",
+   "at": [
+    -17,
+    -30
+   ],
+   "s": 1.2,
+   "leaf": "#e8913a"
+  },
+  {
+   "k": "tree",
+   "at": [
+    -38,
+    -32
+   ],
+   "s": 1.2,
+   "leaf": "#d9542e"
+  },
+  {
+   "k": "tree",
+   "at": [
+    -40,
+    -14
+   ],
+   "s": 1.1,
+   "leaf": "#f2b437"
+  },
+  {
+   "k": "tree",
+   "at": [
+    -13,
+    -9
+   ],
+   "s": 1.0,
+   "leaf": "#e8913a"
+  },
+  {
+   "k": "tree",
+   "at": [
+    -30,
+    -36
+   ],
+   "s": 1.1,
+   "leaf": "#f2b437"
+  },
+  {
+   "k": "model",
+   "m": "apple_crate",
+   "at": [
+    -31,
+    -18
+   ],
+   "rot": 0.5,
+   "solid": 0.6
+  },
+  {
+   "k": "fence",
+   "from": [
+    -42,
+    -6
+   ],
+   "to": [
+    -30,
+    -8
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    -42,
+    -6
+   ],
+   "to": [
+    -44,
+    -20
+   ]
+  },
+  {
+   "k": "pine",
+   "at": [
+    16,
+    -32
+   ],
+   "s": 1.3
+  },
+  {
+   "k": "pine",
+   "at": [
+    24,
+    -34
+   ],
+   "s": 1.4
+  },
+  {
+   "k": "pine",
+   "at": [
+    36,
+    -30
+   ],
+   "s": 1.3
+  },
+  {
+   "k": "pine",
+   "at": [
+    38,
+    -14
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "pine",
+   "at": [
+    14,
+    -12
+   ],
+   "s": 1.1
+  },
+  {
+   "k": "mountain",
+   "at": [
+    36,
+    -58
+   ],
+   "r": 20,
+   "h": 18,
+   "color": "#dfe8ee",
+   "snow": true
+  },
+  {
+   "k": "rock",
+   "at": [
+    28,
+    -14
+   ],
+   "s": 0.9
+  },
+  {
+   "k": "meadow",
+   "at": [
+    0,
+    -34
+   ],
+   "r": 7,
+   "n": 50
+  },
+  {
+   "k": "model",
+   "m": "hot_air_balloon",
+   "at": [
+    9,
+    -40
+   ],
+   "rot": 0,
+   "solid": 1.8
+  },
+  {
+   "k": "tree",
+   "at": [
+    -9,
+    -32
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "mountain",
+   "at": [
+    -30,
+    -62
+   ],
+   "r": 22,
+   "h": 18,
+   "color": "#86a870",
+   "snow": true
+  },
+  {
+   "k": "mountain",
+   "at": [
+    4,
+    -66
+   ],
+   "r": 24,
+   "h": 20,
+   "color": "#86a870",
+   "snow": true
+  },
+  {
+   "k": "mountain",
+   "at": [
+    -62,
+    10
+   ],
+   "r": 16,
+   "h": 12,
+   "color": "#86a870"
+  },
+  {
+   "k": "mountain",
+   "at": [
+    62,
+    4
+   ],
+   "r": 16,
+   "h": 12,
+   "color": "#86a870"
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    -7,
+    10
+   ],
+   "rot": 1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    8,
+    21
+   ],
+   "rot": -1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    -6,
+    26
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    6,
+    26
+   ]
+  },
+  {
+   "k": "tree",
+   "at": [
+    -12,
+    40
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "tree",
+   "at": [
+    12,
+    40
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "grove",
+   "at": [
+    0,
+    62
+   ],
+   "r": 10,
+   "n": 8,
+   "kind": "mix",
+   "s": 1.2
+  },
+  {
+   "k": "lamp",
+   "at": [
+    -3,
+    30
+   ]
+  },
+  {
+   "k": "lamp",
+   "at": [
+    3,
+    30
+   ]
+  }
+ ],
+ "things": [
+  {
+   "id": "lamp1",
+   "name": "lamp",
+   "zh": "路灯",
+   "model": "lamp_post",
+   "pos": [
+    4,
+    0,
+    36
+   ],
+   "aliases": [
+    "light",
+    "lamp post"
+   ],
+   "radius": 0.3,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "fountain",
+   "name": "fountain",
+   "zh": "喷泉",
+   "model": "fountain",
+   "pos": [
+    0,
+    0,
+    12
+   ],
+   "radius": 1.8,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "season_sign",
+   "name": "season sign",
+   "zh": "季节告示牌",
+   "model": "signpost",
+   "pos": [
+    -6,
+    0,
+    20
+   ],
+   "aliases": [
+    "sign",
+    "board",
+    "notice"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "In spring, it's warm. We can fly kites.\nIn summer, it's hot. We can swim.\nIn autumn, it's cool. We can pick apples.\nIn winter, it's cold. We can make a snowman."
+  },
+  {
+   "id": "vane",
+   "name": "weather vane",
+   "zh": "风向标",
+   "model": "weather_vane",
+   "pos": [
+    7,
+    0,
+    8
+   ],
+   "aliases": [
+    "vane",
+    "season vane"
+   ],
+   "radius": 0.4,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "flowers",
+   "name": "flowers",
+   "zh": "花",
+   "model": "flowers",
+   "pos": [
+    -24,
+    0,
+    18
+   ],
+   "aliases": [
+    "flower"
+   ],
+   "radius": 0,
+   "can": [
+    "grow"
+   ]
+  },
+  {
+   "id": "swing",
+   "name": "swing",
+   "zh": "秋千",
+   "model": "swing",
+   "pos": [
+    -33,
+    0,
+    25
+   ],
+   "radius": 1.2,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "rabbit",
+   "name": "rabbit",
+   "zh": "兔子",
+   "model": "rabbit",
+   "pos": [
+    -21,
+    0,
+    26
+   ],
+   "tags": [
+    "white",
+    "small"
+   ],
+   "color": "white",
+   "radius": 0.4,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Hop hop! I like spring best because it's warm and green!"
+   ]
+  },
+  {
+   "id": "kite",
+   "name": "kite",
+   "zh": "风筝",
+   "model": "kite",
+   "pos": [
+    -39,
+    0,
+    -2
+   ],
+   "tags": [
+    "red"
+   ],
+   "color": "red",
+   "radius": 0.4,
+   "can": [
+    "fly",
+    "pick"
+   ]
+  },
+  {
+   "id": "lake",
+   "name": "lake",
+   "zh": "湖",
+   "model": "none",
+   "pos": [
+    37,
+    0,
+    20
+   ],
+   "aliases": [
+    "pond",
+    "water"
+   ],
+   "radius": 0,
+   "label": true
+  },
+  {
+   "id": "ball",
+   "name": "beach ball",
+   "zh": "沙滩球",
+   "model": "beach_ball",
+   "pos": [
+    25,
+    0,
+    13
+   ],
+   "aliases": [
+    "ball"
+   ],
+   "radius": 0.4,
+   "can": [
+    "fly",
+    "pick"
+   ]
+  },
+  {
+   "id": "sandcastle",
+   "name": "sandcastle",
+   "zh": "沙堡",
+   "model": "sandcastle",
+   "pos": [
+    27,
+    0,
+    25
+   ],
+   "aliases": [
+    "sand castle",
+    "castle"
+   ],
+   "radius": 0.6,
+   "can": [
+    "fly"
+   ],
+   "reveal": [
+    "ws_swim"
+   ],
+   "revealOn": "big"
+  },
+  {
+   "id": "cart",
+   "name": "ice cream cart",
+   "zh": "冰淇淋车",
+   "model": "ice_cream_cart",
+   "pos": [
+    18,
+    0,
+    26
+   ],
+   "aliases": [
+    "cart",
+    "ice cream car"
+   ],
+   "radius": 1.3,
+   "can": [
+    "fly"
+   ]
+  },
+  {
+   "id": "apple_tree",
+   "name": "apple tree",
+   "zh": "苹果树",
+   "model": "fruit_tree",
+   "pos": [
+    -30,
+    0,
+    -25
+   ],
+   "aliases": [
+    "tree"
+   ],
+   "radius": 1.0,
+   "can": [
+    "grow"
+   ]
+  },
+  {
+   "id": "apple_tree2",
+   "name": "apple tree",
+   "zh": "苹果树",
+   "model": "fruit_tree",
+   "pos": [
+    -21,
+    0,
+    -29
+   ],
+   "aliases": [
+    "tree"
+   ],
+   "radius": 1.0,
+   "can": [
+    "grow"
+   ],
+   "label": false
+  },
+  {
+   "id": "leaves",
+   "name": "leaves",
+   "zh": "落叶堆",
+   "model": "leaf_pile",
+   "pos": [
+    -16,
+    0,
+    -14
+   ],
+   "aliases": [
+    "leaf pile",
+    "leaf"
+   ],
+   "tags": [
+    "red",
+    "yellow"
+   ],
+   "radius": 0.6,
+   "can": [
+    "fly"
+   ],
+   "reveal": [
+    "ws_leaves"
+   ],
+   "revealOn": "fly"
+  },
+  {
+   "id": "pumpkin",
+   "name": "pumpkin",
+   "zh": "南瓜",
+   "model": "pumpkin",
+   "pos": [
+    -35,
+    0,
+    -13
+   ],
+   "tags": [
+    "orange",
+    "big"
+   ],
+   "color": "orange",
+   "radius": 0.5,
+   "can": [
+    "grow",
+    "pick"
+   ]
+  },
+  {
+   "id": "scarecrow",
+   "name": "scarecrow",
+   "zh": "稻草人",
+   "model": "scarecrow",
+   "pos": [
+    -37,
+    0,
+    -25
+   ],
+   "radius": 0.5,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "funny"
+   },
+   "chatter": [
+    "Hello! I like autumn best. Why? Because the apples are red!",
+    "Autumn is golden. Look at the leaves!"
+   ]
+  },
+  {
+   "id": "orchard_sign",
+   "name": "orchard sign",
+   "zh": "果园告示牌",
+   "model": "signpost",
+   "pos": [
+    -17,
+    0,
+    -21
+   ],
+   "aliases": [
+    "sign",
+    "board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "AUTUMN ORCHARD\nAutumn is golden.\nI like autumn best because I can pick apples."
+  },
+  {
+   "id": "sled",
+   "name": "sled",
+   "zh": "雪橇",
+   "model": "sled",
+   "pos": [
+    31,
+    0,
+    -28
+   ],
+   "aliases": [
+    "sledge"
+   ],
+   "tags": [
+    "red"
+   ],
+   "radius": 0.6,
+   "can": [
+    "fly",
+    "pick"
+   ]
+  },
+  {
+   "id": "hat",
+   "name": "woolly hat",
+   "zh": "毛线帽",
+   "model": "woolly_hat",
+   "pos": [
+    19,
+    0,
+    -27
+   ],
+   "aliases": [
+    "hat",
+    "wool hat"
+   ],
+   "tags": [
+    "red"
+   ],
+   "radius": 0.2,
+   "can": [
+    "pick"
+   ]
+  },
+  {
+   "id": "penguin",
+   "name": "penguin",
+   "zh": "企鹅",
+   "model": "penguin",
+   "pos": [
+    32,
+    0,
+    -18
+   ],
+   "tags": [
+    "black",
+    "white"
+   ],
+   "color": "black",
+   "radius": 0.5,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "I like winter best because it's cold and snowy!",
+    "Which season do you like best? Winter, winter, winter!"
+   ]
+  },
+  {
+   "id": "winter_sign",
+   "name": "winter sign",
+   "zh": "雪坡告示牌",
+   "model": "signpost",
+   "pos": [
+    18,
+    0,
+    -17
+   ],
+   "aliases": [
+    "sign",
+    "board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "WINTER HILL\nWinter is cold and white.\nWe can make a snowman and go sledding.\nDon't forget your hat!"
+  },
+  {
+   "id": "picnic",
+   "name": "picnic table",
+   "zh": "野餐桌",
+   "model": "picnic_table",
+   "pos": [
+    0,
+    0,
+    -33
+   ],
+   "aliases": [
+    "table",
+    "picnic"
+   ],
+   "radius": 1.2
+  },
+  {
+   "id": "chest",
+   "name": "treasure chest",
+   "zh": "宝箱",
+   "model": "treasure_chest",
+   "pos": [
+    -6,
+    0,
+    -38
+   ],
+   "aliases": [
+    "chest",
+    "box",
+    "treasure",
+    "picnic basket"
+   ],
+   "radius": 0.6,
+   "can": [
+    "open",
+    "fly"
+   ],
+   "reveal": [
+    "ws_picnic"
+   ],
+   "revealOn": "open"
+  }
+ ],
+ "npcs": [
+  {
+   "id": "mia",
+   "name": "Mia",
+   "zh": "米娅",
+   "model": "girl_scarf",
+   "pos": [
+    3,
+    0,
+    19
+   ],
+   "aliases": [
+    "girl",
+    "mia"
+   ],
+   "idle": [
+    "Which season do you like best?",
+    "I like spring best because the flowers are pretty!",
+    "Try a season spell: Make it autumn!"
+   ],
+   "chatter": [
+    "Which season do you like best?",
+    "I like spring best. Why? Because I can fly kites!",
+    "Spring is green. Summer is hot. Autumn is golden. Winter is white!"
+   ],
+   "voice": "child",
+   "persona": "Mia, a cheerful girl who asks everyone about their favourite season; grade-5 English (Which season do you like best? Why? Because…)",
+   "greet": "Hi! I'm Mia. I love all the seasons!",
+   "radius": 0.8
+  },
+  {
+   "id": "snow",
+   "name": "Mr Snow",
+   "zh": "雪人先生",
+   "model": "snowman",
+   "pos": [
+    24,
+    0,
+    -21
+   ],
+   "aliases": [
+    "snowman",
+    "mr snow",
+    "snow man"
+   ],
+   "tags": [
+    "white"
+   ],
+   "ouch": "Ouch! My carrot nose!",
+   "idle": [
+    "I like winter best because it snows!",
+    "Brrr! Winter is cold. I love it!"
+   ],
+   "chatter": [
+    "I like winter best. Why? Because I am a snowman!",
+    "Summer is hot. Help! I'm melting!"
+   ],
+   "voice": "oldman",
+   "persona": "Mr Snow, a funny talking snowman who melts in summer and loves winter; grade-5 English about seasons",
+   "greet": "Oh, hello! I'm Mr Snow. Is it summer? I'm melting!",
+   "radius": 0.8
+  },
+  {
+   "id": "tom",
+   "name": "Tom",
+   "zh": "汤姆",
+   "model": "student",
+   "pos": [
+    -32,
+    0,
+    3
+   ],
+   "aliases": [
+    "boy",
+    "tom"
+   ],
+   "idle": [
+    "I like spring best because I can fly kites.",
+    "Spring is warm and windy. Great for kites!"
+   ],
+   "chatter": [
+    "I like spring best because I can fly kites!",
+    "Spring is pretty. The flowers are pink and yellow."
+   ],
+   "voice": "child",
+   "persona": "Tom, a boy who loves flying kites in spring; grade-5 English",
+   "greet": "Hi! I'm Tom. I like spring best!",
+   "radius": 0.8
+  },
+  {
+   "id": "sunny",
+   "name": "Sunny",
+   "zh": "桑妮",
+   "model": "girl_sunhat",
+   "pos": [
+    22,
+    0,
+    19
+   ],
+   "aliases": [
+    "girl",
+    "sunny"
+   ],
+   "idle": [
+    "I like summer best because I can swim!",
+    "It's hot. I want an ice cream!"
+   ],
+   "chatter": [
+    "I like summer best. Why? Because I can swim in the lake!",
+    "Summer is hot. Let's eat ice cream!"
+   ],
+   "voice": "child",
+   "persona": "Sunny, a girl who loves summer, swimming and ice cream; grade-5 English",
+   "greet": "Hi! I'm Sunny. Summer is my favourite season!",
+   "radius": 0.8
+  },
+  {
+   "id": "farmer",
+   "name": "Farmer Brown",
+   "zh": "布朗农夫",
+   "model": "fruit_seller",
+   "pos": [
+    -26,
+    0,
+    -19
+   ],
+   "aliases": [
+    "farmer",
+    "brown",
+    "man",
+    "uncle"
+   ],
+   "idle": [
+    "I like autumn best because I can pick apples!",
+    "Autumn is cool and golden."
+   ],
+   "chatter": [
+    "I like autumn best. Why? Because I can pick apples!",
+    "In autumn, the leaves are red and yellow."
+   ],
+   "voice": "man",
+   "persona": "Farmer Brown, a happy apple farmer who loves autumn; grade-5 English",
+   "greet": "Hello! I'm Farmer Brown. Welcome to my orchard!",
+   "radius": 0.8
+  }
+ ],
+ "quests": [
+  {
+   "id": "sv_best",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "mia",
+   "titleZh": "回答 Mia：你最喜欢哪个季节？",
+   "title": "Which season do you like best?",
+   "intro": [
+    "I am asking everyone in the valley. I have a question for you!"
+   ],
+   "model": [
+    "I like spring best.",
+    "I like winter best."
+   ],
+   "done": [
+    "Me too! I like it too!"
+   ],
+   "prompt": "Which season do you like best?",
+   "accept": [
+    [
+     "spring",
+     "summer",
+     "autumn",
+     "fall",
+     "winter"
+    ]
+   ],
+   "tipZh": "Mia 问你最喜欢哪个季节，可以说：“I like … best.”"
+  },
+  {
+   "id": "sv_why",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "mia",
+   "titleZh": "告诉 Mia 为什么喜欢（用 because）",
+   "title": "Why?",
+   "intro": [
+    "Why do you like it?"
+   ],
+   "model": [
+    "Because I can make a snowman.",
+    "Because I can swim."
+   ],
+   "done": [
+    "Great reason! That sounds fun!"
+   ],
+   "prompt": "Why do you like it?",
+   "accept": [
+    [
+     "because",
+     "cause",
+     "i can"
+    ]
+   ],
+   "judge": "The child gives a reason for liking a season, ideally starting with 'because' (e.g. 'Because I can swim.'). Accept any sensible reason.",
+   "needs": "sv_best",
+   "tipZh": "Mia 问“为什么？”用 because 回答：“Because I can …”"
+  },
+  {
+   "id": "sv_listen",
+   "kind": "listen",
+   "skill": "听",
+   "giver": "mia",
+   "titleZh": "听一听：她为什么喜欢秋天？",
+   "title": "Listen and choose",
+   "intro": [
+    "Listen to my friend Lily!"
+   ],
+   "model": [],
+   "done": [
+    "Yes! She can pick apples with her grandma."
+   ],
+   "prompt": "Why does Lily like autumn?",
+   "audio": "Hi, I'm Lily. I like autumn best. The weather is cool and the leaves are golden. I can pick apples with my grandma.",
+   "options": [
+    "She can swim",
+    "She can pick apples",
+    "She can make a snowman"
+   ],
+   "answer": 1,
+   "video": "season.mp4",
+   "needs": "sv_why"
+  },
+  {
+   "id": "sv_write",
+   "kind": "write",
+   "skill": "写",
+   "giver": "mia",
+   "titleZh": "写出季节：可以堆雪人的季节",
+   "title": "Write the season",
+   "intro": [
+    "Write a season for me!"
+   ],
+   "model": [
+    "winter"
+   ],
+   "done": [
+    "Yes! W-I-N-T-E-R, winter!"
+   ],
+   "prompt": "You can make a snowman in ___. Write the season.",
+   "accept": [
+    [
+     "winter"
+    ]
+   ],
+   "needs": "sv_listen"
+  },
+  {
+   "id": "sv_party",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "mia",
+   "titleZh": "调查完成！放烟花庆祝四季",
+   "title": "Fireworks!",
+   "intro": [
+    "Thank you! Now I know: everyone likes a different season. Spring, summer, autumn, winter, they are all great! Let's have a season party!"
+   ],
+   "model": [
+    "Fireworks!"
+   ],
+   "done": [
+    "Wow! Happy spring, summer, autumn and winter! Thank you, little wizard!"
+   ],
+   "prompt": "Say: Fireworks!",
+   "goal": "fireworks",
+   "needs": "sv_write"
+  },
+  {
+   "id": "sv_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "season_sign",
+   "titleZh": "读告示牌：哪个季节可以放风筝？",
+   "title": "Read the season sign",
+   "intro": [],
+   "model": [],
+   "done": [
+    "Yes! In spring, it's warm. We can fly kites."
+   ],
+   "passage": "In spring, it's warm. We can fly kites.\nIn summer, it's hot. We can swim.\nIn autumn, it's cool. We can pick apples.\nIn winter, it's cold. We can make a snowman.",
+   "prompt": "When can we fly kites?",
+   "options": [
+    "In spring",
+    "In summer",
+    "In winter"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "orchard_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "orchard_sign",
+   "titleZh": "大声读出果园告示牌",
+   "title": "Read the orchard sign",
+   "intro": [],
+   "model": [
+    "Autumn is golden."
+   ],
+   "done": [
+    "Lovely reading! Autumn is golden."
+   ],
+   "passage": "Autumn is golden. I like autumn best because I can pick apples.",
+   "readAloud": true,
+   "prompt": "Read the sign aloud."
+  },
+  {
+   "id": "winter_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "winter_sign",
+   "titleZh": "读雪坡告示牌：冬天是什么样的？",
+   "title": "What is winter like?",
+   "intro": [],
+   "model": [],
+   "done": [
+    "Right! Winter is cold and white."
+   ],
+   "passage": "WINTER HILL\nWinter is cold and white.\nWe can make a snowman and go sledding.\nDon't forget your hat!",
+   "prompt": "What is winter like?",
+   "options": [
+    "Hot and sunny",
+    "Cold and white",
+    "Warm and green"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "sv_winter",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "snow",
+   "titleZh": "雪人要化了：把季节变成冬天",
+   "title": "Make it winter",
+   "intro": [
+    "It's summer and it's so hot. I'm melting! Help!"
+   ],
+   "model": [
+    "Make it winter!"
+   ],
+   "done": [
+    "Ahh, snow! Thank you! I like winter best!"
+   ],
+   "prompt": "Say: Make it winter!",
+   "goal": "season:winter",
+   "tipZh": "雪人快化了！念咒语把季节变成冬天：“Make it winter!”"
+  },
+  {
+   "id": "sn_hat",
+   "kind": "do",
+   "skill": "说",
+   "giver": "snow",
+   "titleZh": "雪人的头好冷：把毛线帽送给他",
+   "title": "A hat for Mr Snow",
+   "intro": [
+    "Brrr! Now my head is cold. There is a woolly hat on the hill. Can you bring it to me?"
+   ],
+   "model": [
+    "Pick up the hat.",
+    "Give the hat to Mr Snow."
+   ],
+   "done": [
+    "A red woolly hat! I look great! Thank you!"
+   ],
+   "goal": "give:*:snow",
+   "needs": "sv_winter",
+   "tipZh": "先捡起帽子：“Pick up the hat!” 再送给雪人：“Give the hat to Mr Snow!”"
+  },
+  {
+   "id": "sn_can",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "snow",
+   "titleZh": "回答雪人：冬天你能做什么？",
+   "title": "What can you do in winter?",
+   "intro": [
+    "I love winter. What can you do in winter?"
+   ],
+   "model": [
+    "I can make a snowman.",
+    "I can go sledding."
+   ],
+   "done": [
+    "Ha ha! Make a snowman? Make a friend for me!"
+   ],
+   "prompt": "What can you do in winter?",
+   "accept": [
+    [
+     "snowman",
+     "snow",
+     "skate",
+     "ski",
+     "sled",
+     "sledding",
+     "ice"
+    ]
+   ],
+   "judge": "The child says something people can do in winter (e.g. 'I can make a snowman.', 'I can skate.'). Accept any sensible winter activity.",
+   "needs": "sn_hat",
+   "tipZh": "雪人问冬天能做什么。可以说：“I can make a snowman.”"
+  },
+  {
+   "id": "sv_spring",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "snow",
+   "titleZh": "雪人的花朋友在睡觉：把季节变成春天",
+   "title": "Make it spring",
+   "intro": [
+    "My friends the flowers are sleeping under the snow. They miss the sun!"
+   ],
+   "model": [
+    "Make it spring!"
+   ],
+   "done": [
+    "Look, the flowers are waking up! Goodbye, my friends, see you next winter!"
+   ],
+   "prompt": "Say: Make it spring!",
+   "goal": "season:spring",
+   "needs": "sn_can"
+  },
+  {
+   "id": "tm_listen",
+   "kind": "listen",
+   "skill": "听",
+   "giver": "tom",
+   "titleZh": "听 Tom 说：他为什么喜欢春天？",
+   "title": "Why does Tom like spring?",
+   "intro": [
+    "Listen! I will tell you about my favourite season."
+   ],
+   "model": [],
+   "done": [
+    "Yes! He can fly kites with his dad."
+   ],
+   "prompt": "Why does Tom like spring?",
+   "audio": "I'm Tom. I like spring best. It's warm and the flowers are pretty. I can fly kites with my dad.",
+   "options": [
+    "He can fly kites",
+    "He can swim",
+    "He can pick apples"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "tm_wind",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "tom",
+   "titleZh": "没有风筝飞不起来：让天刮风",
+   "title": "Make it windy",
+   "intro": [
+    "Oh no, there isn't any wind today. My kite can't fly!"
+   ],
+   "model": [
+    "Make it windy!"
+   ],
+   "done": [
+    "Whoosh! The wind is here! Thank you!"
+   ],
+   "prompt": "Say: Make it windy!",
+   "goal": "weather:windy",
+   "needs": "tm_listen"
+  },
+  {
+   "id": "tm_kite",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "tom",
+   "titleZh": "让 Tom 的风筝飞起来",
+   "title": "Make the kite fly",
+   "intro": [
+    "Now help my kite go up high!"
+   ],
+   "model": [
+    "Make the kite fly!"
+   ],
+   "done": [
+    "Look! It is flying high! I like spring best because I can fly kites!"
+   ],
+   "prompt": "Say: Make the kite fly!",
+   "goal": "fly:kite",
+   "needs": "tm_wind"
+  },
+  {
+   "id": "tm_write",
+   "kind": "write",
+   "skill": "写",
+   "giver": "tom",
+   "titleZh": "填空：春天我们可以放什么？",
+   "title": "Write the word",
+   "intro": [
+    "Spelling time! What can we fly in spring?"
+   ],
+   "model": [
+    "kites"
+   ],
+   "done": [
+    "K-I-T-E-S! Kites! Well done!"
+   ],
+   "prompt": "In spring, we can fly ___ . Write the word.",
+   "accept": [
+    [
+     "kite"
+    ]
+   ],
+   "needs": "tm_kite"
+  },
+  {
+   "id": "su_can",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "sunny",
+   "titleZh": "回答 Sunny：夏天你能做什么？",
+   "title": "What can you do in summer?",
+   "intro": [
+    "I like summer best! What can you do in summer?"
+   ],
+   "model": [
+    "I can swim.",
+    "I can eat ice cream."
+   ],
+   "done": [
+    "Yes! Summer is so much fun!"
+   ],
+   "prompt": "What can you do in summer?",
+   "accept": [
+    [
+     "swim",
+     "ice cream",
+     "beach",
+     "sandcastle",
+     "boat",
+     "play",
+     "water"
+    ]
+   ],
+   "judge": "The child says something people can do in summer (e.g. 'I can swim.'). Accept any sensible summer activity.",
+   "tipZh": "Sunny 问夏天能做什么。可以说：“I can swim.”"
+  },
+  {
+   "id": "su_icecream",
+   "kind": "do",
+   "skill": "说",
+   "giver": "sunny",
+   "titleZh": "天太热了：变个冰淇淋送给 Sunny",
+   "title": "Ice cream for Sunny",
+   "intro": [
+    "Summer is hot. Phew! The ice cream man is not here. Can you make an ice cream for me?"
+   ],
+   "model": [
+    "Make an ice cream!",
+    "Give the ice cream to Sunny."
+   ],
+   "done": [
+    "Mmm, cold and yummy! I like summer best!"
+   ],
+   "goal": "give:*:sunny",
+   "needs": "su_can",
+   "tipZh": "先变冰淇淋：“Make an ice cream!” 再送给她：“Give the ice cream to Sunny!”"
+  },
+  {
+   "id": "su_ball",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "sunny",
+   "titleZh": "让沙滩球跳起来",
+   "title": "Make the ball jump",
+   "intro": [
+    "Let's play! Can you make my beach ball jump?"
+   ],
+   "model": [
+    "Make the ball jump!"
+   ],
+   "done": [
+    "Boing, boing! Summer is the best!"
+   ],
+   "prompt": "Say: Make the ball jump!",
+   "goal": "hop:ball",
+   "needs": "su_icecream"
+  },
+  {
+   "id": "fb_autumn",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "farmer",
+   "titleZh": "苹果还是绿的：把季节变成秋天",
+   "title": "Make it autumn",
+   "intro": [
+    "My apples are still small and green. Apples are red in autumn. Can you help?"
+   ],
+   "model": [
+    "Make it autumn!"
+   ],
+   "done": [
+    "Look! The leaves are golden and the apples are red. I like autumn best!"
+   ],
+   "prompt": "Say: Make it autumn!",
+   "goal": "season:autumn",
+   "tipZh": "把季节变成秋天：“Make it autumn!”"
+  },
+  {
+   "id": "fb_apples",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "farmer",
+   "titleZh": "帮农夫摘苹果：让天上掉苹果",
+   "title": "Make it rain apples",
+   "intro": [
+    "Now it's time to pick apples. There are so many! Can you help me?"
+   ],
+   "model": [
+    "Make it rain apples!"
+   ],
+   "done": [
+    "Ha ha! Apples everywhere! I like autumn best because I can pick apples!"
+   ],
+   "prompt": "Say: Make it rain apples!",
+   "goal": "fruit_rain:apple",
+   "needs": "fb_autumn"
+  }
+ ],
+ "words": [
+  {
+   "id": "ws_season",
+   "say": "season",
+   "zh": "季节",
+   "pos": [
+    -4,
+    6
+   ]
+  },
+  {
+   "id": "ws_spring",
+   "say": "spring",
+   "zh": "春天",
+   "pos": [
+    -30,
+    20
+   ]
+  },
+  {
+   "id": "ws_summer",
+   "say": "summer",
+   "zh": "夏天",
+   "pos": [
+    30,
+    15
+   ]
+  },
+  {
+   "id": "ws_autumn",
+   "say": "autumn",
+   "zh": "秋天",
+   "pos": [
+    -25,
+    -24
+   ]
+  },
+  {
+   "id": "ws_winter",
+   "say": "winter",
+   "zh": "冬天",
+   "pos": [
+    28,
+    -25
+   ]
+  },
+  {
+   "id": "ws_kites",
+   "say": "fly kites",
+   "zh": "放风筝",
+   "pos": [
+    -36,
+    -6
+   ]
+  },
+  {
+   "id": "ws_swim",
+   "say": "go swimming",
+   "zh": "去游泳",
+   "pos": [
+    30,
+    27
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_apples",
+   "say": "pick apples",
+   "zh": "摘苹果",
+   "pos": [
+    -33,
+    -21
+   ]
+  },
+  {
+   "id": "ws_snowman",
+   "say": "make a snowman",
+   "zh": "堆雪人",
+   "pos": [
+    21,
+    -24
+   ]
+  },
+  {
+   "id": "ws_cold",
+   "say": "cold",
+   "zh": "寒冷",
+   "pos": [
+    34,
+    -22
+   ]
+  },
+  {
+   "id": "ws_warm",
+   "say": "warm",
+   "zh": "温暖",
+   "pos": [
+    -24,
+    12
+   ]
+  },
+  {
+   "id": "ws_which",
+   "say": "Which season do you like best?",
+   "zh": "你最喜欢哪个季节？",
+   "pos": [
+    5,
+    24
+   ]
+  },
+  {
+   "id": "ws_best",
+   "say": "I like winter best.",
+   "zh": "我最喜欢冬天。",
+   "pos": [
+    16,
+    -20
+   ]
+  },
+  {
+   "id": "ws_because",
+   "say": "Because I can fly kites.",
+   "zh": "因为我可以放风筝。",
+   "pos": [
+    -28,
+    5
+   ]
+  },
+  {
+   "id": "ws_hot",
+   "say": "Summer is hot.",
+   "zh": "夏天很热。",
+   "pos": [
+    20,
+    12
+   ]
+  },
+  {
+   "id": "ws_leaves",
+   "say": "The leaves are red and yellow.",
+   "zh": "树叶是红色和黄色的。",
+   "pos": [
+    -18,
+    -11
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_picnic",
+   "say": "Spring is pretty. Let's go on a picnic!",
+   "zh": "春天很美，我们去野餐吧！",
+   "pos": [
+    -3,
+    -40
+   ],
+   "hidden": true
+  }
+ ],
+ "spellIdeas": [
+  {
+   "say": "Make it autumn!",
+   "zh": "变成秋天"
+  },
+  {
+   "say": "Make it winter!",
+   "zh": "变成冬天"
+  },
+  {
+   "say": "Make the sandcastle big!",
+   "zh": "把沙堡变大（会发现秘密哦）",
+   "near": "sandcastle"
+  },
+  {
+   "say": "Make the leaves fly!",
+   "zh": "让落叶飞起来（会发现秘密哦）",
+   "near": "leaves"
+  },
+  {
+   "say": "Open the chest!",
+   "zh": "打开野餐山坡的宝箱",
+   "near": "chest"
+  },
+  {
+   "say": "Make the snowman dance!",
+   "zh": "让雪人跳舞",
+   "near": "snow"
+  },
+  {
+   "say": "Make the swing fly!",
+   "zh": "让秋千飞起来",
+   "near": "swing"
+  },
+  {
+   "say": "Make the pumpkin giant!",
+   "zh": "把南瓜变得超级大",
+   "near": "pumpkin"
+  },
+  {
+   "say": "Make three penguins!",
+   "zh": "变出三只企鹅",
+   "near": "penguin"
+  },
+  {
+   "say": "Make it snowy!",
+   "zh": "让天下雪"
+  },
+  {
+   "say": "Make an ice cream!",
+   "zh": "变一个冰淇淋"
+  },
+  {
+   "say": "Freeze the fountain!",
+   "zh": "把喷泉冻住",
+   "near": "fountain"
+  },
+  {
+   "say": "Make the scarecrow sing!",
+   "zh": "让稻草人唱歌",
+   "near": "scarecrow"
+  },
+  {
+   "say": "Grow a tree!",
+   "zh": "长出一棵树"
+  },
+  {
+   "say": "Turn the pumpkin into a cake!",
+   "zh": "把南瓜变成蛋糕",
+   "near": "pumpkin"
+  },
+  {
+   "say": "Make it spring!",
+   "zh": "变成春天"
+  },
+  {
+   "say": "Make it summer!",
+   "zh": "变成夏天"
+  },
+  {
+   "say": "Make it rain leaves!",
+   "zh": "下一场落叶雨"
+  },
+  {
+   "say": "Make it rain snowflakes!",
+   "zh": "飘雪花"
+  },
+  {
+   "say": "Make a whirlwind!",
+   "zh": "刮起一阵旋风"
+  },
+  {
+   "say": "Make butterflies!",
+   "zh": "春天的蝴蝶飞来啦"
+  },
+  {
+   "say": "Put the pumpkin on a cloud!",
+   "zh": "让南瓜坐上云朵"
+  },
+  {
+   "say": "Move the swing to the left!",
+   "zh": "把秋千移到左边"
+  },
+  {
+   "say": "Make the leaves gold!",
+   "zh": "把树叶变成金色"
+  },
+  {
+   "say": "Everybody, jump!",
+   "zh": "让大家一起跳"
+  }
+ ]
+}

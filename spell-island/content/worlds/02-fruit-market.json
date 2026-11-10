@@ -1,0 +1,2246 @@
+{
+ "id": "fruit-market",
+ "order": 2,
+ "grade": "三年级下册",
+ "gradeNum": 3,
+ "unit": "Unit · Fruits: Do you like…?（水果）",
+ "title": "Fruit Market",
+ "titleZh": "水果魔法集市",
+ "scene": "market",
+ "bounds": 50,
+ "intro": [
+  "今天是水果魔法集市的水果节！苹果园、香蕉角、葡萄园、西瓜地……大家都在问：“Do you like …?”",
+  "喜欢就说“Yes, I do.”，不喜欢就说“No, I don't.” 先去广场找卖水果的 Uncle Bob 吧：“Go to Uncle Bob!”"
+ ],
+ "vocab": [
+  "fruit",
+  "apple",
+  "banana",
+  "orange",
+  "pear",
+  "watermelon",
+  "grapes",
+  "strawberry",
+  "like",
+  "big",
+  "small"
+ ],
+ "patterns": [
+  "Do you like pears? Yes, I do. / No, I don't.",
+  "I like bananas.",
+  "I don't like oranges.",
+  "Can I have some grapes, please? Here you are.",
+  "Make it rain apples!"
+ ],
+ "spawn": {
+  "pos": [
+   0,
+   0,
+   42
+  ],
+  "rot": 3.14159
+ },
+ "zones": [
+  {
+   "id": "gate",
+   "name": "Market Gate",
+   "zh": "集市大门",
+   "pos": [
+    0,
+    38
+   ],
+   "r": 8
+  },
+  {
+   "id": "plaza",
+   "name": "Fruit Plaza",
+   "zh": "水果广场",
+   "pos": [
+    0,
+    6
+   ],
+   "r": 10
+  },
+  {
+   "id": "banana",
+   "name": "Banana Corner",
+   "zh": "香蕉角",
+   "pos": [
+    30,
+    8
+   ],
+   "r": 9
+  },
+  {
+   "id": "orchard",
+   "name": "Apple Orchard",
+   "zh": "苹果园",
+   "pos": [
+    26,
+    -20
+   ],
+   "r": 11
+  },
+  {
+   "id": "juice",
+   "name": "Juice Bar",
+   "zh": "果汁吧",
+   "pos": [
+    22,
+    30
+   ],
+   "r": 9
+  },
+  {
+   "id": "grape",
+   "name": "Grape Garden",
+   "zh": "葡萄园",
+   "pos": [
+    -26,
+    -20
+   ],
+   "r": 11
+  },
+  {
+   "id": "melon",
+   "name": "Watermelon Patch",
+   "zh": "西瓜地",
+   "pos": [
+    -30,
+    8
+   ],
+   "r": 10
+  },
+  {
+   "id": "picnic",
+   "name": "Picnic Lawn",
+   "zh": "野餐草坪",
+   "pos": [
+    -22,
+    32
+   ],
+   "r": 9
+  },
+  {
+   "id": "hill",
+   "name": "Strawberry Hill",
+   "zh": "草莓山坡",
+   "pos": [
+    0,
+    -32
+   ],
+   "r": 10
+  }
+ ],
+ "decor": [
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     48
+    ],
+    [
+     0,
+     6
+    ]
+   ],
+   "w": 4
+  },
+  {
+   "k": "plaza",
+   "at": [
+    0,
+    6
+   ],
+   "r": 9,
+   "color": "#e3cfa0"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     6
+    ],
+    [
+     0,
+     -27
+    ]
+   ],
+   "w": 3.2
+  },
+  {
+   "k": "plaza",
+   "at": [
+    0,
+    -31
+   ],
+   "r": 6,
+   "color": "#e8d9b0"
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     6
+    ],
+    [
+     20,
+     6
+    ],
+    [
+     27,
+     8
+    ]
+   ],
+   "w": 3.2
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     27,
+     8
+    ],
+    [
+     26,
+     -12
+    ]
+   ],
+   "w": 3
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     6
+    ],
+    [
+     -20,
+     6
+    ],
+    [
+     -27,
+     8
+    ]
+   ],
+   "w": 3.2
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     -27,
+     8
+    ],
+    [
+     -26,
+     -12
+    ]
+   ],
+   "w": 3
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     26
+    ],
+    [
+     17,
+     28
+    ]
+   ],
+   "w": 2.8
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     26
+    ],
+    [
+     -17,
+     31
+    ]
+   ],
+   "w": 2.8
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     -28
+    ],
+    [
+     19,
+     -21
+    ]
+   ],
+   "w": 2.6
+  },
+  {
+   "k": "path",
+   "pts": [
+    [
+     0,
+     -28
+    ],
+    [
+     -19,
+     -21
+    ]
+   ],
+   "w": 2.6
+  },
+  {
+   "k": "model",
+   "m": "lantern",
+   "at": [
+    -4,
+    40
+   ]
+  },
+  {
+   "k": "model",
+   "m": "lantern",
+   "at": [
+    4,
+    40
+   ]
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -6,
+    32
+   ],
+   "rot": 1.57
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    6,
+    32
+   ],
+   "rot": 1.57
+  },
+  {
+   "k": "fence",
+   "from": [
+    -18,
+    42
+   ],
+   "to": [
+    -5,
+    42
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    5,
+    42
+   ],
+   "to": [
+    18,
+    42
+   ]
+  },
+  {
+   "k": "house",
+   "at": [
+    -14,
+    18
+   ],
+   "rot": 0.8,
+   "w": 5,
+   "h": 3.6,
+   "wall": "#f6e0c2",
+   "roof": "#c8553d"
+  },
+  {
+   "k": "house",
+   "at": [
+    14,
+    18
+   ],
+   "rot": -0.8,
+   "w": 5,
+   "h": 3.8,
+   "wall": "#e8d0e8",
+   "roof": "#4f7fb8"
+  },
+  {
+   "k": "house",
+   "at": [
+    -14,
+    -8
+   ],
+   "rot": 2.3,
+   "w": 5,
+   "h": 3.4,
+   "wall": "#d8ecd0",
+   "roof": "#5f9f4e"
+  },
+  {
+   "k": "house",
+   "at": [
+    14,
+    -8
+   ],
+   "rot": -2.3,
+   "w": 5,
+   "h": 3.6,
+   "wall": "#f4d8c8",
+   "roof": "#d9a23a"
+  },
+  {
+   "k": "model",
+   "m": "stall_fruit",
+   "at": [
+    8,
+    -2
+   ],
+   "rot": -0.7,
+   "solid": 1.8
+  },
+  {
+   "k": "model",
+   "m": "stall_fruit",
+   "at": [
+    -8,
+    12
+   ],
+   "rot": 2.4,
+   "solid": 1.8
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    -5,
+    -3
+   ],
+   "rot": 0.6,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    6,
+    14
+   ],
+   "rot": -2.5,
+   "solid": 0.9
+  },
+  {
+   "k": "lamp",
+   "at": [
+    -3,
+    22
+   ]
+  },
+  {
+   "k": "lamp",
+   "at": [
+    3,
+    22
+   ]
+  },
+  {
+   "k": "lamp",
+   "at": [
+    -3,
+    -16
+   ]
+  },
+  {
+   "k": "lamp",
+   "at": [
+    3,
+    -16
+   ]
+  },
+  {
+   "k": "tree",
+   "at": [
+    37,
+    3
+   ],
+   "s": 1.2
+  },
+  {
+   "k": "tree",
+   "at": [
+    36,
+    16
+   ],
+   "s": 1.1
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    25,
+    13
+   ],
+   "rot": 3.14,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    22,
+    1
+   ]
+  },
+  {
+   "k": "model",
+   "m": "bush",
+   "at": [
+    34,
+    -2
+   ]
+  },
+  {
+   "k": "model",
+   "m": "fruit_tree",
+   "at": [
+    19,
+    -27
+   ],
+   "solid": 1.0
+  },
+  {
+   "k": "model",
+   "m": "fruit_tree",
+   "at": [
+    34,
+    -28
+   ],
+   "solid": 1.0
+  },
+  {
+   "k": "model",
+   "m": "fruit_tree",
+   "at": [
+    36,
+    -19
+   ],
+   "solid": 1.0
+  },
+  {
+   "k": "model",
+   "m": "fruit_tree",
+   "at": [
+    20,
+    -13
+   ],
+   "solid": 1.0
+  },
+  {
+   "k": "fence",
+   "from": [
+    16,
+    -10
+   ],
+   "to": [
+    22,
+    -10
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    30,
+    -10
+   ],
+   "to": [
+    38,
+    -10
+   ]
+  },
+  {
+   "k": "meadow",
+   "at": [
+    27,
+    -21
+   ],
+   "r": 9,
+   "n": 50
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    17,
+    34
+   ],
+   "rot": 1.57,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    14,
+    25
+   ],
+   "rot": 0.3
+  },
+  {
+   "k": "model",
+   "m": "potted_plant",
+   "at": [
+    29,
+    35
+   ]
+  },
+  {
+   "k": "tree",
+   "at": [
+    31,
+    37
+   ],
+   "s": 1.1
+  },
+  {
+   "k": "model",
+   "m": "berry_bush",
+   "at": [
+    -20,
+    -25
+   ],
+   "solid": 0.7
+  },
+  {
+   "k": "model",
+   "m": "berry_bush",
+   "at": [
+    -27,
+    -28
+   ],
+   "solid": 0.7
+  },
+  {
+   "k": "model",
+   "m": "berry_bush",
+   "at": [
+    -34,
+    -19
+   ],
+   "solid": 0.7
+  },
+  {
+   "k": "model",
+   "m": "berry_bush",
+   "at": [
+    -21,
+    -13
+   ],
+   "solid": 0.7
+  },
+  {
+   "k": "model",
+   "m": "berry_bush",
+   "at": [
+    -31,
+    -11
+   ],
+   "solid": 0.7
+  },
+  {
+   "k": "grove",
+   "at": [
+    -36,
+    -34
+   ],
+   "r": 6,
+   "n": 6,
+   "kind": "mix"
+  },
+  {
+   "k": "model",
+   "m": "watermelon",
+   "at": [
+    -33,
+    3
+   ]
+  },
+  {
+   "k": "model",
+   "m": "watermelon",
+   "at": [
+    -31,
+    13
+   ]
+  },
+  {
+   "k": "model",
+   "m": "watermelon",
+   "at": [
+    -24,
+    12
+   ]
+  },
+  {
+   "k": "model",
+   "m": "watermelon",
+   "at": [
+    -36,
+    7
+   ]
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -31,
+    8
+   ],
+   "r": 8,
+   "n": 40
+  },
+  {
+   "k": "fence",
+   "from": [
+    -40,
+    0
+   ],
+   "to": [
+    -40,
+    16
+   ]
+  },
+  {
+   "k": "fence",
+   "from": [
+    -40,
+    16
+   ],
+   "to": [
+    -30,
+    18
+   ]
+  },
+  {
+   "k": "meadow",
+   "at": [
+    -22,
+    32
+   ],
+   "r": 8,
+   "n": 60
+  },
+  {
+   "k": "tree",
+   "at": [
+    -30,
+    38
+   ],
+   "s": 1.3
+  },
+  {
+   "k": "tree",
+   "at": [
+    -14,
+    38
+   ],
+   "s": 1.0
+  },
+  {
+   "k": "model",
+   "m": "bench",
+   "at": [
+    -17,
+    36
+   ],
+   "rot": -1.2,
+   "solid": 0.9
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    -8,
+    -26
+   ],
+   "rot": 0.5
+  },
+  {
+   "k": "model",
+   "m": "flower_bed",
+   "at": [
+    8,
+    -34
+   ],
+   "rot": -0.5
+  },
+  {
+   "k": "meadow",
+   "at": [
+    0,
+    -36
+   ],
+   "r": 8,
+   "n": 60
+  },
+  {
+   "k": "mountain",
+   "at": [
+    0,
+    -50
+   ],
+   "r": 12,
+   "h": 7,
+   "color": "#9cb87a"
+  },
+  {
+   "k": "grove",
+   "at": [
+    18,
+    -40
+   ],
+   "r": 7,
+   "n": 7,
+   "kind": "tree"
+  },
+  {
+   "k": "grove",
+   "at": [
+    -18,
+    -40
+   ],
+   "r": 7,
+   "n": 7,
+   "kind": "pine"
+  },
+  {
+   "k": "grove",
+   "at": [
+    42,
+    22
+   ],
+   "r": 6,
+   "n": 6,
+   "kind": "mix"
+  },
+  {
+   "k": "grove",
+   "at": [
+    -44,
+    24
+   ],
+   "r": 6,
+   "n": 6,
+   "kind": "mix"
+  },
+  {
+   "k": "pine",
+   "at": [
+    44,
+    -6
+   ],
+   "s": 1.3
+  },
+  {
+   "k": "pine",
+   "at": [
+    -44,
+    -6
+   ],
+   "s": 1.3
+  }
+ ],
+ "things": [
+  {
+   "id": "sign_welcome",
+   "name": "welcome sign",
+   "zh": "欢迎牌",
+   "model": "signpost",
+   "pos": [
+    -3.5,
+    0,
+    35
+   ],
+   "aliases": [
+    "sign",
+    "board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Welcome to the Fruit Festival!\nDo you like fruit?\nCome and see!"
+  },
+  {
+   "id": "balloon",
+   "name": "balloon",
+   "zh": "热气球",
+   "model": "hot_air_balloon",
+   "pos": [
+    13,
+    0,
+    37
+   ],
+   "aliases": [
+    "hot air balloon"
+   ],
+   "radius": 2.0,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "h": 4.5
+   }
+  },
+  {
+   "id": "fountain",
+   "name": "fountain",
+   "zh": "喷泉",
+   "model": "fountain",
+   "pos": [
+    0,
+    0,
+    6
+   ],
+   "radius": 1.8,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "stall",
+   "name": "fruit stall",
+   "zh": "水果摊",
+   "model": "stall_fruit",
+   "pos": [
+    -7,
+    0,
+    1
+   ],
+   "aliases": [
+    "stall",
+    "shop",
+    "uncle bob's stall"
+   ],
+   "rot": 0.6,
+   "radius": 2.2
+  },
+  {
+   "id": "price",
+   "name": "price board",
+   "zh": "价格牌",
+   "model": "signpost",
+   "pos": [
+    6,
+    0,
+    2
+   ],
+   "aliases": [
+    "board",
+    "sign",
+    "price"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Apples: 2 yuan\nBananas: 3 yuan\nWatermelons: 10 yuan"
+  },
+  {
+   "id": "lamp1",
+   "name": "lamp",
+   "zh": "路灯",
+   "model": "lamp_post",
+   "pos": [
+    5,
+    0,
+    11
+   ],
+   "aliases": [
+    "light",
+    "lamp post"
+   ],
+   "radius": 0.3,
+   "can": [
+    "light"
+   ]
+  },
+  {
+   "id": "bananas",
+   "name": "banana bunch",
+   "zh": "一串香蕉",
+   "model": "banana_bunch",
+   "pos": [
+    33,
+    0,
+    11
+   ],
+   "aliases": [
+    "bananas"
+   ],
+   "tags": [
+    "yellow"
+   ],
+   "color": "yellow",
+   "radius": 0.4,
+   "can": [
+    "pick",
+    "fly",
+    "eat"
+   ]
+  },
+  {
+   "id": "lemon",
+   "name": "lemon",
+   "zh": "柠檬",
+   "model": "food:lemon",
+   "pos": [
+    31.5,
+    0,
+    2.5
+   ],
+   "tags": [
+    "yellow",
+    "small"
+   ],
+   "color": "yellow",
+   "radius": 0,
+   "scale": 2.2,
+   "can": [
+    "pick",
+    "fly",
+    "eat"
+   ]
+  },
+  {
+   "id": "apple_tree",
+   "name": "apple tree",
+   "zh": "苹果树",
+   "model": "fruit_tree",
+   "pos": [
+    27,
+    0,
+    -23
+   ],
+   "aliases": [
+    "tree",
+    "fruit tree"
+   ],
+   "radius": 1.2,
+   "can": [
+    "grow"
+   ],
+   "reveal": [
+    "ws_apple"
+   ],
+   "revealOn": "shake"
+  },
+  {
+   "id": "apple_box",
+   "name": "apple box",
+   "zh": "一箱苹果",
+   "model": "apple_crate",
+   "pos": [
+    30,
+    0,
+    -16
+   ],
+   "aliases": [
+    "box",
+    "crate",
+    "apple crate"
+   ],
+   "tags": [
+    "red"
+   ],
+   "radius": 0.6,
+   "can": [
+    "pick",
+    "fly"
+   ]
+  },
+  {
+   "id": "juice_stand",
+   "name": "juice stand",
+   "zh": "果汁摊",
+   "model": "juice_stand",
+   "pos": [
+    25,
+    0,
+    33
+   ],
+   "aliases": [
+    "juice bar",
+    "juice shop",
+    "stand"
+   ],
+   "rot": -0.6,
+   "radius": 1.6
+  },
+  {
+   "id": "orange_box",
+   "name": "orange box",
+   "zh": "一箱橙子",
+   "model": "orange_crate",
+   "pos": [
+    28.5,
+    0,
+    28
+   ],
+   "aliases": [
+    "crate",
+    "orange crate"
+   ],
+   "radius": 0.6,
+   "can": [
+    "pick",
+    "fly"
+   ]
+  },
+  {
+   "id": "grapes",
+   "name": "grapes",
+   "zh": "葡萄",
+   "model": "grapes",
+   "pos": [
+    -23,
+    0,
+    -18
+   ],
+   "tags": [
+    "purple"
+   ],
+   "color": "purple",
+   "radius": 0.3,
+   "can": [
+    "pick",
+    "fly",
+    "eat"
+   ]
+  },
+  {
+   "id": "parrot",
+   "name": "parrot",
+   "zh": "鹦鹉",
+   "model": "parrot",
+   "pos": [
+    -29.5,
+    0,
+    -14
+   ],
+   "aliases": [
+    "bird",
+    "polly"
+   ],
+   "radius": 0.4,
+   "can": [
+    "fly"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Do you like grapes? Do you like grapes?",
+    "Yes, I do! Yes, I do!",
+    "Grapes, grapes! I like grapes!"
+   ]
+  },
+  {
+   "id": "chest",
+   "name": "treasure chest",
+   "zh": "宝箱",
+   "model": "treasure_chest",
+   "pos": [
+    -31,
+    0,
+    -26
+   ],
+   "aliases": [
+    "chest",
+    "box",
+    "treasure"
+   ],
+   "radius": 0.6,
+   "can": [
+    "open",
+    "fly"
+   ],
+   "reveal": [
+    "ws_have"
+   ],
+   "revealOn": "open"
+  },
+  {
+   "id": "watermelon",
+   "name": "watermelon",
+   "zh": "西瓜",
+   "model": "watermelon",
+   "pos": [
+    -27,
+    0,
+    5
+   ],
+   "tags": [
+    "big",
+    "green"
+   ],
+   "color": "green",
+   "radius": 0.5,
+   "can": [
+    "pick",
+    "fly",
+    "eat"
+   ]
+  },
+  {
+   "id": "scarecrow",
+   "name": "scarecrow",
+   "zh": "稻草人",
+   "model": "scarecrow",
+   "pos": [
+    -35,
+    0,
+    12
+   ],
+   "radius": 0.5,
+   "can": [
+    "fly"
+   ],
+   "reveal": [
+    "ws_dont"
+   ],
+   "revealOn": "dance"
+  },
+  {
+   "id": "picnic_table",
+   "name": "picnic table",
+   "zh": "野餐桌",
+   "model": "picnic_table",
+   "pos": [
+    -22,
+    0,
+    34
+   ],
+   "aliases": [
+    "table"
+   ],
+   "radius": 1.4
+  },
+  {
+   "id": "basket",
+   "name": "fruit basket",
+   "zh": "水果篮",
+   "model": "fruit_basket",
+   "pos": [
+    -18.5,
+    0,
+    30.5
+   ],
+   "aliases": [
+    "basket"
+   ],
+   "radius": 0.5,
+   "can": [
+    "pick",
+    "fly"
+   ]
+  },
+  {
+   "id": "pear",
+   "name": "pear",
+   "zh": "梨",
+   "model": "food:pear",
+   "pos": [
+    -25.5,
+    0,
+    30
+   ],
+   "tags": [
+    "yellow"
+   ],
+   "radius": 0,
+   "scale": 2.2,
+   "can": [
+    "pick",
+    "fly",
+    "eat"
+   ]
+  },
+  {
+   "id": "rabbit",
+   "name": "rabbit",
+   "zh": "兔子",
+   "model": "rabbit",
+   "pos": [
+    -27,
+    0,
+    34
+   ],
+   "aliases": [
+    "bunny"
+   ],
+   "tags": [
+    "white",
+    "small"
+   ],
+   "color": "white",
+   "radius": 0.4,
+   "can": [
+    "fly",
+    "pick"
+   ],
+   "params": {
+    "voice": "animal"
+   },
+   "chatter": [
+    "Hello! Do you like carrots? I do!",
+    "I don't like lemons. I like pears!"
+   ]
+  },
+  {
+   "id": "strawberries",
+   "name": "strawberry basket",
+   "zh": "一篮草莓",
+   "model": "strawberry_basket",
+   "pos": [
+    -4,
+    0,
+    -33
+   ],
+   "aliases": [
+    "strawberries",
+    "basket of strawberries"
+   ],
+   "tags": [
+    "red"
+   ],
+   "radius": 0.4,
+   "can": [
+    "pick",
+    "fly",
+    "eat"
+   ]
+  },
+  {
+   "id": "recipe",
+   "name": "recipe sign",
+   "zh": "水果沙拉菜谱",
+   "model": "signpost",
+   "pos": [
+    5,
+    0,
+    -35
+   ],
+   "aliases": [
+    "sign",
+    "recipe",
+    "board"
+   ],
+   "radius": 0.4,
+   "can": [
+    "read"
+   ],
+   "text": "Granny's Fruit Salad\nApples, pears and grapes.\nI like fruit salad!"
+  },
+  {
+   "id": "lamp2",
+   "name": "lantern",
+   "zh": "灯笼",
+   "model": "lantern",
+   "pos": [
+    7.5,
+    0,
+    -27
+   ],
+   "aliases": [
+    "lamp",
+    "light"
+   ],
+   "radius": 0.4,
+   "can": [
+    "light"
+   ],
+   "params": {
+    "h": 2.2
+   }
+  }
+ ],
+ "npcs": [
+  {
+   "id": "bob",
+   "name": "Uncle Bob",
+   "zh": "水果叔叔",
+   "model": "fruit_seller",
+   "pos": [
+    -4,
+    0,
+    6.5
+   ],
+   "aliases": [
+    "uncle",
+    "bob",
+    "fruit seller",
+    "seller",
+    "man"
+   ],
+   "idle": [
+    "Fruit is good for you!",
+    "Do you like apples? I like apples!",
+    "Here you are! Have some fruit!"
+   ],
+   "chatter": [
+    "Apples! Bananas! Pears! Do you like pears?",
+    "Fresh fruit! I like watermelons. They are big!",
+    "Can I help you? Here you are!"
+   ],
+   "voice": "man",
+   "persona": "Uncle Bob, a jolly fruit seller who runs the Fruit Festival; very simple grade-3 English about fruits; often asks \"Do you like …?\"",
+   "greet": "Fresh fruit! Fresh fruit! Hello, little wizard! Do you like fruit?",
+   "radius": 0.8
+  },
+  {
+   "id": "tom",
+   "name": "Tom",
+   "zh": "汤姆",
+   "model": "student",
+   "pos": [
+    28,
+    0,
+    5
+   ],
+   "aliases": [
+    "boy",
+    "tom"
+   ],
+   "idle": [
+    "I like bananas. Yummy!",
+    "I don't like lemons. They are sour!"
+   ],
+   "chatter": [
+    "Bananas, bananas! I like bananas!",
+    "I don't like oranges. Do you like oranges?",
+    "Do you like bananas? I do!"
+   ],
+   "voice": "child",
+   "persona": "Tom, a friendly boy who loves bananas and does not like oranges or lemons; very simple English",
+   "greet": "Hi! I'm Tom! I like bananas!",
+   "radius": 0.8
+  },
+  {
+   "id": "momo",
+   "name": "Momo",
+   "zh": "小猴 Momo",
+   "model": "monkey",
+   "pos": [
+    23,
+    0,
+    -19
+   ],
+   "aliases": [
+    "monkey",
+    "momo"
+   ],
+   "tags": [
+    "brown"
+   ],
+   "color": "brown",
+   "idle": [
+    "Ooh ooh! Apples, apples! Yummy!",
+    "I like apples. I like bananas, too!"
+   ],
+   "chatter": [
+    "Ooh ooh! Do you like apples?",
+    "The apples are so high! Ooh ooh!"
+   ],
+   "voice": "animal",
+   "persona": "Momo, a hungry little monkey in the apple orchard who loves apples and bananas; very simple English",
+   "greet": "Ooh ooh! Apples! I like apples!",
+   "radius": 0.8
+  },
+  {
+   "id": "granny",
+   "name": "Granny Rose",
+   "zh": "罗丝奶奶",
+   "model": "granny",
+   "pos": [
+    3,
+    0,
+    -29.5
+   ],
+   "aliases": [
+    "granny",
+    "grandma",
+    "rose",
+    "old lady"
+   ],
+   "idle": [
+    "Thank you, dear!",
+    "I like grapes. I like pears, too."
+   ],
+   "chatter": [
+    "Can I have some grapes, please?",
+    "Strawberries are red and sweet. Do you like strawberries?",
+    "I like fruit salad. Yummy!"
+   ],
+   "voice": "granny",
+   "persona": "Granny Rose, a kind old lady making a fruit salad for the festival; very simple, slow English",
+   "greet": "Hello, dear! I'm Granny Rose. Do you like fruit salad?",
+   "radius": 0.8
+  },
+  {
+   "id": "lily",
+   "name": "Lily",
+   "zh": "莉莉",
+   "model": "shopper_girl",
+   "pos": [
+    20.5,
+    0,
+    29
+   ],
+   "aliases": [
+    "girl",
+    "lily"
+   ],
+   "idle": [
+    "Strawberry juice is yummy!",
+    "Here you are! Have some juice!"
+   ],
+   "chatter": [
+    "Orange juice! Apple juice! Do you like orange juice?",
+    "I like strawberries. They are red!",
+    "Yes, I do! I like juice!"
+   ],
+   "voice": "child",
+   "persona": "Lily, a cheerful girl who sells fruit juice at the Juice Bar; loves strawberries; very simple English",
+   "greet": "Hi! I'm Lily. Juice! Fruit juice! Do you like juice?",
+   "radius": 0.8
+  }
+ ],
+ "quests": [
+  {
+   "id": "fm_what",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "bob",
+   "titleZh": "告诉 Uncle Bob 你喜欢什么水果",
+   "title": "What fruit do you like?",
+   "intro": [
+    "Welcome to the Fruit Festival! I have apples, bananas, pears and grapes."
+   ],
+   "model": [
+    "I like bananas.",
+    "I like apples."
+   ],
+   "done": [
+    "Good choice! Here you are!"
+   ],
+   "prompt": "What fruit do you like?",
+   "accept": [
+    [
+     "like",
+     "love",
+     "want"
+    ],
+    [
+     "apple",
+     "banana",
+     "orange",
+     "pear",
+     "watermelon",
+     "grape",
+     "strawberry",
+     "peach",
+     "mango",
+     "durian",
+     "lemon",
+     "fruit"
+    ]
+   ],
+   "tipZh": "Uncle Bob 问你喜欢什么水果。说：“I like …”，比如“I like bananas.”"
+  },
+  {
+   "id": "fm_write",
+   "kind": "write",
+   "skill": "写",
+   "giver": "bob",
+   "titleZh": "写出水果：又大又绿，里面是红的",
+   "title": "Write the fruit",
+   "intro": [
+    "Can you write the name of my biggest fruit?"
+   ],
+   "model": [
+    "watermelon"
+   ],
+   "done": [
+    "Wonderful! W-A-T-E-R-M-E-L-O-N!"
+   ],
+   "prompt": "It is big and green. It is red inside. Write the fruit.",
+   "accept": [
+    [
+     "watermelon",
+     "water melon"
+    ]
+   ],
+   "needs": "fm_what"
+  },
+  {
+   "id": "bob_big",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "bob",
+   "titleZh": "去西瓜地：把西瓜变大，参加水果节",
+   "title": "Make the watermelon big",
+   "intro": [
+    "The festival needs a super big watermelon! Go to the Watermelon Patch. Can you make the watermelon big?"
+   ],
+   "model": [
+    "Make the watermelon big!"
+   ],
+   "done": [
+    "Wow! What a big watermelon! I like watermelons!"
+   ],
+   "prompt": "Say: Make the watermelon big!",
+   "goal": "big:watermelon",
+   "needs": "fm_write",
+   "tipZh": "西瓜在西边的西瓜地。念咒语：“Make the watermelon big!”"
+  },
+  {
+   "id": "bob_party",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "bob",
+   "titleZh": "水果节开始啦！放烟花庆祝",
+   "title": "Fireworks!",
+   "intro": [
+    "Thank you, little wizard! The Fruit Festival can start now. Fireworks, please!"
+   ],
+   "model": [
+    "Fireworks!"
+   ],
+   "done": [
+    "Hooray! Happy Fruit Festival! Do you like fireworks? I do!"
+   ],
+   "prompt": "Say: Fireworks!",
+   "goal": "fireworks",
+   "needs": "bob_big"
+  },
+  {
+   "id": "fm_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "price",
+   "titleZh": "看价格牌：香蕉多少钱？",
+   "title": "How much are the bananas?",
+   "intro": [],
+   "model": [],
+   "done": [
+    "Right! Bananas are three yuan."
+   ],
+   "passage": "Apples: 2 yuan\nBananas: 3 yuan\nWatermelons: 10 yuan",
+   "prompt": "How much are the bananas?",
+   "options": [
+    "Two yuan",
+    "Three yuan",
+    "Ten yuan"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "fm_like",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "tom",
+   "titleZh": "回答 Tom：你喜欢苹果吗？",
+   "title": "Do you like apples?",
+   "intro": [
+    "Hi! I'm Tom. I like bananas. I have a question!"
+   ],
+   "model": [
+    "Yes, I do.",
+    "No, I don't."
+   ],
+   "done": [
+    "Cool! I like apples, too!"
+   ],
+   "prompt": "Do you like apples?",
+   "accept": [
+    [
+     "yes",
+     "no",
+     "i like",
+     "i do not",
+     "i love",
+     "not really",
+     "of course"
+    ]
+   ],
+   "tipZh": "Tom 问你喜不喜欢苹果。喜欢就说“Yes, I do.”，不喜欢就说“No, I don't.”"
+  },
+  {
+   "id": "fm_listen",
+   "kind": "listen",
+   "skill": "听",
+   "giver": "tom",
+   "titleZh": "听 Tom 说，选出他不喜欢的水果",
+   "title": "Listen and choose",
+   "intro": [
+    "Listen to me! What fruit do I not like?"
+   ],
+   "model": [],
+   "done": [
+    "Yes! I don't like oranges. They are sour!"
+   ],
+   "prompt": "What doesn't Tom like?",
+   "audio": "Hi! I'm Tom. I like bananas. I like pears, too. But I don't like oranges.",
+   "options": [
+    "Bananas",
+    "Pears",
+    "Oranges"
+   ],
+   "answer": 2,
+   "video": "fruit.mp4",
+   "needs": "fm_like"
+  },
+  {
+   "id": "tom_banana",
+   "kind": "do",
+   "skill": "说",
+   "giver": "tom",
+   "titleZh": "Tom 饿了：变一根香蕉给他",
+   "title": "A banana for Tom",
+   "intro": [
+    "I'm hungry! I like bananas. Can I have a banana, please?"
+   ],
+   "model": [
+    "Make a banana!",
+    "Give the banana to Tom."
+   ],
+   "done": [
+    "Thank you! Yummy! I like bananas!"
+   ],
+   "goal": "give:*:tom",
+   "needs": "fm_listen",
+   "tipZh": "先变一根香蕉：“Make a banana!” 再送给他：“Give the banana to Tom!”"
+  },
+  {
+   "id": "tom_lemon",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "tom",
+   "titleZh": "Tom 不喜欢柠檬：把柠檬变成香蕉",
+   "title": "Turn the lemon into a banana",
+   "intro": [
+    "Look at this lemon. It's so sour! I don't like lemons. Can you turn it into a banana?"
+   ],
+   "model": [
+    "Turn the lemon into a banana!"
+   ],
+   "done": [
+    "Ha ha! A banana! Thank you! I like bananas!"
+   ],
+   "prompt": "Say: Turn the lemon into a banana!",
+   "goal": "into:lemon:banana",
+   "needs": "tom_banana",
+   "tipZh": "柠檬就在 Tom 旁边。念咒语：“Turn the lemon into a banana!”"
+  },
+  {
+   "id": "fm_rain",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "momo",
+   "titleZh": "帮小猴：让苹果从天上掉下来",
+   "title": "Make it rain apples",
+   "intro": [
+    "Ooh ooh! I like apples! But the apples are too high!"
+   ],
+   "model": [
+    "Make it rain apples!"
+   ],
+   "done": [
+    "Apples, apples! Thank you! Ooh ooh!"
+   ],
+   "prompt": "Say: Make it rain apples!",
+   "goal": "fruit_rain:apple",
+   "tipZh": "念咒语让苹果掉下来：“Make it rain apples!”"
+  },
+  {
+   "id": "momo_like",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "momo",
+   "titleZh": "回答小猴：你喜欢香蕉吗？",
+   "title": "Do you like bananas?",
+   "intro": [
+    "Ooh ooh! I like apples. I like bananas, too!"
+   ],
+   "model": [
+    "Yes, I do.",
+    "No, I don't."
+   ],
+   "done": [
+    "Ooh ooh! Bananas are yummy!"
+   ],
+   "prompt": "Do you like bananas?",
+   "accept": [
+    [
+     "yes",
+     "no",
+     "i like",
+     "i do not",
+     "i love",
+     "not really",
+     "of course"
+    ]
+   ],
+   "needs": "fm_rain",
+   "tipZh": "小猴问你喜不喜欢香蕉。回答：“Yes, I do.” 或者 “No, I don't.”"
+  },
+  {
+   "id": "momo_shake",
+   "kind": "magic",
+   "skill": "说",
+   "giver": "momo",
+   "titleZh": "树上还有苹果：让苹果树摇一摇",
+   "title": "Make the apple tree shake",
+   "intro": [
+    "Look! More apples up in the tree! Can you make the apple tree shake?"
+   ],
+   "model": [
+    "Make the apple tree shake!"
+   ],
+   "done": [
+    "Ooh ooh! Apples! And look, a word star!"
+   ],
+   "prompt": "Say: Make the apple tree shake!",
+   "goal": "shake:apple_tree",
+   "needs": "momo_like",
+   "tipZh": "让苹果树摇一摇，会掉下一个秘密哦：“Make the apple tree shake!”"
+  },
+  {
+   "id": "granny_listen",
+   "kind": "listen",
+   "skill": "听",
+   "giver": "granny",
+   "titleZh": "听罗丝奶奶的购物清单，选出她要买的水果",
+   "title": "Granny's shopping list",
+   "intro": [
+    "Listen to my shopping list, dear. What fruit do I want?"
+   ],
+   "model": [],
+   "done": [
+    "Yes! Grapes and pears for my fruit salad."
+   ],
+   "prompt": "What does Granny want?",
+   "audio": "Hello, Uncle Bob! Can I have some grapes, please? And some pears, too. I don't like bananas.",
+   "options": [
+    "Grapes and pears",
+    "Apples and oranges",
+    "Bananas and strawberries"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "granny_grapes",
+   "kind": "do",
+   "skill": "说",
+   "giver": "granny",
+   "titleZh": "把葡萄送给罗丝奶奶",
+   "title": "Grapes for Granny",
+   "intro": [
+    "I like grapes. Can I have some grapes, please? The grapes are in the Grape Garden."
+   ],
+   "model": [
+    "Give the grapes to Granny."
+   ],
+   "done": [
+    "Thank you, dear! I like grapes. Here you are, a strawberry for you!"
+   ],
+   "goal": "give:*:granny",
+   "needs": "granny_listen",
+   "tipZh": "葡萄在西北边的葡萄园。说：“Give the grapes to Granny!” 也可以先变一串：“Make some grapes!”"
+  },
+  {
+   "id": "granny_read",
+   "kind": "read",
+   "skill": "读",
+   "giver": "recipe",
+   "titleZh": "大声读出奶奶的水果沙拉菜谱",
+   "title": "Read the recipe",
+   "intro": [],
+   "model": [
+    "Apples, pears and grapes. I like fruit salad!"
+   ],
+   "done": [
+    "You read it! Apples, pears and grapes. Yummy!"
+   ],
+   "passage": "Apples, pears and grapes. I like fruit salad!",
+   "readAloud": true,
+   "prompt": "Read the sign aloud."
+  },
+  {
+   "id": "lily_ask",
+   "kind": "speak",
+   "skill": "说",
+   "giver": "lily",
+   "titleZh": "问问 Lily：你喜欢……吗？",
+   "title": "Ask Lily a question",
+   "intro": [
+    "Hi! I'm Lily. Now you ask me! Ask: Do you like …?"
+   ],
+   "model": [
+    "Do you like pears?",
+    "Do you like strawberries?"
+   ],
+   "done": [
+    "Yes, I do! I like all fruit! I like strawberries best."
+   ],
+   "prompt": "Ask Lily: Do you like …?",
+   "accept": [
+    [
+     "do you like",
+     "you like"
+    ],
+    [
+     "apple",
+     "banana",
+     "orange",
+     "pear",
+     "watermelon",
+     "grape",
+     "strawberry",
+     "peach",
+     "mango",
+     "durian",
+     "lemon",
+     "fruit"
+    ]
+   ],
+   "tipZh": "这次你来提问！说：“Do you like …?” 比如“Do you like pears?”"
+  },
+  {
+   "id": "lily_write",
+   "kind": "write",
+   "skill": "写",
+   "giver": "lily",
+   "titleZh": "写出水果：p _ _ r",
+   "title": "Write the fruit",
+   "intro": [
+    "Let's play a spelling game!"
+   ],
+   "model": [
+    "pear"
+   ],
+   "done": [
+    "P-E-A-R! Pear! Great!"
+   ],
+   "prompt": "It is green or yellow. It is not an apple. p _ _ r. Write the fruit.",
+   "accept": [
+    [
+     "pear"
+    ]
+   ],
+   "needs": "lily_ask"
+  },
+  {
+   "id": "lily_juice",
+   "kind": "do",
+   "skill": "说",
+   "giver": "lily",
+   "titleZh": "变一个草莓送给 Lily 做果汁",
+   "title": "A strawberry for Lily",
+   "intro": [
+    "I want to make strawberry juice. Can I have a strawberry, please?"
+   ],
+   "model": [
+    "Make a strawberry!",
+    "Give the strawberry to Lily."
+   ],
+   "done": [
+    "Thank you! Strawberry juice! Do you like strawberry juice? Here you are!"
+   ],
+   "goal": "give:*:lily",
+   "needs": "lily_write",
+   "tipZh": "先变一个草莓：“Make a strawberry!” 再送给她：“Give the strawberry to Lily!”"
+  }
+ ],
+ "words": [
+  {
+   "id": "ws_banana",
+   "say": "banana",
+   "zh": "香蕉",
+   "pos": [
+    32,
+    15
+   ]
+  },
+  {
+   "id": "ws_apple",
+   "say": "apple",
+   "zh": "苹果",
+   "pos": [
+    24,
+    -26
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_orange",
+   "say": "orange",
+   "zh": "橙子",
+   "pos": [
+    30,
+    24
+   ]
+  },
+  {
+   "id": "ws_pear",
+   "say": "pear",
+   "zh": "梨",
+   "pos": [
+    -27,
+    38
+   ]
+  },
+  {
+   "id": "ws_watermelon",
+   "say": "watermelon",
+   "zh": "西瓜",
+   "pos": [
+    -23,
+    2
+   ]
+  },
+  {
+   "id": "ws_grapes",
+   "say": "grapes",
+   "zh": "葡萄",
+   "pos": [
+    -20,
+    -21
+   ]
+  },
+  {
+   "id": "ws_strawberry",
+   "say": "strawberry",
+   "zh": "草莓",
+   "pos": [
+    -8,
+    -30
+   ]
+  },
+  {
+   "id": "ws_fruit",
+   "say": "fruit",
+   "zh": "水果",
+   "pos": [
+    2.5,
+    15
+   ]
+  },
+  {
+   "id": "ws_like",
+   "say": "like",
+   "zh": "喜欢",
+   "pos": [
+    14,
+    6
+   ]
+  },
+  {
+   "id": "ws_here",
+   "say": "Here you are.",
+   "zh": "给你。",
+   "pos": [
+    -11,
+    6
+   ]
+  },
+  {
+   "id": "ws_doyou",
+   "say": "Do you like pears?",
+   "zh": "你喜欢梨吗？",
+   "pos": [
+    0,
+    25
+   ]
+  },
+  {
+   "id": "ws_yes",
+   "say": "Yes, I do.",
+   "zh": "是的，我喜欢。",
+   "pos": [
+    -12,
+    29
+   ]
+  },
+  {
+   "id": "ws_no",
+   "say": "No, I don't.",
+   "zh": "不，我不喜欢。",
+   "pos": [
+    10,
+    -25
+   ]
+  },
+  {
+   "id": "ws_ilike",
+   "say": "I like bananas.",
+   "zh": "我喜欢香蕉。",
+   "pos": [
+    25,
+    0
+   ]
+  },
+  {
+   "id": "ws_dont",
+   "say": "I don't like oranges.",
+   "zh": "我不喜欢橙子。",
+   "pos": [
+    -37,
+    17
+   ],
+   "hidden": true
+  },
+  {
+   "id": "ws_have",
+   "say": "Can I have some grapes, please?",
+   "zh": "请给我一些葡萄好吗？",
+   "pos": [
+    -34,
+    -29
+   ],
+   "hidden": true
+  }
+ ],
+ "spellIdeas": [
+  {
+   "say": "Make the apple tree shake!",
+   "zh": "让苹果树摇一摇（会有秘密哦）",
+   "near": "apple_tree"
+  },
+  {
+   "say": "Open the chest!",
+   "zh": "打开宝箱",
+   "near": "chest"
+  },
+  {
+   "say": "Make the scarecrow dance!",
+   "zh": "让稻草人跳舞（会有秘密哦）",
+   "near": "scarecrow"
+  },
+  {
+   "say": "Make the watermelon giant!",
+   "zh": "把西瓜变得超级大",
+   "near": "watermelon"
+  },
+  {
+   "say": "Make it rain bananas!",
+   "zh": "让天上掉香蕉"
+  },
+  {
+   "say": "Make three pears!",
+   "zh": "变出三个梨",
+   "near": "pear"
+  },
+  {
+   "say": "Make the balloon fly!",
+   "zh": "让热气球飞起来",
+   "near": "balloon"
+  },
+  {
+   "say": "Make the parrot sing!",
+   "zh": "让鹦鹉唱歌",
+   "near": "parrot"
+  },
+  {
+   "say": "Turn the rabbit into a pear!",
+   "zh": "把兔子变成梨",
+   "near": "rabbit"
+  },
+  {
+   "say": "Make the grapes big!",
+   "zh": "把葡萄变大",
+   "near": "grapes"
+  },
+  {
+   "say": "Make the fountain rainbow!",
+   "zh": "把喷泉变成彩虹色",
+   "near": "fountain"
+  },
+  {
+   "say": "Make Momo dance!",
+   "zh": "让小猴跳舞",
+   "near": "momo"
+  },
+  {
+   "say": "Make Tom happy!",
+   "zh": "让 Tom 开心",
+   "near": "tom"
+  },
+  {
+   "say": "Light the lantern!",
+   "zh": "点亮灯笼",
+   "near": "lamp2"
+  },
+  {
+   "say": "Make a durian!",
+   "zh": "变一个榴莲"
+  },
+  {
+   "say": "Make it night!",
+   "zh": "让天黑下来"
+  },
+  {
+   "say": "Make it rain pears!",
+   "zh": "让天上掉梨"
+  },
+  {
+   "say": "Make it rain grapes!",
+   "zh": "让天上掉葡萄"
+  },
+  {
+   "say": "Turn the parrot into a banana!",
+   "zh": "把鹦鹉变成香蕉"
+  },
+  {
+   "say": "Make the watermelon gold!",
+   "zh": "把西瓜变成金色"
+  },
+  {
+   "say": "Put the watermelon on a cloud!",
+   "zh": "让西瓜坐上云朵"
+  },
+  {
+   "say": "Make three watermelons!",
+   "zh": "变出三个西瓜"
+  },
+  {
+   "say": "Make the pear pink!",
+   "zh": "把梨变成粉色"
+  },
+  {
+   "say": "Make the scarecrow invisible!",
+   "zh": "让稻草人隐身"
+  },
+  {
+   "say": "Move the fruit stall to the left!",
+   "zh": "把水果摊移到左边"
+  },
+  {
+   "say": "Everybody, sing!",
+   "zh": "让大家一起唱歌"
+  }
+ ]
+}

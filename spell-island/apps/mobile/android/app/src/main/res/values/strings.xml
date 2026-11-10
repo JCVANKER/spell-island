@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">咒语岛</string>
+    <string name="title_activity_main">咒语岛</string>
+    <string name="package_name">com.ncjng.spellisland</string>
+    <string name="custom_url_scheme">com.ncjng.spellisland</string>
+</resources>

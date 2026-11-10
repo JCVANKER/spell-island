@@ -1,0 +1,7 @@
+{
+  "appId": "com.ncjng.spellisland",
+  "appName": "咒语岛",
+  "webDir": "../web/dist",
+  "android": { "allowMixedContent": false, "backgroundColor": "#0d1118" },
+  "server": { "androidScheme": "https" }
+}

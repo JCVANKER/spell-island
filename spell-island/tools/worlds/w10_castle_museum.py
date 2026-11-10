@@ -1,0 +1,198 @@
+from common import T, N, Q, S, Z
+
+# 10 ----------------------------------------------------------------- 九 Could you please tell me where…?
+# An old castle that is now a big open-air museum: entrance with ticket booth, gift shop and restrooms, a stone
+# courtyard, the Knight Hall and the Dragon Hall, a great gate to the Throne Room, an old tower with a little
+# dragon, and a post office. Everybody here is polite — ask with "Could you please tell me where…?" /
+# "Do you know when…?", give directions, guide lost visitors, and end the tour with fireworks.
+WORLD = dict(id='castle-museum', order=10, grade='九年级', gradeNum=9, unit='Unit · Could you please tell me where…?（礼貌问询与宾语从句）', title='The Castle Museum', titleZh='古堡博物馆', scene='castle',
+  bounds=52,
+  intro=['这座古堡是一座大博物馆：骑士厅、金龙厅、王座厅、古塔、礼品店、邮局……这里的人都很讲礼貌。', '问路要用礼貌的说法：“Could you please tell me where … is?” 先去庭院找导游格蕾丝：“Go to Ms Grace!”'],
+  vocab=['castle', 'museum', 'exhibit', 'guide', 'polite', 'excuse me', 'could you', 'tell me', 'where', 'restroom', 'gift shop', 'postcard', 'stamp', 'post office', 'next to', 'turn left', 'built', 'wonder'],
+  patterns=['Could you please tell me where the gift shop is?', 'Do you know when the castle was built?', 'Do you know where I can buy stamps?', 'Excuse me, could you please open the door?', "Sure. It's next to the entrance, on the right."],
+  spawn={'pos': [0, 0, 44], 'rot': 3.14159},
+  zones=[
+    Z('entrance', 'Museum Entrance', '博物馆入口', (0, 36), 8),
+    Z('courtyard', 'Castle Courtyard', '城堡庭院', (0, 6), 10),
+    Z('knight', 'Knight Hall', '骑士厅', (-26, -6), 10),
+    Z('dragon', 'Dragon Hall', '金龙厅', (26, -6), 10),
+    Z('throne', 'Throne Room', '王座厅', (0, -32), 9),
+    Z('gift', 'Gift Shop', '礼品店', (27, 24), 9),
+    Z('rest', 'Restrooms', '洗手间', (-27, 24), 8),
+    Z('tower', 'Old Tower', '古塔', (-28, -33), 9),
+    Z('post', 'Post Office', '邮局', (28, -34), 9),
+  ],
+  decor=[
+    # entrance and the main stone path
+    {'k': 'path', 'pts': [[0, 50], [0, 6]], 'w': 4, 'color': '#c9c2b6'},
+    {'k': 'model', 'm': 'lantern', 'at': [-3.4, 31]}, {'k': 'model', 'm': 'lantern', 'at': [3.4, 31]},
+    {'k': 'model', 'm': 'flower_bed', 'at': [-7, 40], 'rot': 1.57}, {'k': 'model', 'm': 'flower_bed', 'at': [8, 41], 'rot': 1.57},
+    {'k': 'tree', 'at': [-12, 44], 's': 1.2}, {'k': 'tree', 'at': [12, 44], 's': 1.2},
+    # courtyard with stone walls
+    {'k': 'plaza', 'at': [0, 6], 'r': 10, 'color': '#c8c2b8'},
+    {'k': 'wall', 'from': [-20, 19], 'to': [-4, 19]}, {'k': 'wall', 'from': [4, 19], 'to': [20, 19]},
+    {'k': 'wall', 'from': [-20, -20], 'to': [-5, -20]}, {'k': 'wall', 'from': [5, -20], 'to': [20, -20]},
+    {'k': 'tower', 'at': [-21.5, 20]}, {'k': 'tower', 'at': [21.5, 20]}, {'k': 'tower', 'at': [-21.5, -21.5]}, {'k': 'tower', 'at': [21.5, -21.5]},
+    {'k': 'model', 'm': 'bench', 'at': [-9, 9], 'rot': 1.57, 'solid': 0.9}, {'k': 'model', 'm': 'bench', 'at': [10, 4], 'rot': -1.57, 'solid': 0.9},
+    {'k': 'model', 'm': 'bush', 'at': [-12, 15]}, {'k': 'model', 'm': 'bush', 'at': [13, 15]}, {'k': 'model', 'm': 'bush', 'at': [-13, -12]}, {'k': 'model', 'm': 'bush', 'at': [13, -12]},
+    {'k': 'model', 'm': 'flower_bed', 'at': [-5, -6], 'rot': 0.3}, {'k': 'model', 'm': 'flower_bed', 'at': [5, -6], 'rot': -0.3},
+    # paths between the halls
+    {'k': 'path', 'pts': [[0, 6], [-14, -2], [-23, -5]], 'w': 3.2, 'color': '#c9c2b6'},
+    {'k': 'path', 'pts': [[0, 6], [14, -2], [23, -5]], 'w': 3.2, 'color': '#c9c2b6'},
+    {'k': 'path', 'pts': [[0, 6], [0, -32]], 'w': 3.6, 'color': '#c9c2b6'},
+    {'k': 'path', 'pts': [[0, 23], [14, 23], [24, 24]], 'w': 3, 'color': '#c9c2b6'},
+    {'k': 'path', 'pts': [[0, 23], [-14, 23], [-23, 23]], 'w': 3, 'color': '#c9c2b6'},
+    {'k': 'path', 'pts': [[-24, -9], [-26, -22], [-25, -28]], 'w': 2.8, 'color': '#c9c2b6'},
+    {'k': 'path', 'pts': [[24, -9], [26, -22], [25, -29]], 'w': 2.8, 'color': '#c9c2b6'},
+    # Knight Hall / Dragon Hall buildings
+    {'k': 'house', 'at': [-33, -18], 'rot': 0.4, 'w': 7, 'h': 5, 'wall': '#cfc8bc', 'roof': '#4f6fb8'},
+    {'k': 'house', 'at': [33, -18], 'rot': -0.4, 'w': 7, 'h': 5, 'wall': '#cfc8bc', 'roof': '#c8343a'},
+    {'k': 'plaza', 'at': [-26, -6], 'r': 6, 'color': '#bdb6aa'}, {'k': 'plaza', 'at': [26, -6], 'r': 6, 'color': '#bdb6aa'},
+    {'k': 'model', 'm': 'lantern', 'at': [-19, -11]}, {'k': 'model', 'm': 'lantern', 'at': [19, -11]},
+    {'k': 'rock', 'at': [-38, -4], 's': 1.2}, {'k': 'rock', 'at': [38, -3], 's': 1.1},
+    # Throne Room behind the great gate
+    {'k': 'plaza', 'at': [0, -34], 'r': 7, 'color': '#d9b8b8'},
+    {'k': 'house', 'at': [0, -46], 'rot': 0, 'w': 8, 'h': 5.5, 'wall': '#d8d0c4', 'roof': '#4f6fb8'},
+    {'k': 'model', 'm': 'lantern', 'at': [-7, -38]}, {'k': 'model', 'm': 'lantern', 'at': [7, -38]},
+    # restrooms and gift shop by the entrance
+    {'k': 'house', 'at': [-31, 29], 'rot': 0, 'w': 5, 'h': 3.4, 'wall': '#e6e0d6', 'roof': '#6f8fb8'},
+
+    {'k': 'model', 'm': 'flower_bed', 'at': [35, 19], 'rot': 0.5}, {'k': 'model', 'm': 'bench', 'at': [19, 30], 'rot': 3.14, 'solid': 0.9},
+    # old tower and post office corners
+    {'k': 'meadow', 'at': [-16, -32], 'r': 5, 'n': 35}, {'k': 'meadow', 'at': [16, -40], 'r': 5, 'n': 35},
+    {'k': 'pine', 'at': [-38, -24], 's': 1.3}, {'k': 'pine', 'at': [-16, -44], 's': 1.2}, {'k': 'tree', 'at': [38, -28], 's': 1.2}, {'k': 'tree', 'at': [18, -46], 's': 1.1},
+    {'k': 'model', 'm': 'bench', 'at': [20, -36], 'rot': 1.57, 'solid': 0.9},
+    # castle grounds edges
+    {'k': 'grove', 'at': [-47, 8], 'r': 6, 'n': 7, 'kind': 'mix'}, {'k': 'grove', 'at': [47, 8], 'r': 6, 'n': 7, 'kind': 'mix'},
+    {'k': 'grove', 'at': [-42, 42], 'r': 6, 'n': 6, 'kind': 'tree'}, {'k': 'grove', 'at': [42, 42], 'r': 6, 'n': 6, 'kind': 'tree'},
+    {'k': 'grove', 'at': [0, 60], 'r': 10, 'n': 8, 'kind': 'pine', 's': 1.2}, {'k': 'grove', 'at': [-20, -56], 'r': 8, 'n': 6, 'kind': 'pine'}, {'k': 'grove', 'at': [22, -56], 'r': 8, 'n': 6, 'kind': 'pine'},
+    {'k': 'mountain', 'at': [0, -78], 'r': 18, 'h': 14, 'color': '#8fa88a'},
+  ],
+  things=[
+    # Museum Entrance
+    T('booth', 'ticket booth', 'ticket_booth', (-6, 0, 34), '售票亭', aliases=['booth', 'tickets', 'ticket office'], radius=1.2, can=['fly']),
+    T('entrance_sign', 'museum sign', 'signpost', (6, 0, 38), '博物馆告示牌', aliases=['sign', 'board', 'welcome sign'], radius=0.4, can=['read'], text='Welcome to the Castle Museum\nOpen: 9:00 a.m. to 5:00 p.m.\nPlease do not touch the exhibits.\nCould you please speak quietly?'),
+    T('lamp1', 'lamp', 'lantern', (-4, 0, 27), '灯', aliases=['lantern'], radius=0.4, can=['light'], params={'h': 2.4}),
+    # Gift Shop and Restrooms
+    T('gift_shop', 'gift shop', 'gift_shop', (30, 0, 27), '礼品店', aliases=['shop', 'souvenir shop', 'gift kiosk'], radius=1.6, can=['light']),
+    T('postcards', 'postcards', 'book_pile', (24, 0, 28), '明信片', aliases=['postcard', 'cards'], radius=0.4, can=['pick', 'fly']),
+    T('west', 'west door', 'magic_door', (-26, 0, 23), '洗手间的门', aliases=['restroom', 'restrooms', 'toilet', 'bathroom', 'restroom door', 'west'], rot=1.5708, radius=0.6, can=['open'], params={'h': 3.2}),
+    # Castle Courtyard
+    T('fountain', 'fountain', 'fountain', (0, 0, 6), '喷泉', radius=1.8, can=['light']),
+    T('map', 'castle map', 'signpost', (-6, 0, 14), '城堡地图', aliases=['map', 'sign', 'board'], radius=0.4, can=['read'],
+      text="Castle Map\nRestrooms: next to the entrance, on the left.\nGift shop: next to the entrance, on the right.\nKnight Hall: on the left. Dragon Hall: on the right.\nThrone Room: behind the great gate."),
+    T('horse', 'horse', 'horse', (9, 0, 10), '骑士的马', aliases=['pony', "knight's horse"], tags=['brown'], color='brown', radius=0.9, can=['fly'], params={'voice': 'animal'},
+      chatter=['Neigh! Excuse me, could you tell me where the carrots are?', 'Neigh! Do you know when my knight comes back?']),
+    T('lamp2', 'lamp', 'lantern', (-9, 0, -3), '灯', aliases=['lantern'], radius=0.4, can=['light'], label=False, params={'h': 2.4}),
+    # Knight Hall
+    T('armor', 'knight armor', 'knight_armor', (-24, 0, -8), '骑士盔甲', aliases=['armor', 'armour', 'knight', 'knight armour'], radius=0.9, can=['fly'], text='The armor of Sir Leon.\nHe was a brave and kind knight.\nHe lived here about 400 years ago.'),
+    T('cannon', 'cannon', 'cannon', (-30, 0, -2), '大炮', aliases=['old cannon'], radius=0.8, can=['fly']),
+    T('chest', 'treasure chest', 'treasure_chest', (-31, 0, -9), '宝箱', aliases=['chest', 'box', 'treasure'], radius=0.6, can=['open', 'fly'], reveal=['ws_how'], revealOn='open'),
+    # Dragon Hall
+    T('dragon', 'dragon statue', 'dragon_statue', (26, 0, -8), '金龙雕像', aliases=['statue', 'golden dragon', 'gold dragon'], tags=['gold'], radius=1.2, can=['fly'], text='This golden dragon was made in 1888.\nPeople believed that dragons brought good luck,\nso the king kept it in the great hall.'),
+    T('vase', 'vase', 'vase', (20, 0, -3), '青花瓷瓶', aliases=['blue and white vase', 'old vase'], radius=0.4, can=['fly'], text='This blue and white vase is about 300 years old.\nIt came from China.'),
+    T('painting', 'painting', 'painting_frame', (31, 0, -1), '城堡油画', aliases=['picture', 'castle painting'], radius=0.8, can=['fly'], text='The Castle on the Hill\nPainted in 1750.'),
+    # Great gate and Throne Room
+    T('gate', 'castle gate', 'castle_gate', (0, 0, -20), '城堡大门', aliases=['gate', 'great gate', 'great door', 'castle door'], radius=4.0, can=['open']),
+    T('throne', 'throne', 'throne', (0, 0, -37), '王座', aliases=['king chair', "king's chair"], tags=['red'], radius=1.0, can=['fly']),
+    T('crown', 'crown', 'crown_display', (5, 0, -31), '王冠', aliases=["king's crown", 'royal crown'], tags=['gold'], radius=0.6, can=['fly'], params={'startTint': 'grey'}, reveal=['ws_wonder'], revealOn='glow'),
+    # Old Tower
+    T('tower', 'tower', 'wizard_tower', (-33, 0, -38), '古塔', aliases=['old tower'], radius=3.4, can=['light'], params={'h': 9}),
+    T('owl', 'owl', 'owl', (-22, 0, -38), '猫头鹰', tags=['brown'], radius=0.4, can=['fly'], params={'voice': 'animal'},
+      chatter=['Hoo! Could you please tell me what time it is?', 'Hoo! Do you know where the post office is?'], reveal=['ws_postwhere'], revealOn='any'),
+    # Post Office
+    T('post_office', 'post office', 'post_office', (32, 0, -38), '邮局', aliases=['post'], radius=3.0, can=['light']),
+    T('post_sign', 'post office sign', 'signpost', (22, 0, -30), '邮局牌子', aliases=['sign', 'board'], radius=0.4, can=['read'], text='Post Office\nStamps, postcards and letters\nOpen every day, 9:00 a.m. to 5:00 p.m.'),
+  ],
+  npcs=[
+    N('guard', 'Sir Bob', 'guard', (6, 0, -16), 'guard', 'Sir Bob, a polite castle guard at the great gate who only answers polite questions; grade-9 English', 'Good day! Welcome to the Castle Museum. Please speak politely here.', '守卫鲍勃爵士', aliases=['guard', 'sir bob', 'bob', 'knight guard'], ouch='Ouch! That is not very polite, young wizard!',
+      idle=['Thank you for asking so politely!', 'Could you please speak quietly in the museum?'],
+      chatter=['Excuse me, could you please speak quietly?', 'Polite visitors are always welcome!', 'The Throne Room is behind this gate.']),
+    N('grace', 'Ms Grace', 'guide', (-5, 0, 2), 'lady', "Ms Grace, a friendly museum guide who knows the castle's history; grade-9 English with polite requests and indirect questions", "Hello! I'm Ms Grace, your guide today.", '导游格蕾丝', aliases=['guide', 'grace', 'ms grace', 'lady'],
+      idle=['Do you know when the castle was built? About four hundred years ago!', 'Please do not touch the exhibits.'],
+      chatter=['Could you please follow me? The tour is starting!', 'The Knight Hall is on the left. The Dragon Hall is on the right.', 'Do you know who lived in this castle?']),
+    N('brown', 'Mr Brown', 'tourist', (6, 0, 25), 'man', 'Mr Brown, a friendly tourist who is a little lost and not good with directions; grade-9 English', "Excuse me! Could you help me? I'm a little lost.", '布朗先生', aliases=['mr brown', 'brown', 'tourist', 'man'],
+      idle=['Thank you for your help!', 'What a polite young wizard!'],
+      chatter=['Excuse me, do you know where the gift shop is?', 'I wonder where I can buy postcards.']),
+    N('lily', 'Lily', 'girl_scarf', (7, 0, 15), 'child', 'Lily, a young visitor who is looking for the restrooms; grade-9 English', "Hi! I'm Lily. This castle is so big!", '莉莉', aliases=['lily', 'girl'],
+      idle=['Thank you so much!', 'This castle is amazing!'],
+      chatter=['Excuse me, could you tell me where the restrooms are?', 'I wonder where the restrooms are...']),
+    N('page', 'Mr Page', 'fruit_seller', (25, 0, 21), 'man', 'Mr Page, the cheerful gift shop keeper; grade-9 English', 'Welcome to the gift shop! Can I help you?', '佩奇先生', aliases=['mr page', 'page', 'shopkeeper', 'shop man'],
+      idle=['Have a nice day!', 'You can buy stamps at the post office.'],
+      chatter=['Postcards! Toy castles! Could I help you find something?', 'You can buy stamps at the post office.']),
+    N('sparky', 'Sparky', 'baby_dragon', (-25, 0, -30), 'animal', 'Sparky, a little dragon living in the old tower who wants to learn polite English; grade-9 English', "Rawr! I mean... hello! I'm Sparky, the little dragon of the old tower.", '小龙斯帕基', aliases=['sparky', 'little dragon', 'baby dragon'], tags=['small'],
+      idle=['Excuse me, could you... Rawr! I am learning!', 'I want to be a polite dragon!'],
+      chatter=['Where is the kitchen?! Oops... Could you tell me where the kitchen is?', 'I want to be a polite dragon!']),
+  ],
+  quests=[
+    # Ms Grace: the tour (main line), ending with the fireworks show
+    Q('cm_listen', 'listen', '听', 'grace', '听导游讲解，选出游客不能做的事', 'Listen to the tour', ['The tour is starting. Listen carefully!'], [], ['Correct! Please do not touch the exhibits.'],
+      prompt='What should visitors NOT do?', audio='Welcome to the Castle Museum! This castle was built about four hundred years ago. If you look to your left, you will see the armor of a famous knight. You may take photos, but please do not touch the exhibits.',
+      options=['Take photos', 'Touch the exhibits', 'Look to the left'], answer=1, video='castle.mp4'),
+    Q('cm_guide', 'guide', '说', 'grace', '格蕾丝想看骑士盔甲：带她去骑士厅', 'Take Ms Grace to the knight armor', ["Oh, I'm new here too! Could you show me where the knight armor is?"], ['Follow me, please.', 'Go to the knight armor.'], ['Here it is! Thank you. You are a wonderful guide!'],
+      prompt='Please lead the way. I will follow you.', to='armor', needs='cm_listen', tipZh='骑士盔甲在左边（西边）的骑士厅。说“Go to the knight armor.”，格蕾丝会跟着你。'),
+    Q('cm_ask', 'speak', '说', 'grace', '用 Do you know … 礼貌地问城堡哪年建的', 'Ask when it was built', ['Do you have any questions about the castle?'], ['Do you know when the castle was built?', 'Could you tell me when the castle was built?'], ['Good question! It was built about four hundred years ago.'],
+      prompt='Ask me when the castle was built, politely.', accept=[['do you know', 'could you', 'can you', 'would you'], ['when', 'how old', 'what year']],
+      judge="A polite indirect question about when the castle was built, e.g. 'Do you know when the castle was built?'", needs='cm_guide', tipZh='礼貌地问：“Do you know when the castle was built?” 注意 when 后面用陈述句语序。'),
+    Q('cm_fireworks', 'magic', '说', 'grace', '参观结束啦！放烟花庆祝', 'Fireworks show', ['That is the end of our tour! Every evening the castle has a fireworks show. Could you start it for us?'], ['Fireworks!'], ['Wonderful! What a polite and clever wizard! Thank you for visiting the Castle Museum!'],
+      prompt='Say: Fireworks!', goal='fireworks', needs='cm_ask', tipZh='念咒语放烟花：“Fireworks!”'),
+    # signs and plaques
+    Q('cm_read', 'read', '读', 'dragon', '读金龙的说明牌：国王为什么留着它？', 'Read the plaque', [], [], ['Exactly. People believed dragons brought good luck.'],
+      passage='This golden dragon was made in 1888. People believed that dragons brought good luck, so the king kept it in the great hall.', prompt='Why did the king keep the dragon?', options=['Because it was cheap', 'Because people believed it brought good luck', 'Because it could fly'], answer=1),
+    Q('cm_map', 'read', '读', 'map', '读城堡地图：洗手间在哪里？', 'Read the map', [], [], ['Right! The restrooms are next to the entrance, on the left.'],
+      passage="Castle Map\nRestrooms: next to the entrance, on the left.\nGift shop: next to the entrance, on the right.\nKnight Hall: on the left. Dragon Hall: on the right.\nThrone Room: behind the great gate.", prompt='Where are the restrooms?',
+      options=['Next to the entrance, on the left', 'Behind the great gate', 'In the Dragon Hall'], answer=0),
+    # Sir Bob: politeness at the great gate, then the Throne Room
+    Q('cm_polite', 'speak', '说', 'guard', '礼貌地问守卫：礼品店在哪里？', 'Ask politely', ['Halt! In this castle you must ask politely. Ask me where the gift shop is.'], ['Could you please tell me where the gift shop is?'], ['Of course! The gift shop is next to the entrance, on the right. What a polite young wizard!'],
+      prompt='Go on, ask me politely.', accept=[['could you', 'can you', 'would you', 'excuse me', 'do you know'], ['where']], tipZh='守卫只回答有礼貌的问题。试试：“Could you please tell me where the gift shop is?”注意 where 后面是陈述句语序哦。'),
+    Q('cm_write', 'write', '写', 'guard', '把问句改成礼貌说法', 'Write it politely', ['Now a writing test. Make this question polite.'], ['Could you tell me where the restroom is?'], ['Perfect word order! You may pass.'],
+      prompt='"Where is the restroom?" → Could you tell me ___?', accept=[['could you', 'can you'], ['where'], ['restroom', 'toilet', 'bathroom'], ['is']],
+      judge="An indirect question with statement word order, e.g. 'Could you tell me where the restroom is?' (not 'where is the restroom').", needs='cm_polite', tipZh='写：“Could you tell me where the restroom is?” is 要放到最后。'),
+    Q('cm_gate', 'magic', '说', 'guard', '用礼貌的咒语打开城堡大门', 'Open the great gate', ['The great gate is locked. Only a polite wizard can open it.'], ['Please open the gate!'], ['The gate is open! The Throne Room is behind it. Well done, polite wizard!'],
+      prompt='Say: Please open the gate!', goal='open:gate', needs='cm_write', tipZh='礼貌地念咒语：“Please open the gate!”'),
+    Q('cm_crown', 'magic', '说', 'guard', '王冠失去了光彩：让它重新闪耀', 'Make the crown shine', ["The king's crown is in the Throne Room, but it has lost its shine. Could you please make it glow again?"], ['Make the crown glow!'], ['Look at it shine! The king would be very happy. Thank you!'],
+      prompt='Say: Make the crown glow!', goal='glow:crown', needs='cm_gate', tipZh='王冠在大门后面的王座厅。念咒语：“Make the crown glow!”'),
+    # Mr Brown: a lost tourist — give directions and guide him
+    Q('cm_brown', 'speak', '说', 'brown', '告诉布朗先生礼品店在哪里', 'Give directions', ['Excuse me, could you tell me where the gift shop is?'], ["Sure. It's next to the entrance, on the right.", "It's over there, on the right."], ['On the right, next to the entrance. Thank you!'],
+      prompt='Could you tell me where the gift shop is?', accept=[['right', 'left', 'next to', 'near', 'go', 'turn', 'follow', 'this way', 'over there', 'behind', 'between', 'across', 'east']],
+      judge="The child politely tells Mr Brown where the gift shop is or how to get there (e.g. 'Sure. It's next to the entrance, on the right.').", tipZh='布朗先生问礼品店在哪里。看看地图：“Sure. It\'s next to the entrance, on the right.”'),
+    Q('cm_brown_go', 'guide', '说', 'brown', '布朗先生不认路：带他去礼品店', 'Take Mr Brown to the gift shop', ["Sorry, could you show me the way? I'm not good with directions."], ['Follow me, please.', 'Go to the gift shop.'], ['Here we are! Thank you so much. I can buy some postcards now.'],
+      prompt='Could you show me the way, please?', to='gift_shop', needs='cm_brown', tipZh='说“Go to the gift shop.”，布朗先生会跟着你走。'),
+    # Mr Page: stamps and postcards
+    Q('cm_stamps', 'speak', '说', 'page', '礼貌地问店主：哪里可以买邮票？', 'Ask about stamps', ['Welcome to the gift shop! We have postcards and toy castles. But no stamps, sorry!'], ['Do you know where I can buy stamps?', 'Could you tell me where I can buy stamps?'], ['Stamps? You can buy them at the post office. It is behind the Dragon Hall.'],
+      prompt='Can I help you?', accept=[['do you know', 'could you', 'can you', 'would you', 'excuse me'], ['where']],
+      judge="A polite indirect question asking where to buy stamps, e.g. 'Do you know where I can buy stamps?'", needs='cm_brown_go', tipZh='礼貌地问哪里能买邮票：“Do you know where I can buy stamps?”'),
+    Q('cm_postcard', 'do', '说', 'page', '把明信片送给布朗先生', 'Postcards for Mr Brown', ['Oh! Mr Brown wants some postcards of the castle. Could you please give these postcards to him?'], ['Pick up the postcards.', 'Give the postcards to Mr Brown.'], ['Thank you, little wizard! Now Mr Brown can send them to his family.'],
+      goal='give:*:brown', needs='cm_stamps', tipZh='先拿明信片：“Pick up the postcards.” 再送过去：“Give the postcards to Mr Brown.”'),
+    # Lily: looking for the restrooms
+    Q('cm_lily', 'guide', '说', 'lily', 'Lily 找不到洗手间：带她去', 'Take Lily to the restrooms', ['Excuse me... I wonder where the restrooms are. Could you take me there, please?'], ['Follow me, please.', 'Go to the restroom.'], ['Here they are! Thank you so much!'],
+      prompt='Could you take me to the restrooms?', to='west', needs='cm_map', tipZh='洗手间在入口旁边、左边（西边）。说“Go to the restroom.”，Lily 会跟着你。'),
+    Q('cm_door', 'magic', '说', 'lily', '洗手间的门锁住了：礼貌地请它打开', 'Open the door, please', ['Oh no, the door is locked! Could you please open it?'], ['Could you please open the door?'], ['It opened! You are so polite — even the door listens to you!'],
+      prompt='Say: Could you please open the door?', goal='open:west', needs='cm_lily', tipZh='礼貌地说：“Could you please open the door?”'),
+    # Sparky: a little dragon who wants to be polite
+    Q('cm_sparky', 'speak', '说', 'sparky', '教小龙礼貌地问路：厨房在哪里？', 'Teach Sparky to ask politely', ["When I shout 'Where is the kitchen?!', people run away! How can I ask politely?"], ['Excuse me, could you tell me where the kitchen is?'], ["Excuse me, could you tell me where the kitchen is? Oh, that's much better! Thank you!"],
+      prompt='How can I ask politely?', accept=[['could you', 'can you', 'would you', 'do you know', 'excuse me'], ['where'], ['kitchen']],
+      judge="A polite indirect question asking where the kitchen is, e.g. 'Excuse me, could you tell me where the kitchen is?'", tipZh='教小龙说：“Excuse me, could you tell me where the kitchen is?”'),
+    Q('cm_tower', 'magic', '说', 'sparky', '小龙的古塔太黑了：点亮古塔', 'Light the tower', ['My old tower is so dark at night. Could you please light it for me?'], ['Light the tower!'], ['Rawr! I mean... thank you very much! My tower looks beautiful!'],
+      prompt='Say: Light the tower!', goal='light:tower', needs='cm_sparky', tipZh='点亮古塔：“Light the tower!”'),
+  ],
+  words=[
+    S('ws_excuse', 'excuse me', '打扰一下', (-9, 30)), S('ws_museum', 'museum', '博物馆', (9, 34)),
+    S('ws_where', 'Could you please tell me where the gift shop is?', '请问你能告诉我礼品店在哪里吗？', (14, 22)),
+    S('ws_gift', 'gift shop', '礼品店', (33, 21)), S('ws_postcards', 'postcards', '明信片', (21, 31)),
+    S('ws_rest', 'restrooms', '洗手间', (-21, 27)), S('ws_nextto', 'next to', '在……旁边', (-14, 17)),
+    S('ws_polite', 'polite', '有礼貌的', (-9, 4)), S('ws_castle', 'castle', '城堡', (-18, -1)),
+    S('ws_built', 'Do you know when the castle was built?', '你知道这座城堡是什么时候建的吗？', (-21, -13)),
+    S('ws_left', 'turn left', '向左转', (14, -3)),
+    S('ws_door', 'Could you please open the door?', '请你开一下门好吗？', (-7, -14)),
+    S('ws_stamps', 'stamps', '邮票', (25, -40)), S('ws_buy', 'Do you know where I can buy stamps?', '你知道我在哪里能买到邮票吗？', (18, -33)),
+    S('ws_how', 'Could you tell me how to get to the tower?', '你能告诉我怎么去古塔吗？', (-36, -5), hidden=True),
+    S('ws_wonder', 'I wonder who wore this crown.', '我想知道谁戴过这顶王冠。', (9, -34), hidden=True),
+    S('ws_postwhere', 'Excuse me, do you know where the post office is?', '打扰一下，你知道邮局在哪里吗？', (-18, -41), hidden=True),
+  ],
+  spellIdeas=[{'say': 'Open the chest!', 'zh': '打开骑士厅的宝箱（会发现秘密哦）', 'near': 'chest'}, {'say': 'Make the owl fly!', 'zh': '让猫头鹰飞起来（它藏着秘密）', 'near': 'owl'}, {'say': 'Make the dragon statue fly!', 'zh': '让金龙雕像飞起来', 'near': 'dragon'},
+    {'say': 'Make the knight armor dance!', 'zh': '让骑士盔甲跳舞', 'near': 'armor'}, {'say': 'Make the throne gold!', 'zh': '把王座变成金色', 'near': 'throne'}, {'say': 'Make the vase big!', 'zh': '把青花瓷瓶变大', 'near': 'vase'},
+    {'say': 'Make Sir Bob small!', 'zh': '把守卫变小（他会生气吗？）', 'near': 'guard'}, {'say': 'Make the horse dance!', 'zh': '让骑士的马跳舞', 'near': 'horse'}, {'say': 'Make Sparky sing!', 'zh': '让小龙唱歌', 'near': 'sparky'},
+    {'say': 'Light the lamp!', 'zh': '点亮城堡里的灯', 'near': 'lamp2'}, {'say': 'Make the cannon jump!', 'zh': '让大炮跳一跳', 'near': 'cannon'}, {'say': 'Make it night!', 'zh': '让天黑下来，看古堡夜景'},
+    {'say': 'Be invisible!', 'zh': '隐身，偷偷溜过去'}, {'say': 'Turn the painting into a cake!', 'zh': '把油画变成蛋糕', 'near': 'painting'}, {'say': 'Light the post office!', 'zh': '点亮邮局', 'near': 'post_office'}],
+)

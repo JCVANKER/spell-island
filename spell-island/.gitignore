@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+apps/server/.cache
+.DS_Store
+apps/web/dist-android
+apps/mobile/android/app/build
+apps/mobile/android/.gradle
+apps/mobile/release
+apps/desktop/release
+.update-key
+deployment/artifacts/
